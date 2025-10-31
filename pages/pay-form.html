@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Comenzar</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/payform.css">
+</head>
+
+<body>
+    <div class="background-wrapper">
+        <div class="background-overlay"></div>
+
+        <div class="payment-header">
+            <a class="header-div" href="/">
+                <div class="icon-container">
+                    <img src="/assets/images/logo.png" width="30" height="30" alt="logo">
+                </div>
+                <h1 class="title">InstaTV</h1>
+            </a>
+        </div>
+
+
+        <div class="form-container">
+            <section class="utility-heading">
+                <h1>Comenzar</h1>
+                <p>Ingresa tu dirección de correo electrónico para comenzar. Si ya te suscribiste a InstaTV Premium,
+                    ingresa el
+                    correo electrónico asociado con esa cuenta.</p>
+            </section>
+
+            <form id="start-form" novalidate>
+                <label for="email">Dirección de correo electrónico</label>
+                <input type="email" id="email" name="email" required>
+                
+                <div id="form-message" class="form-msg"></div>
+
+                <button class="payform-btn" type="submit">Continuar</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Validación simple del formulario
+        const form = document.getElementById('start-form');
+        const message = document.getElementById('form-message');
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const email = form.email.value.trim();
+            if (email === "") {
+                message.textContent = "Por favor ingresa tu correo electrónico.";
+            } else if (!/\S+@\S+\.\S+/.test(email)) {
+                message.textContent = "Ingresa un correo válido.";
+            } else {
+                message.style.color = "#00ff00";
+                message.textContent = "¡Correo enviado correctamente!";
+                form.reset();
+            }
+        });
+    </script>
+</body>
+
+</html>

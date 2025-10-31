@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ES">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streaming de Canales</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/modal.css">
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <div class="left-div">
+            <div class="left-wrapper">
+                <div class="header-container">
+                    <div class="header-content">
+                        <div class="header-div">
+                            <div class="icon-container">
+                                <img src="/assets/images/logo.png" width="30" height="30" alt="logo">
+                            </div>
+                            <h1 class="title">InstaTV</h1>
+                        </div>
+                        <button id="category-menu-btn" class="category-menu-btn">Categorias</button>
+                    </div>
+                </div>
+
+                <div class="category-container">
+                    <div class="category-grid">
+                        <button class="category-btn">Todos</button>
+                        <button class="category-btn">Cine</button>
+                        <button class="category-btn">Deportes</button>
+                        <button class="category-btn">Música</button>
+                        <button class="category-btn">Noticias</button>
+                        <button class="category-btn">Shows</button>
+                        <button class="category-btn">Reportajes</button>
+                    </div>
+                </div>
+
+                <div class="channels-container">
+                    <div id="channelsList" class="channels-list">
+                        <!-- DINAMIC DATA -->
+                    </div>
+                </div>
+
+                <div class="footer-stats">
+                    <div class="footer-content">
+                        <div class="stats-left">
+                            <div class="stat-item">
+                                <div id="totalChannels" class="stat-number">0</div>
+                                <div class="stat-label">Canales</div>
+                            </div>
+                            <div class="stat-item">
+                                <div id="channelsOnline" class="stat-number online">0</div>
+                                <div class="stat-label">Online</div>
+                            </div>
+                        </div>
+                        <div class="live-indicator">🔴 EN VIVO</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="right-div">
+            <div class="video-wrapper">
+
+                <video class="video" id="videoPlayer" autoplay muted playsinline src="" type="application/x-mpegURL">
+                </video>
+
+                <div class="video-header">
+                    <div class="channel-heading">
+                        <div class="channel-details">
+
+                            <img id="imagenCanalActual" src="" alt="Canal actual" class="channel-logo">
+                            <div>
+                                <div id="nombreCanalActual" class="channel-name"></div>
+
+
+                                <div class="live-status">
+                                    <div class="live-dot"></div> EN VIVO
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-controls">
+                    <div class="player-controls">
+                        <!-- Play -->
+                        <button id="btnPlay" class="control-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="icon-play" aria-hidden="true">
+                                <path
+                                    d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z">
+                                </path>
+                            </svg>
+                        </button>
+
+                        <!-- Volumen -->
+                        <div class="volume-wrapper">
+                            <button id="btnVolume" class="control-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="icon-volume" aria-hidden="true">
+                                    <path
+                                        d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z">
+                                    </path>
+                                    <path d="M16 9a5 5 0 0 1 0 6"></path>
+                                    <path d="M19.364 18.364a9 9 0 0 0 0-12.728"></path>
+                                </svg>
+                            </button>
+
+                            <div class="volume-slider-container">
+                                <input type="range" id="volumeSlider" min="0" max="1" step="0.05" value="1"
+                                    class="volume-slider">
+                            </div>
+                        </div>
+
+                        <!-- Estado -->
+                        <span id="statusText" class="status-text">Pausado</span>
+                    </div>
+
+
+                    <div class="settings-and-fullscreen">
+                        <div class="settings-btn-container">
+                            <button id="btnSettings" class="settings-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="26" height="26"
+                                    fill="#ffffff">
+                                    <path
+                                        d="M19.4 12.94a7.9 7.9 0 0 0 0-1.88l2.06-1.6a.5.5 0 0 0 .12-.64l-1.9-3.3a.5.5 0 0 0-.6-.23l-2.43.97a7.9 7.9 0 0 0-1.63-.94l-.36-2.56a.5.5 0 0 0-.5-.42h-3.8a.5.5 0 0 0-.5.42l-.36 2.56a7.9 7.9 0 0 0-1.63.94l-2.43-.97a.5.5 0 0 0-.6.23l-1.9 3.3a.5.5 0 0 0 .12.64l2.06 1.6a7.9 7.9 0 0 0 0 1.88l-2.06 1.6a.5.5 0 0 0-.12.64l1.9 3.3a.5.5 0 0 0 .6.23l2.43-.97a7.9 7.9 0 0 0 1.63.94l.36 2.56a.5.5 0 0 0 .5.42h3.8a.5.5 0 0 0 .5-.42l.36-2.56a7.9 7.9 0 0 0 1.63-.94l2.43.97a.5.5 0 0 0 .6-.23l1.9-3.3a.5.5 0 0 0-.12-.64l-2.06-1.6ZM12 16.5a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9Z" />
+                                </svg>
+                            </button>
+
+                            <div id="settingsMenu" class="settings-menu">
+                                <ul>
+                                    <li data-action="theme">Tema</li>
+                                    <li data-action="quality" id="openModalBtn">
+                                        Calidad HD
+                                        <span class="premium">Premium</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <button id="btnFullscreen" class="fullscreen-btn" title="Pantalla completa (F)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="icon-maximize" aria-hidden="true">
+                                <path d="M8 3H5a2 2 0 0 0-2 2v3"></path>
+                                <path d="M21 8V5a2 2 0 0 0-2-2h-3"></path>
+                                <path d="M3 16v3a2 2 0 0 0 2 2h3"></path>
+                                <path d="M16 21h3a2 2 0 0 0 2-2v-3"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="premiumModal" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" id="closeModalBtn" aria-label="Cerrar modal">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path d="M6 6L18 18M6 18L18 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </button>
+
+            <h2 class="modal-title">Planes Premium</h2>
+
+            <div class="plans">
+                <!-- Plan Oro -->
+                <div class="plan-card gold">
+                    <div class="plan-div">
+                        <div class="plan-header">
+                            <h3>Plan Oro</h3>
+                            <p class="price">₡1,500 / mes</p>
+                        </div>
+                        <ul class="benefits">
+                            <li>Canales exclusivos</li>
+                            <li>Calidad HD estable</li>
+                            <li>Sin anuncios</li>
+                            <li>Soporte prioritario</li>
+                            <li>Actualizaciones rápidas</li>
+                        </ul>
+                    </div>
+                    <a href="/pages/pay-form.html" class="select-btn">Elige este plan</a>
+                </div>
+
+                <!-- Plan Platino -->
+                <div class="plan-card platinum">
+                    <div class="plan-div">
+                        <div class="plan-header">
+                            <h3>Plan Platino</h3>
+                            <p class="price">₡2,900 / mes</p>
+                        </div>
+                        <ul class="benefits">
+                            <li>Todo del Plan Oro</li>
+                            <li>Canales 4K</li>
+                            <li>Eventos en vivo exclusivos</li>
+                            <li>Acceso internacional</li>
+                            <li>Soporte 24/7</li>
+                        </ul>
+                    </div>
+                    <a href="/pages/pay-form.html" class="select-btn">Elige este plan</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script src="/assets/js/data.js" defer></script>
+    <script src="/assets/js/scripts.js" defer></script>
+    <script src="/assets/js/category-menu.js" defer></script>
+    <script src="/assets/js/sort.js" defer></script>
+    <script src="/assets/js/fullscreen.js" defer></script>
+    <script src="/assets/js/config.js" defer></script>
+    <script src="/assets/js/modal.js" defer></script>
+</body>
+
+</html>

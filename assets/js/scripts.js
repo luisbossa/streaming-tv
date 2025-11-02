@@ -27,7 +27,9 @@ canales.forEach((canal, index) => {
       ${String(index + 1).padStart(2, "0")}
     </div>
     <div class="channel-image-container">
-      <img src="${canal.imagen}" alt="${canal.nombre}" class="channel-image">
+      <div class="img-div">
+        <img src="${canal.imagen}" alt="${canal.nombre}" class="channel-image">
+      </div>
       <div class="status-dot"></div>
     </div>
     <div class="channel-info">
@@ -47,6 +49,22 @@ canales.forEach((canal, index) => {
           <span>HD</span>
         </div>
       </div>
+    </div>
+    <div class="load-dots-div">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+          <circle fill="#F6F6F6" stroke="#F6F6F6" stroke-width="3" r="15" cx="40" cy="100">
+              <animate attributeName="opacity" calcMode="spline" dur="2" values="1;0;1;"
+                  keySplines=".5 0 .5 1;.5 0 .5 1" repeatCount="indefinite" begin="-.4"></animate>
+          </circle>
+          <circle fill="#F6F6F6" stroke="#F6F6F6" stroke-width="3" r="15" cx="100" cy="100">
+              <animate attributeName="opacity" calcMode="spline" dur="2" values="1;0;1;"
+                  keySplines=".5 0 .5 1;.5 0 .5 1" repeatCount="indefinite" begin="-.2"></animate>
+          </circle>
+          <circle fill="#F6F6F6" stroke="#F6F6F6" stroke-width="3" r="15" cx="160" cy="100">
+              <animate attributeName="opacity" calcMode="spline" dur="2" values="1;0;1;"
+                  keySplines=".5 0 .5 1;.5 0 .5 1" repeatCount="indefinite" begin="0"></animate>
+          </circle>
+      </svg>
     </div>
   `;
 

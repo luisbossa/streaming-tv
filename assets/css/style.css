@@ -978,10 +978,6 @@ body[data-theme="light"] .btn-channel:hover {
     display: none;
   }
 
-  .video-wrapper {
-    min-width: 700px;
-  }
-
   .settings-and-fullscreen {
     gap: 8px;
   }
@@ -1005,8 +1001,49 @@ body[data-theme="light"] .btn-channel:hover {
     max-height: 300px;
   }
 
+  .video-wrapper {
+    min-width: 650px;
+  }
+
+  .video-header {
+    top: 8px;
+    left: 8px;
+  }
+
+  .channel-heading {
+    padding: 4px 6px;
+    border-radius: 6px;
+  }
+
+  .channel-details {
+    gap: 4px;
+  }
+
+  .channel-logo {
+    width: 18px;
+    height: 18px;
+  }
+
+  .channel-name {
+    font-size: 11px;
+  }
+
+  .live-status {
+    font-size: 9px;
+  }
+
+  .live-dot {
+    width: 4px;
+    height: 4px;
+    margin-right: 3px;
+  }
+
   .footer-stats {
     flex-direction: column;
     gap: 0.5rem;
+  }
+
+  .settings-and-fullscreen {
+    display: none;
   }
 }

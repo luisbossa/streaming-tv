@@ -1002,7 +1002,7 @@ body[data-theme="light"] .btn-channel:hover {
   }
 
   .video-wrapper {
-    min-width: 650px;
+    max-width: 600px;
   }
 
   .video-header {

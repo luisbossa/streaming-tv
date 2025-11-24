@@ -1,6 +1,59 @@
 const video = document.getElementById("videoPlayer");
 let hls = null;
 
+const overlay = document.getElementById("fueraDeServicio");
+const mensajeError = document.getElementById("mensajeError");
+
+function ocultarError() {
+  overlay.style.display = "none";
+  video.style.opacity = "1";
+}
+
+function mostrarError(
+  mensaje = "Actualmente no hay señal disponible para este canal."
+) {
+  overlay.style.display = "flex";
+  video.style.opacity = "0";
+  mensajeError.textContent = mensaje;
+}
+
+function habilitarDeteccionErrores(hlsInstance) {
+  if (!hlsInstance) return;
+
+  hlsInstance.on(Hls.Events.ERROR, (event, data) => {
+    if (data.fatal) {
+      console.log("Error fatal del stream:", data);
+      mostrarError();
+    }
+  });
+}
+
+video.onerror = () => {
+  console.log("Error del video element");
+  mostrarError();
+};
+
+function iniciarTimeoutVerificacion() {
+  ocultarError();
+  setTimeout(() => {
+    if (video.readyState < 2) {
+      console.log("El canal no está enviando señal");
+      mostrarError();
+    }
+  }, 5000);
+}
+
+function verificarVideoActivo() {
+  if (video.videoWidth === 0 && video.videoHeight === 0) {
+    mostrarError("Este canal reproduce solo audio. No hay imagen disponible.");
+  } else {
+    ocultarError();
+  }
+}
+
+video.addEventListener("loadedmetadata", verificarVideoActivo);
+video.addEventListener("playing", verificarVideoActivo);
+
 const totalCanalesElement = document.getElementById("totalChannels");
 const canalesOnlineElement = document.getElementById("channelsOnline");
 
@@ -115,6 +168,8 @@ document.addEventListener("click", (e) => {
     hls = new Hls();
     hls.loadSource(url);
     hls.attachMedia(video);
+    habilitarDeteccionErrores(hls);
+    iniciarTimeoutVerificacion();
     hls.on(Hls.Events.MANIFEST_PARSED, () => {
       video.play();
       actualizarControlesReproduccion();

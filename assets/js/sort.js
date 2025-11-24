@@ -4,7 +4,6 @@ function reproducirCanal(canal) {
   const imagenCanalActual = document.getElementById("imagenCanalActual");
   const nombreCanalActual = document.getElementById("nombreCanalActual");
 
-  // Actualizar info visual
   if (imagenCanalActual && nombreCanalActual) {
     imagenCanalActual.src = canal.imagen;
     nombreCanalActual.textContent = canal.nombre;

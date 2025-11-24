@@ -63,7 +63,6 @@ html {
   line-height: 1.5;
 }
 
-/* --- FORMULARIO --- */
 form {
   display: flex;
   flex-direction: column;
@@ -111,7 +110,6 @@ input[type="email"] {
   font-size: 15px;
 }
 
-/* --- RESPONSIVE --- */
 @media (max-width: 480px) {
   .form-container {
     padding: 25px;

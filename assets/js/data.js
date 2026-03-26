@@ -18,18 +18,18 @@ const canales = [
   },
   {
     id: "canal3",
-    nombre: "Moni TV",
+    nombre: "Cindie TV",
     descripcion: "Películas y programas",
-    imagen: "/assets/images/chanels-imgs/moniTV.png",
-    url: "https://live20.bozztv.com/akamaissh101/ssh101/monitvhd/chunks.m3u8",
+    imagen: "/assets/images/chanels-imgs/cindie-tv.png",
+    url: "https://d20xuwbyc4yoag.cloudfront.net/v1/manifest/9d062541f2ff39b5c0f48b743c6411d25f62fc25/DistroTV-MuxIP-CINDIE/3dd0f5cb-3f46-4945-90a8-b446c6501cdf/2.m3u8",
     categoria: "Cine",
   },
   {
     id: "canal4",
-    nombre: "Free TV familia",
+    nombre: "Neo TV",
     descripcion: "Programas para familia",
-    imagen: "/assets/images/chanels-imgs/freeTv-family.png",
-    url: "https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/freetv-familia/playlist.m3u8",
+    imagen: "/assets/images/chanels-imgs/neo-tv.jpg",
+    url: "https://videostream.shockmedia.com.ar:19360/neotvdigital/neotvdigital.m3u8",
     categoria: "Cine",
   },
   {
@@ -42,10 +42,10 @@ const canales = [
   },
   {
     id: "canal6",
-    nombre: "Pánico TV",
+    nombre: "Gen TV",
     descripcion: "Películas y Entretenimiento",
-    imagen: "/assets/images/chanels-imgs/panicoTV.jpeg",
-    url: "https://epg-ipv4.provider.plex.tv/library/parts/608049aefa2b8ae93c2c39ea-68b9f0bdd60e5dd29263c7a1.m3u8?X-Plex-Product=Plex+Mediaverse&X-Plex-Token=qWV4_PruqtZZQ27pq5hX&includeAllStreams=1&redirectedFromV6=1",
+    imagen: "/assets/images/chanels-imgs/gen-tv.jpg",
+    url: "https://srv3.zcast.com.br/gentv/gentv/playlist.m3u8",
     categoria: "Cine",
   },
   {

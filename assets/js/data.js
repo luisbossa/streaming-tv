@@ -517,12 +517,4 @@ const canales = [
     url: "https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/index.m3u8",
     categoria: "Noticias",
   },
-  {
-    id: "canal64",
-    nombre: "Worldskate TV",
-    descripcion: "Skateboarding en vivo",
-    imagen: "/assets/images/chanels-imgs/skateTV.png",
-    url: "https://play.cdn.enetres.net/A217BCEBB2594BDF8FE2E65131DBF6630222/022618/playlist.m3u8",
-    categoria: "Noticias",
-  },
 ];

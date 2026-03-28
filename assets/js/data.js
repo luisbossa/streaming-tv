@@ -97,7 +97,7 @@ const canales = [
     categoria: "Cine",
   },
 
-  // --- Deportes ---
+  // --- Deportes ----
   {
     id: "canal13",
     nombre: "Real Madrid",

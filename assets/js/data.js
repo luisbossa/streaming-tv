@@ -141,7 +141,7 @@ const canales = [
   {
     id: "canal18",
     nombre: "Fox",
-    descripcion: "Fútbol en vivo",
+    descripcion: "Deportes en vivo",
     imagen: "/assets/images/chanels-imgs/foxSports.png",
     url: "https://aegis-cloudfront-1.tubi.video/62883227-8fc8-4992-97ff-614d283b4789/playlist.m3u8",
     categoria: "Deportes",
@@ -183,10 +183,10 @@ const canales = [
   },
   {
     id: "canal23",
-    nombre: "Nosey TV",
+    nombre: "COLOSAL TV",
     descripcion: "Programas y entretenimiento",
-    imagen: "/assets/images/chanels-imgs/nosey.jpg",
-    url: "https://epg-ipv4.provider.plex.tv/library/parts/608049aefa2b8ae93c2c39ea-6154a863e3e4d9577f96b31a.m3u8?X-Plex-Product=Plex+Mediaverse&X-Plex-Token=nbxDAYhHqU1SCSw9G79P&includeAllStreams=1&redirectedFromV6=1",
+    imagen: "/assets/images/chanels-imgs/colosalTV.jpg",
+    url: "http://tv.ticosmedia.com:1935/COLOSAL/COLOSAL/playlist.m3u8",
     categoria: "Shows",
   },
   {
@@ -237,23 +237,21 @@ const canales = [
     url: "https://streamtv.intervenhosting.net:3592/stream/play.m3u8",
     categoria: "Shows",
   },
-
-  // --- Documentales ---
   {
     id: "canal30",
-    nombre: "Xtrema Animal",
-    descripcion: "Naturaleza, vida salvaje",
-    imagen: "/assets/images/chanels-imgs/xtremaTV.jpg",
-    url: "https://stmv6.voxtvhd.com.br/xtremaanimal/xtremaanimal/playlist.m3u8",
-    categoria: "Reportajes",
+    nombre: "Mr. Bean Live",
+    descripcion: "Serie y entretenimiento",
+    imagen: "/assets/images/chanels-imgs/mrBean.jpg",
+    url: "https://amg00627-amg00627c40-rakuten-uk-5725.playouts.now.amagi.tv/720p-vtt/index.m3u8",
+    categoria: "Shows",
   },
   {
     id: "canal31",
-    nombre: "TV PG",
-    descripcion: "Documentales, entretenimiento",
-    imagen: "/assets/images/chanels-imgs/TVPG.png",
-    url: "https://epg-ipv4.provider.plex.tv/library/parts/608049aefa2b8ae93c2c39ea-68dcb497250f81dfec9091d7.m3u8?X-Plex-Product=Plex+Mediaverse&X-Plex-Token=qo2Cma95v9trCTzwLic1&includeAllStreams=1&redirectedFromV6=1",
-    categoria: "Reportajes",
+    nombre: "Cops",
+    descripcion: "Serie y entretenimiento",
+    imagen: "/assets/images/chanels-imgs/cops.jpg",
+    url: "https://rightsboosterltd-cops-1-eu.plex.wurl.tv/playlist.m3u8",
+    categoria: "Shows",
   },
 
   // --- General/Variedad ---
@@ -333,10 +331,10 @@ const canales = [
   },
   {
     id: "canal41",
-    nombre: "FreeTV Hits",
-    descripcion: "Música en vivo",
-    imagen: "/assets/images/chanels-imgs/freeTVhits.png",
-    url: "https://amg01024-olympusat-flash-ono-ad-3q.amagi.tv/playlist/amg01024-olympusat-flash-ono/cb563d167d6c668c84c83d67cef462ffa65928d80b6c852a6ab454876da64607d1e3b680fd358b785d9f01de6a1a0a080361cf12ce3407c3c76ad91174204213cfcac9229d86170ab5c60c2c3aab016635837209c0790a79dca93d0d8636ba304530e01b615b37c2ec5daf6852db80148b6f4adafb8c2360625f5c98435ee3b24aa7fde25917da3ef7ac4e4d967958e68314c9c915e9d1d1469d45d371f440989aa48b851888a1ab54f803f17a1c4a2e0ff5ea1395db58b3ce8c273a937c72377433e7a780b0473ff4202939d1dee9f234a57ea4ef2c925f3bba14ea2cee51da31d263cbe04ab3e3bacf527e37a5c95e134fca838698fe30078b3c88c88dcd727097847f122ee85de81d25379efece4ef4a97681a222f7dd037a19f0b87a8c89b3d99ddae5498936dec8f9a76b3028096053d50bfac020b14edc7cbb801728583f06c7da069cd5df5a676417d1d40c824749e98cdad38e5c38c861480eed36880b556f9c6e10168c2cfd89726b8c28188047529135308e56f9aa38f4aed5e80335a184bf28916eeba644c7e53db97f354f03b0eb5e392f282c9da32b574013aa44e0c084e2781910ed85ae94a10362695370530898ace37e8ffca3437c469b224c0a751404d80dc556d3015d724da37f83f64d1ef3052e23f2a23149656f83dba58e8ae99b7ba57ec1cef04b4551316ab327003460d2bad72d97525e6d454d92067242be1e282480f198a8d4cd5c38fd0edf50feecdea48a75623b10194005888469976ceb901ccbe3a03ee2cefddfc1185ed96c3e91c2c864b8cc8cc25d0693ab2d760f0c2c9aa40145e61bd5219dd77cd9f22a6e85c3fd29b0ef75852a89cd95d122942fa44e437aef389a90e2b9c3635ae6db2d59565b05462f03246464ccabebbe29178ed763c624036064713c39069f0daca30d5b94e1741dd3167173b1a1f4b9a4c9022a070f9e7ae46f19af5b012fae9976bac3fac4f3896b5b17caf68578fbf0d8cf9c8d8a1177053a64c0814703239166d19c17eda82a79eda282f1953bc422ac66edc4fe05cc088de7f04ea29996fbbb50125d5158b581d4f206d4b10f0aea2f89037d56ccc4b4b456fadcbd1571a508b3d2493df84c0b37a39cf20acc24aff5797bb7f50e77e1346391aeaf5c5fa242802f3d7afdc8fb1e18c7d1009e48dbd8b73845820c11f3541c068879e98cab667febde4a55498ceb662aa56f60bf423797e27471968538f73bb8a56fe762/95/1920x1080_6046040/index.m3u8",
+    nombre: "Rockola TV",
+    descripcion: "Música clásica",
+    imagen: "/assets/images/chanels-imgs/rockolaTV.webp",
+    url: "https://e46fa4a445464f8a9150fa7d510eb85c.mediatailor.us-west-2.amazonaws.com/v1/master/2d2d0d97b0e548f025b2598a69b55bf30337aa0e/npp/S9K831QV8TO3291HQ8JS/hls3/now,-1m/m.m3u8",
     categoria: "Música",
   },
   {
@@ -445,10 +443,10 @@ const canales = [
   },
   {
     id: "canal55",
-    nombre: "COLOSAL TV",
+    nombre: "Now 90s",
     descripcion: "Música y entretenimiento",
-    imagen: "/assets/images/chanels-imgs/colosalTV.jpg",
-    url: "http://tv.ticosmedia.com:1935/COLOSAL/COLOSAL/playlist.m3u8",
+    imagen: "/assets/images/chanels-imgs/now90s.png",
+    url: "https://amg01076-amg01076c19-rakuten-gb-8653.playouts.now.amagi.tv/playlist/amg01076-lightning-now90s00s-rakutengb/playlist.m3u8",
     categoria: "Música",
   },
   {
@@ -470,7 +468,7 @@ const canales = [
   {
     id: "canal58",
     nombre: "Dance FM",
-    descripcion: "Música urbana, entretenimiento",
+    descripcion: "Dj's en vivo",
     imagen: "/assets/images/chanels-imgs/danceFM.jpg",
     url: "https://5eaccbab48461.streamlock.net:1936/dancefm_1/dancefm_1/chunklist_w131721410.m3u8",
     categoria: "Música",
@@ -516,5 +514,24 @@ const canales = [
     imagen: "/assets/images/chanels-imgs/dwEsp.png",
     url: "https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/index.m3u8",
     categoria: "Noticias",
+  },
+
+  // --- Documentales ---
+
+  {
+    id: "canal64",
+    nombre: "Extrema TV",
+    descripcion: "Documental animal",
+    imagen: "/assets/images/chanels-imgs/xtremaTV.jpg",
+    url: "https://stmv2.voxtvhd.com.br/xpherewild/xpherewild/playlist.m3u8",
+    categoria: "Reportajes",
+  },
+  {
+    id: "canal65",
+    nombre: "Love The Planet",
+    descripcion: "Documental animal",
+    imagen: "/assets/images/chanels-imgs/lovePlanet.jpg",
+    url: "https://amg01821-lovetvchannels-lovetheplanetsp-tivify-tivify-vycsr.amagi.tv/playlist.m3u8",
+    categoria: "Reportajes",
   },
 ];

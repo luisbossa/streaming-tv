@@ -11,6 +11,11 @@ body {
   user-select: none;
 }
 
+a {
+  color: inset;
+  text-decoration: none;
+}
+
 .radio-container {
   display: flex;
   flex-direction: column;
@@ -401,6 +406,32 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+.tv-btn {
+  width: fit-content;
+  padding: 0.4rem 10px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  transition: background 0.2s;
+  gap: 5px;
+}
+
+.tv-img-btn {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.tv-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
 }
 
 @media (max-width: 1100px) {

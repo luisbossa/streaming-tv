@@ -50,9 +50,9 @@ const canales = [
   },
   {
     id: "canal7",
-    nombre: "TVS Retro",
+    nombre: "Vision TV",
     descripcion: "Películas y cine",
-    imagen: "/assets/images/chanels-imgs/tvsRetro.png",
+    imagen: "/assets/images/chanels-imgs/visionTV.webp",
     url: "https://cdn.streamhispanatv.net:3531/live/tvsretrogtlive.m3u8",
     categoria: "Cine",
   },
@@ -108,10 +108,10 @@ const canales = [
   },
   {
     id: "canal14",
-    nombre: "Motorvision TV",
-    descripcion: "Autos",
-    imagen: "/assets/images/chanels-imgs/motorvisionTV.webp",
-    url: "https://epg-ipv4.provider.plex.tv/library/parts/608049aefa2b8ae93c2c39ea-60da3a5c0d1cc1002c38370e.m3u8?X-Plex-Product=Plex+Mediaverse&X-Plex-Token=qo2Cma95v9trCTzwLic1&includeAllStreams=1&redirectedFromV6=1",
+    nombre: "Redbull TV",
+    descripcion: "Deportes extremos",
+    imagen: "/assets/images/chanels-imgs/redbullTV.png",
+    url: "https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8",
     categoria: "Deportes",
   },
   {
@@ -124,18 +124,18 @@ const canales = [
   },
   {
     id: "canal16",
-    nombre: "Fuel TV",
-    descripcion: "Skate, surf y snow",
-    imagen: "/assets/images/chanels-imgs/fuelTv.png",
-    url: "https://epg-ipv4.provider.plex.tv/library/parts/608049aefa2b8ae93c2c39ea-62ffc5cfa6cad6f2991745c2.m3u8?X-Plex-Product=Plex+Mediaverse&X-Plex-Token=qo2Cma95v9trCTzwLic1&includeAllStreams=1&redirectedFromV6=1",
+    nombre: "CnAr Desportes",
+    descripcion: "Carreras de autos",
+    imagen: "/assets/images/chanels-imgs/cnar.png",
+    url: "https://stmv6.voxtvhd.com.br/cnardeportes/cnardeportes/playlist.m3u8",
     categoria: "Deportes",
   },
   {
     id: "canal17",
-    nombre: "PG",
-    descripcion: "Entretenimiento, peleas",
-    imagen: "/assets/images/chanels-imgs/PG.png",
-    url: "https://epg-ipv4.provider.plex.tv/library/parts/608049aefa2b8ae93c2c39ea-6470477fe536e0faaf10be9d.m3u8?X-Plex-Product=Plex+Mediaverse&X-Plex-Token=qo2Cma95v9trCTzwLic1&includeAllStreams=1&redirectedFromV6=1",
+    nombre: "Motorsport TV",
+    descripcion: "Autos, accesorios",
+    imagen: "/assets/images/chanels-imgs/motorsportTV.png",
+    url: "https://amg00378-mavtv-amg00378c2-rakuten-us-1048.playouts.now.amagi.tv/playlist/amg00378-mavtvfast-motorsportsnetwork-rakutenus/playlist.m3u8",
     categoria: "Deportes",
   },
   {
@@ -164,10 +164,10 @@ const canales = [
   },
   {
     id: "canal21",
-    nombre: "Canal Digital",
-    descripcion: "Películas",
-    imagen: "/assets/images/chanels-imgs/canalDigital.jpeg",
-    url: "https://live20.bozztv.com/akamaissh101/ssh101/ucchullo/chunks.m3u8",
+    nombre: "Lucha Plus",
+    descripcion: "Peleas Mexicanas",
+    imagen: "/assets/images/chanels-imgs/luchaPlus.webp",
+    url: "https://amg17334-amg17334c1-plex-us-6729.playouts.now.amagi.tv/playlist/amg17334-luchalibrefast-luchalibre-plexus/playlist.m3u8",
     categoria: "Cine",
   },
 
@@ -175,10 +175,10 @@ const canales = [
 
   {
     id: "canal22",
-    nombre: "Novelas TV",
-    descripcion: "Telenovelas latinas 24h",
-    imagen: "/assets/images/chanels-imgs/novelasTV.png",
-    url: "https://stormcast-novelas-2-es.samsung.wurl.tv/playlist.m3u8",
+    nombre: "Anime Pluto",
+    descripcion: "Anime",
+    imagen: "/assets/images/chanels-imgs/animePluto.png",
+    url: "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/5dcde17bf6591d0009839e02/master.m3u8?advertisingId=&appName=web&appVersion=9.20.0-89258290264838515e264f5b051b7c1602a58482&app_name=web&clientDeviceType=0&clientID=387abb85-6928-4e32-8f84-b21c44b74cdd&clientModelNumber=1.0.0&country=CR&deviceDNT=false&deviceId=387abb85-6928-4e32-8f84-b21c44b74cdd&deviceLat=9.7200&deviceLon=-83.9100&deviceMake=chrome&deviceModel=web&deviceType=web&deviceVersion=146.0.0&marketingRegion=VE&serverSideAds=false&sessionID=d34114d7-2b03-11f1-8647-4a0dd48d7445&sid=d34114d7-2b03-11f1-8647-4a0dd48d7445&userId=&jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6ImQ2NWRkNDc0LWQzOGQtNGM2MS05ODZkLWI5OTUyYzg5ZDZiNSIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiJkMzQxMTRkNy0yYjAzLTExZjEtODY0Ny00YTBkZDQ4ZDc0NDUiLCJjbGllbnRJUCI6IjI4MDA6ODYwOjcxYmQ6N2U1NjpjNDY3Ojc0MTE6ZDhmNjo5YmJlIiwiY2l0eSI6IkFsdGFtaXJhZGFzIiwicG9zdGFsQ29kZSI6IjMwODAyIiwiY291bnRyeSI6IkNSIiwiZG1hIjowLCJhY3RpdmVSZWdpb24iOiJWRSIsImRldmljZUxhdCI6OS43MjAwMDAyNjcwMjg4MDksImRldmljZUxvbiI6LTgzLjkxMDAwMzY2MjEwOTM4LCJwcmVmZXJyZWRMYW5ndWFnZSI6ImVzIiwiZGV2aWNlVHlwZSI6IndlYiIsImRldmljZVZlcnNpb24iOiIxNDYuMC4wIiwiZGV2aWNlTWFrZSI6ImNocm9tZSIsImRldmljZU1vZGVsIjoid2ViIiwiYXBwTmFtZSI6IndlYiIsImFwcFZlcnNpb24iOiI5LjIwLjAtODkyNTgyOTAyNjQ4Mzg1MTVlMjY0ZjViMDUxYjdjMTYwMmE1ODQ4MiIsImNsaWVudElEIjoiMzg3YWJiODUtNjkyOC00ZTMyLThmODQtYjIxYzQ0Yjc0Y2RkIiwiY21BdWRpZW5jZUlEIjoiIiwiaXNDbGllbnRETlQiOmZhbHNlLCJ1c2VySUQiOiIiLCJsb2dMZXZlbCI6IkRFRkFVTFQiLCJ0aW1lWm9uZSI6IkFtZXJpY2EvQ29zdGFfUmljYSIsInNlcnZlclNpZGVBZHMiOmZhbHNlLCJlMmVCZWFjb25zIjpmYWxzZSwiZmVhdHVyZXMiOnsibXVsdGlQb2RBZHMiOnsiY29ob3J0IjoiIiwiZW5hYmxlZCI6dHJ1ZX0sInN0aXRjaGVySGxzTmciOnsiZGVtdXhlZEF1ZGlvIjoiaml0In0sInN0aXRjaGVySGxzTmdWbGwiOnsiZW5hYmxlZCI6dHJ1ZX0sInN0aXRjaGVySGxzTmdWb2QiOnsiZW5hYmxlZCI6dHJ1ZX19LCJmbXNQYXJhbXMiOnsiZndWY0lEMiI6IjM4N2FiYjg1LTY5MjgtNGUzMi04Zjg0LWIyMWM0NGI3NGNkZCIsImZ3VmNJRDJDb3BwYSI6IjM4N2FiYjg1LTY5MjgtNGUzMi04Zjg0LWIyMWM0NGI3NGNkZCIsImN1c3RvbVBhcmFtcyI6eyJmbXNfbGl2ZXJhbXBfaWRsIjoiIiwiZm1zX2VtYWlsaGFzaCI6IiIsImZtc19zdWJzY3JpYmVyaWQiOiIiLCJmbXNfaWZhIjoiIiwiZm1zX2lkZnYiOiIiLCJmbXNfdXNlcmlkIjoiMzg3YWJiODUtNjkyOC00ZTMyLThmODQtYjIxYzQ0Yjc0Y2RkIiwiZm1zX3ZjaWQydHlwZSI6InVzZXJpZCIsImZtc19yYW1wX2lkIjoiIiwiZm1zX2hoX3JhbXBfaWQiOiIiLCJmbXNfYmlkaWR0eXBlIjoiIiwiX2Z3XzNQX1VJRCI6IiIsImZtc19ydWxlaWQiOiIxMDAxNSwxMDAyMCwxMDAyMSwxMDAwMCwxMDAwOSwxMDAxMywxMDAxNCwxMDAxNiJ9fSwiZHJtIjp7Im5hbWUiOiJ3aWRldmluZSIsImxldmVsIjoiTDMifSwic2Vzc2lvblN0YXJ0VGltZSI6MTc3NDc0MzA4NTQzNSwiaXNzIjoiYm9vdC5wbHV0by50diIsInN1YiI6InByaTp2MTpwbHV0bzpkZXZpY2VzOlZFOk16ZzNZV0ppT0RVdE5qa3lPQzAwWlRNeUxUaG1PRFF0WWpJeFl6UTBZamMwWTJSayIsImF1ZCI6IioucGx1dG8udHYiLCJleHAiOjE3NzQ4Mjk0ODUsImlhdCI6MTc3NDc0MzA4NSwianRpIjoiMzMzNGQzYWMtNDFiNy00ZmQ4LWI4NzktYjVlYmZmN2Y0YWZmIn0.yPNl6X3oc5S0MuCa6nL9G65BDFduWBzY0vTURA_OjmY&masterJWTPassthrough=true&includeExtendedEvents=true&paln=AQzzBGQEaYa3uptZN10VDKuluMylD5swnEkhWcfmvpRvsPJEsKS4NYDo2dk5pMSRBeFTo5q1qOg09D79NGBQq2diVJOYktkzjQcEohlDZsPuU24Cs2RSd57r9Wz9bk9qeA5myr0KJQGarYccKdnWbD1afeuW8LmX3HRFesON0UMAKa1iuQZKUppWT3N37TX4-AdAgyouoaPfEQ5bFYKn67cBe54n7bjTaYkjDtX-RPehFhHmyk0O34cjMuSAGaClDSVPjYP3-9IlU3rIZDdEgIGbgZ6L0b7uxMn1pA_QsMa1tulAthJxU93y4PZM_hp__Z_0teF3FP8HvmJajwsN30WS_8O71tRbikLwqstp0exsEPHh5JaSKIiYk73nqf4rebIuudNBNV9IctsWO0AtPuDWBSqXH6_1m95ICi_ymEM74YRAlC0KGz9g_iQO7-QH9TnvFnmf1FoCyjvVNJqsVpYUb6Eou3wC0zB-7paWYWbErlwXq_3uPVHI7lCzhu7pm8fUkw_s7OCljOETSfbMXWJ5HizvYpe3ncfvqeOx6Y8MgBIvRlKs-g7PSOIe9aSIPwTZpk1YOfgob6OjB1gozLiiJhkNEJOmPkl9DB9N3OqOspAljTHE9NwTShxhMTpBAZQSK9RgFnzeOdDx2ZBZpFZufNKmHcxChpgL5z2Txg6OYxcCoBLfF_jaz27JyuyJU5-H0eweoHWFB6c27ZvlLZQv55_7HpgJGDxs0qZm5vdX1okdNXt2-s81mDvGyQabMqD4YCJBMjjAGvNmbTUCrtZ9U-mjpNqCE-ZFplubVFG6fFMy_QTk19TXAtHLJghZlIpCK6qQAIvti5UhM5ZAkaVmQ_2OgFDJ2_1Z7RXkdJiVJ9Kv2uyBIwU7zQ1ijioS0O7TbtNbPxWPTsawKvUeYJp2WXUw6OpPp24Od9-aBU0mJPIWYWUIPEYgci3D6mOz7t7mcnzV5ze0JIfssLdxfDnr3p183ueXBIvHg-7VUuZ1H_psMwhKxkAO0VEUkkx5Z6KVGPWBQVayueMqMO4D9qGgXctDzVEgM1vsaOl00qHfsyrWcdYlwRsFgFF20fdmoSQiUUm3R1JnNUhhYMjX9nbLz-xLYMK9Mf5-f4CWPeePGy4WI346v5r-owBLn94c1e4yljpF0K4jgcQ8z4qHLBL_or8vYiIjX6650C1vpzxCGTU9xEx122tKeS643BOAHKxg2lueaqSzWeY-QSs7M4OEKWYeNxRjAS9N0sRY3hHHEqzDHecx8Apm1DsxhflSgRb0z8V3WyJPQUwL9QDN0GqiIRuSjgrV4mGfdUu7zTWBYhfEx1EgI6AW2HbLyslSKFtdKt6bLOOUpeIJHhcFB4_xeyzV0886Zy9m8nRfag7bhAsVeQXOFChV4Lawy5nZ_Nr-ah--x8y0Znc8OQKSsNf1ufYkEt9ZWHc0C1svIZV6JE9JPocnm39IHi4nyXnn8AdYx2zGhhyQXgtq5FB8Lpr46M7MUxS0Xbw15w9XjrpVa57VLztKGcDA3tCYAhecsb02nz9V2GsP1D9Afzwq1l_4VhhUVr3_eRSyhxgYgaM4-XEDE-E6V83IuEJHddSsDQj6SrbVniltoSmP_U1q3X4Xvq9q1nVYpN82JczQgnLfgIVfPFFXWiNoJroegFLytMsDQlZAa3Z5jDmDYvxKMWhpquhMriEMKs9FGtQ50Qvlsd7Z2rXoiQ..&eventVOD=false&CMCD=mtp%3D10000%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22f508a4dd-f2c3-4520-9ada-82dcb0789716%22%2Csu",
     categoria: "Shows",
   },
   {
@@ -215,10 +215,10 @@ const canales = [
   },
   {
     id: "canal27",
-    nombre: "Frecuencia Musical",
-    descripcion: "Música y entretenimiento",
-    imagen: "/assets/images/chanels-imgs/frecuenciaMTV.png",
-    url: "https://stream-us-east-1.getpublica.com/playlist.m3u8?cb=[CACHEBUSTER]&network_id=13014&live=1&avod=1&hls_marker=1&pod_duration=120&position=preroll&app_bundle=VIVALIVE&app_name=VIVALIVE&min_ad_duration=6&max_ad_duration=120",
+    nombre: "Retro Plus Tv",
+    descripcion: "Películas y entretenimiento",
+    imagen: "/assets/images/chanels-imgs/retroPlus.png",
+    url: "https://tls-cl.cdnz.cl/retroplustvtres/live/playlist.m3u8",
     categoria: "Shows",
   },
   {
@@ -249,7 +249,7 @@ const canales = [
     id: "canal31",
     nombre: "Cops",
     descripcion: "Serie y entretenimiento",
-    imagen: "/assets/images/chanels-imgs/cops.jpg",
+    imagen: "/assets/images/chanels-imgs/cops.png",
     url: "https://rightsboosterltd-cops-1-eu.plex.wurl.tv/playlist.m3u8",
     categoria: "Shows",
   },
@@ -257,7 +257,7 @@ const canales = [
   // --- General/Variedad ---
   {
     id: "canal32",
-    nombre: "TVM para ti",
+    nombre: "TVM+",
     descripcion: "Variedad Venezolana en vivo",
     imagen: "/assets/images/chanels-imgs/TVM.png",
     url: "https://streamtv.intervenhosting.net:3529/live/tvmparatilive.m3u8",
@@ -265,7 +265,7 @@ const canales = [
   },
   {
     id: "canal33",
-    nombre: "CB TV",
+    nombre: "CBTV Sports",
     descripcion: "Programación comunitaria Costa Rica",
     imagen: "/assets/images/chanels-imgs/CBTV.webp",
     url: "https://s1.tvdatta.com:3072/live/cotobrustvlive.m3u8",
@@ -532,6 +532,22 @@ const canales = [
     descripcion: "Documental animal",
     imagen: "/assets/images/chanels-imgs/lovePlanet.jpg",
     url: "https://amg01821-lovetvchannels-lovetheplanetsp-tivify-tivify-vycsr.amagi.tv/playlist.m3u8",
+    categoria: "Reportajes",
+  },
+  {
+    id: "canal66",
+    nombre: "Nature Time",
+    descripcion: "Documental animal",
+    imagen: "/assets/images/chanels-imgs/natureTime.webp",
+    url: "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/681ba2729624e6275efe0044livestitch/master.m3u8?advertisingId=&appName=web&appVersion=9.20.0-89258290264838515e264f5b051b7c1602a58482&app_name=web&clientDeviceType=0&clientID=387abb85-6928-4e32-8f84-b21c44b74cdd&clientModelNumber=1.0.0&country=CR&deviceDNT=false&deviceId=387abb85-6928-4e32-8f84-b21c44b74cdd&deviceLat=9.7200&deviceLon=-83.9100&deviceMake=chrome&deviceModel=web&deviceType=web&deviceVersion=146.0.0&marketingRegion=VE&serverSideAds=false&sessionID=d34114d7-2b03-11f1-8647-4a0dd48d7445&sid=d34114d7-2b03-11f1-8647-4a0dd48d7445&userId=&jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6ImQ2NWRkNDc0LWQzOGQtNGM2MS05ODZkLWI5OTUyYzg5ZDZiNSIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiJkMzQxMTRkNy0yYjAzLTExZjEtODY0Ny00YTBkZDQ4ZDc0NDUiLCJjbGllbnRJUCI6IjI4MDA6ODYwOjcxYmQ6N2U1NjpjNDY3Ojc0MTE6ZDhmNjo5YmJlIiwiY2l0eSI6IkFsdGFtaXJhZGFzIiwicG9zdGFsQ29kZSI6IjMwODAyIiwiY291bnRyeSI6IkNSIiwiZG1hIjowLCJhY3RpdmVSZWdpb24iOiJWRSIsImRldmljZUxhdCI6OS43MjAwMDAyNjcwMjg4MDksImRldmljZUxvbiI6LTgzLjkxMDAwMzY2MjEwOTM4LCJwcmVmZXJyZWRMYW5ndWFnZSI6ImVzIiwiZGV2aWNlVHlwZSI6IndlYiIsImRldmljZVZlcnNpb24iOiIxNDYuMC4wIiwiZGV2aWNlTWFrZSI6ImNocm9tZSIsImRldmljZU1vZGVsIjoid2ViIiwiYXBwTmFtZSI6IndlYiIsImFwcFZlcnNpb24iOiI5LjIwLjAtODkyNTgyOTAyNjQ4Mzg1MTVlMjY0ZjViMDUxYjdjMTYwMmE1ODQ4MiIsImNsaWVudElEIjoiMzg3YWJiODUtNjkyOC00ZTMyLThmODQtYjIxYzQ0Yjc0Y2RkIiwiY21BdWRpZW5jZUlEIjoiIiwiaXNDbGllbnRETlQiOmZhbHNlLCJ1c2VySUQiOiIiLCJsb2dMZXZlbCI6IkRFRkFVTFQiLCJ0aW1lWm9uZSI6IkFtZXJpY2EvQ29zdGFfUmljYSIsInNlcnZlclNpZGVBZHMiOmZhbHNlLCJlMmVCZWFjb25zIjpmYWxzZSwiZmVhdHVyZXMiOnsibXVsdGlQb2RBZHMiOnsiY29ob3J0IjoiIiwiZW5hYmxlZCI6dHJ1ZX0sInN0aXRjaGVySGxzTmciOnsiZGVtdXhlZEF1ZGlvIjoiaml0In0sInN0aXRjaGVySGxzTmdWbGwiOnsiZW5hYmxlZCI6dHJ1ZX0sInN0aXRjaGVySGxzTmdWb2QiOnsiZW5hYmxlZCI6dHJ1ZX19LCJmbXNQYXJhbXMiOnsiZndWY0lEMiI6IjM4N2FiYjg1LTY5MjgtNGUzMi04Zjg0LWIyMWM0NGI3NGNkZCIsImZ3VmNJRDJDb3BwYSI6IjM4N2FiYjg1LTY5MjgtNGUzMi04Zjg0LWIyMWM0NGI3NGNkZCIsImN1c3RvbVBhcmFtcyI6eyJmbXNfbGl2ZXJhbXBfaWRsIjoiIiwiZm1zX2VtYWlsaGFzaCI6IiIsImZtc19zdWJzY3JpYmVyaWQiOiIiLCJmbXNfaWZhIjoiIiwiZm1zX2lkZnYiOiIiLCJmbXNfdXNlcmlkIjoiMzg3YWJiODUtNjkyOC00ZTMyLThmODQtYjIxYzQ0Yjc0Y2RkIiwiZm1zX3ZjaWQydHlwZSI6InVzZXJpZCIsImZtc19yYW1wX2lkIjoiIiwiZm1zX2hoX3JhbXBfaWQiOiIiLCJmbXNfYmlkaWR0eXBlIjoiIiwiX2Z3XzNQX1VJRCI6IiIsImZtc19ydWxlaWQiOiIxMDAxNSwxMDAyMCwxMDAyMSwxMDAwMCwxMDAwOSwxMDAxMywxMDAxNCwxMDAxNiJ9fSwiZHJtIjp7Im5hbWUiOiJ3aWRldmluZSIsImxldmVsIjoiTDMifSwic2Vzc2lvblN0YXJ0VGltZSI6MTc3NDc0MzA4NTQzNSwiaXNzIjoiYm9vdC5wbHV0by50diIsInN1YiI6InByaTp2MTpwbHV0bzpkZXZpY2VzOlZFOk16ZzNZV0ppT0RVdE5qa3lPQzAwWlRNeUxUaG1PRFF0WWpJeFl6UTBZamMwWTJSayIsImF1ZCI6IioucGx1dG8udHYiLCJleHAiOjE3NzQ4Mjk0ODUsImlhdCI6MTc3NDc0MzA4NSwianRpIjoiMzMzNGQzYWMtNDFiNy00ZmQ4LWI4NzktYjVlYmZmN2Y0YWZmIn0.yPNl6X3oc5S0MuCa6nL9G65BDFduWBzY0vTURA_OjmY&masterJWTPassthrough=true&includeExtendedEvents=true&paln=AQzzBGQEjo0B_pxqqwfMa1EW7gLnD3ChmqqwlAESXrZ2LqdPhzpohquMw4ZJ3NmoyHR61acakRSYYg4Spp_AkylmrD0c7gAgrXYcseAWWHRSzXn5he4ArYnL2VqZZEQD34v1FUfqaQkCa32sGDCuFyk7ahzO2CyCPoz1aXKq6RCw13bm8UbaoSmExfGGgIoMmOp4eBLfXTY6QyfW2uBLwrRMZ9Kf06RO_OPS_UjZJMqJK3zXjBXKl_sXqhAxZeYYwyXlJiFICjHpGw1Z7LlOLrOPaQeLABPZBZxyq_dpqg0SHGaQLrMgGW2w4NHvZGsZE-1ZFEh2UpHfwkEd-gl30nofNxigI2PuIfBfO1_Q1xXA_NDt0QTfYxnf4eDIaboxEHmbF4nPENWZZ_x24qfIw6v6vSXpF0EsJXLDQXTSHo3E-1z1v12GLa61VVLDDY-DDwVTaZ7o1skcnrDwWoo329-stU6JR9zHe1gG4Lk1QW_JCH9rBRwfsYZfZCO_8m4VZL0Ndl_1cnsWo7RF-p-r9r-bj0uQqrruTAFLUxmLSshY6_ajNVvwsgihSlZFK9CL3RvD7PVT_9ceTKGxFQZsqrIExMRnuz0c3BoVXgr33OJpCB1TEZZby-lMwbsidqpZmw9mieHfLHnTGMhMVocc588oPnouAgHTr1a6xJU-CD7BxGNkMGAWxAzHG-PR2cnzY2ZDoWONOEq3eGfbA14kJyEwz6KLFfx2hy8tt2_gId5bL-WET_UeyH7nCL3Et3STxANkLEJP-uk-Hw0dRR7ABb7mBrBoNi3XZ4xsM-i4ZakKGT5o--wFM0nmP6ydy1yqw4YuAqKtDVkWnn4NDO4yiaXLVI1Iv2nBtjkDGKVQ2OAbriy91uuUhIcHfog4WWJxuBfL02_F1tdB1bYxLkJhxHeCPKGHmA9aYsIZlXWNPhGFWTY93ew2XcsLXIwnXo3J3GT16lda91f4w2ORaqZNn-aN5orMRIvziyiCr2n9EiC5Wo_Xut3-ombt2Y4AKuagG5wlsQq9bEdEk1VriwFxpLtRFfSQfN5qNcCIBLVwfanKQSQ1RXQW4OYrkBFD-cnHSypqrt7ZYv3dT1mKgislIDuQ3Oh9mm4caKFUpS3Ut7ANvmjNxQ1_o5I5rbNzya6BPJgUPyhJEZK8eEOjlXcGKjsjcnaHRFwiFKHSqeFmC6_zEEEpVOL7DHyKI0MB6_GkAjR8ETlacaLTybhwG0ylVffwnkaPTVdRJDqdJwD0xFZSiSFrhnYZNbLTx0rrKcPlP8Pwz5ZhIX0XZ9noFPOFn6RoKjH_Sku9mQ1Dv16cZJzY3qbrmvGo8N1YQKxFopY1tzaT4EJG18tAbar1ZMX4-2Jzx6-ozHpT8nWCeW8HV-82tRD9Xu2801YFhK3WJ48gn_v2BQl3LXFBodLuOOhVZQMMR3t-JJwZjn7IqErek3FhrmubDpifG5HR7d7x5-j1KL9u9JQOdnI0RjbwqEixUX2h9LPATEw7NKo9EyKLjerDCTIv1PJ4A2XWmgv85VXm16pmC1p_nh_MLmVGKZGk9deLbFbJde0ZBDuhbPGBOCp57tsPIi5mqp_HHVBc2OeIStqZ6Ww9UgeQdZFs5vFJf_Ks5ftjeKvzKiPZ_lprbQXvs8iGRAVBuYELhwSBwpAPrwPDYiml4-6ObiLaS2UaisjvXRhPLDOPU-AF8-8EYsnoBppLLQ-EVTt_tw..&eventVOD=false&CMCD=mtp%3D10000%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22f7889aeb-a12e-4b36-817b-6f45d8395503%22%2Csu&profilesFromStream=true",
+    categoria: "Reportajes",
+  },
+  {
+    id: "canal67",
+    nombre: "Monstruos de rio",
+    descripcion: "Documental animal",
+    imagen: "/assets/images/chanels-imgs/monstruos.png",
+    url: "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/66a92375cd0d31000847b219livestitch/master.m3u8?advertisingId=&appName=web&appVersion=9.20.0-89258290264838515e264f5b051b7c1602a58482&app_name=web&clientDeviceType=0&clientID=387abb85-6928-4e32-8f84-b21c44b74cdd&clientModelNumber=1.0.0&country=CR&deviceDNT=false&deviceId=387abb85-6928-4e32-8f84-b21c44b74cdd&deviceLat=9.7200&deviceLon=-83.9100&deviceMake=chrome&deviceModel=web&deviceType=web&deviceVersion=146.0.0&marketingRegion=VE&serverSideAds=false&sessionID=d34114d7-2b03-11f1-8647-4a0dd48d7445&sid=d34114d7-2b03-11f1-8647-4a0dd48d7445&userId=&jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6ImQ2NWRkNDc0LWQzOGQtNGM2MS05ODZkLWI5OTUyYzg5ZDZiNSIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiJkMzQxMTRkNy0yYjAzLTExZjEtODY0Ny00YTBkZDQ4ZDc0NDUiLCJjbGllbnRJUCI6IjI4MDA6ODYwOjcxYmQ6N2U1NjpjNDY3Ojc0MTE6ZDhmNjo5YmJlIiwiY2l0eSI6IkFsdGFtaXJhZGFzIiwicG9zdGFsQ29kZSI6IjMwODAyIiwiY291bnRyeSI6IkNSIiwiZG1hIjowLCJhY3RpdmVSZWdpb24iOiJWRSIsImRldmljZUxhdCI6OS43MjAwMDAyNjcwMjg4MDksImRldmljZUxvbiI6LTgzLjkxMDAwMzY2MjEwOTM4LCJwcmVmZXJyZWRMYW5ndWFnZSI6ImVzIiwiZGV2aWNlVHlwZSI6IndlYiIsImRldmljZVZlcnNpb24iOiIxNDYuMC4wIiwiZGV2aWNlTWFrZSI6ImNocm9tZSIsImRldmljZU1vZGVsIjoid2ViIiwiYXBwTmFtZSI6IndlYiIsImFwcFZlcnNpb24iOiI5LjIwLjAtODkyNTgyOTAyNjQ4Mzg1MTVlMjY0ZjViMDUxYjdjMTYwMmE1ODQ4MiIsImNsaWVudElEIjoiMzg3YWJiODUtNjkyOC00ZTMyLThmODQtYjIxYzQ0Yjc0Y2RkIiwiY21BdWRpZW5jZUlEIjoiIiwiaXNDbGllbnRETlQiOmZhbHNlLCJ1c2VySUQiOiIiLCJsb2dMZXZlbCI6IkRFRkFVTFQiLCJ0aW1lWm9uZSI6IkFtZXJpY2EvQ29zdGFfUmljYSIsInNlcnZlclNpZGVBZHMiOmZhbHNlLCJlMmVCZWFjb25zIjpmYWxzZSwiZmVhdHVyZXMiOnsibXVsdGlQb2RBZHMiOnsiY29ob3J0IjoiIiwiZW5hYmxlZCI6dHJ1ZX0sInN0aXRjaGVySGxzTmciOnsiZGVtdXhlZEF1ZGlvIjoiaml0In0sInN0aXRjaGVySGxzTmdWbGwiOnsiZW5hYmxlZCI6dHJ1ZX0sInN0aXRjaGVySGxzTmdWb2QiOnsiZW5hYmxlZCI6dHJ1ZX19LCJmbXNQYXJhbXMiOnsiZndWY0lEMiI6IjM4N2FiYjg1LTY5MjgtNGUzMi04Zjg0LWIyMWM0NGI3NGNkZCIsImZ3VmNJRDJDb3BwYSI6IjM4N2FiYjg1LTY5MjgtNGUzMi04Zjg0LWIyMWM0NGI3NGNkZCIsImN1c3RvbVBhcmFtcyI6eyJmbXNfbGl2ZXJhbXBfaWRsIjoiIiwiZm1zX2VtYWlsaGFzaCI6IiIsImZtc19zdWJzY3JpYmVyaWQiOiIiLCJmbXNfaWZhIjoiIiwiZm1zX2lkZnYiOiIiLCJmbXNfdXNlcmlkIjoiMzg3YWJiODUtNjkyOC00ZTMyLThmODQtYjIxYzQ0Yjc0Y2RkIiwiZm1zX3ZjaWQydHlwZSI6InVzZXJpZCIsImZtc19yYW1wX2lkIjoiIiwiZm1zX2hoX3JhbXBfaWQiOiIiLCJmbXNfYmlkaWR0eXBlIjoiIiwiX2Z3XzNQX1VJRCI6IiIsImZtc19ydWxlaWQiOiIxMDAxNSwxMDAyMCwxMDAyMSwxMDAwMCwxMDAwOSwxMDAxMywxMDAxNCwxMDAxNiJ9fSwiZHJtIjp7Im5hbWUiOiJ3aWRldmluZSIsImxldmVsIjoiTDMifSwic2Vzc2lvblN0YXJ0VGltZSI6MTc3NDc0MzA4NTQzNSwiaXNzIjoiYm9vdC5wbHV0by50diIsInN1YiI6InByaTp2MTpwbHV0bzpkZXZpY2VzOlZFOk16ZzNZV0ppT0RVdE5qa3lPQzAwWlRNeUxUaG1PRFF0WWpJeFl6UTBZamMwWTJSayIsImF1ZCI6IioucGx1dG8udHYiLCJleHAiOjE3NzQ4Mjk0ODUsImlhdCI6MTc3NDc0MzA4NSwianRpIjoiMzMzNGQzYWMtNDFiNy00ZmQ4LWI4NzktYjVlYmZmN2Y0YWZmIn0.yPNl6X3oc5S0MuCa6nL9G65BDFduWBzY0vTURA_OjmY&masterJWTPassthrough=true&includeExtendedEvents=true&paln=AQzzBGQEKTeGPaXo_q9lJmHh7DntWnZ20x4f-497q79JsS6VRVeigamLoI2AVYF1lsOY7o7rYEza-vXU1yUAa4pjD2scgVTSptCng9XJRXK02Dota5nQ6dTTv4ICXqvHIxCbLras2PyZWlkbXxbrfGQQ_SNbU-se9gZO7WH1gaBsrl1t1UO8dUCTeHatAoyPeqbo4OvrjCBwzwjWCp-0RV1IequyQNR_q5qArTC5Olfku5We3QNSH94iSukSwuCzgTehgba2p6nYwjiL1ajCb6nDnMimEB0MibpFjvUDV9XD43Cyw4eXQqvyXmCPGUShJn2No7TIijyxAEWyrnw56Dvc4yByaNzR21PI3mJeM5KtzuVWlWxSGEXxy5n1nOrIAmWFFDtDO-s99GI7K_2exXUi9tWajOUFx1hqXkB5xI4MJH6zyPkMHyM8YkWrpDy_XK70mJ6_MrJdr2RclhvFQNaFRjXaUQXcX5vuhrzgfCBLaH9E2a-qz6ASyMxudSJOwzvPhb4TxpcQ9rs39Tvt9xAlomV5nhipyOQ8W6UuYqYbqPl4SD-vbVQdATjJf_7sS4QhF6K3x2zk12hivbm4YQL2NRPL9HQIOJXMiAeRNq7n8IXD4AMZ7kqIjA9BDt-TWOi_z3qXyrPzg0uUBi5jztnds7QSZjI5rNQFRrxVqUc-X7EkP2y2yizJooG49083PaNwdHRKrYU2xewvgbORHkRjrT1Epr-th0kd4VLVTvXpEUgSu3YgJsBWaJekroDMW0DwPEh3KVtMIH8WK_caDafFwo9QT5XqtGn_N1MFbIHpu-8yrJGgENUS4VnqRpAZQz8AlV5ljsGv1MMlEmpyKTlhtvApMMDgaJF3VZWJQ85vck6yWMarAzUX9Ed7qtcfl0f4kGENuFFgv3VokfudTRD4o_EmyXTJ677SqbMHSSdL3EVZF4LW4SRGUG61WffRdWfwSz2oEJiZWkGdJzBR9yW91widMxAaSZ_IJNqcy29yeKt_-WkMx7yUsv51yoWgYPbVIDYYi6tSPeMbs5QHa15tkOeeNnyMY-lWLDyayx_kh1RCa929Htt59dkhzSffZpr_u7UCvJusRsLEwoUA-GT2KBjJAV7XOo4Ag6foskH1FwEYtYFToNhXVKSp_uGnCzdigONtbIib-Uf0rdK5VikHHv4t1cg_dR9-K_PLfk5T6DmpHNu_EhH0z5xYN4Ngofx0b2u3-yvyjcq6SLyKASCq0BqnXgI1p2tLZYJsb7To4xkByHOAsmpleVPo-BkthmbxkbqtGfVVwaL4gfQY7fqZ0vkBdj61r8mfOKlB-cTHWH0-rVMFuj9zwZZFORk4UUQk-nkWaluzEnLF0s4OvwSqjOBcN8eMFRPP18Ts3aAR6CzsVUNPZ9-y3gIPXtW52pSs7SN_bfLF3YVIUxszIKsL0nitX0z987GVr8E10EsJeWUc0pzwgZNezN-9taGHVr6HXS20c1bkGe7W68DblMrdTIh6wZPb1IkSIN5Ljw1M_IhrX-FtZFxCfMmNJu4c8Y_o416yvNbz4RV-QOeZhl2kVGasWd3O4lR8A1agQaha5Av6P3aoGTMVR24ZCUrPO4_BYl1sAC2wHmSI7ehjctuaoIHa4GIDPQL2DieCTO1MibJUyJbNTlqR4Gb6uHP8973FJkem_j9lmNaMjRt_U8b3K-2RIWZpnQ6iElpUBSp8KaQ6q9kJ0tIGXw..&eventVOD=false&CMCD=mtp%3D10000%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22218d9380-8bc3-4425-9a67-bb7ca29100fb%22%2Csu&profilesFromStream=true",
     categoria: "Reportajes",
   },
 ];

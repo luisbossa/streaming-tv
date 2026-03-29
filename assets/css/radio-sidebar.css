@@ -1,0 +1,47 @@
+.radio-sidebar {
+  width: 100%;
+  overflow-y: auto;
+  background: #0a0a0a;
+  border-right: 1px solid #111;
+  scrollbar-width: thin;
+  scrollbar-color: #333 transparent;
+  transition: all 0.3s ease;
+}
+
+.radio-sidebar ::-webkit-scrollbar {
+  width: 6px;
+}
+
+.radio-sidebar ::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.radio-sidebar ::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 10px;
+}
+
+.radio-sidebar ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@media (max-width: 900px) {
+  .radio-sidebar {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: clamp(240px, 75%, 320px);
+    height: 100%;
+    z-index: 100;
+  }
+
+  .radio-sidebar.open {
+    left: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .radio-sidebar {
+    width: 85%;
+  }
+}

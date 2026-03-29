@@ -13,8 +13,14 @@ html {
   -moz-tab-size: 4;
   -o-tab-size: 4;
   tab-size: 4;
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    Segoe UI Symbol,
+    "Noto Color Emoji";
   font-feature-settings: normal;
   font-variation-settings: normal;
   -webkit-tap-highlight-color: transparent;
@@ -61,8 +67,15 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    Liberation Mono, Courier New, monospace;
+  font-family:
+    ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    Monaco,
+    Consolas,
+    Liberation Mono,
+    Courier New,
+    monospace;
   font-feature-settings: normal;
   font-variation-settings: normal;
   font-size: 1em;
@@ -273,6 +286,10 @@ video {
   border-bottom: 1px solid #4a5568;
 }
 
+body[data-theme="light"] .header-container {
+  background-color: #3e495f;
+}
+
 .header-content {
   display: flex;
   align-items: center;
@@ -339,7 +356,9 @@ video {
   overflow: hidden;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+  transition:
+    max-height 0.4s ease-in-out,
+    padding 0.4s ease-in-out;
 }
 
 .category-grid {
@@ -422,7 +441,7 @@ body[data-theme="light"] .btn-channel {
   background-color: #3e495f;
 }
 body[data-theme="light"] .btn-channel:hover {
-  background-color: #4f5772; /* un poco más claro que el base */
+  background-color: #4f5772;
 }
 
 .active-btn {
@@ -529,6 +548,10 @@ body[data-theme="light"] .btn-channel:hover {
   padding: 1rem;
   background-color: #2d3748;
   border-top: 1px solid #4a5568;
+}
+
+body[data-theme="light"] .footer-stats {
+  background-color: #3e495f;
 }
 
 .stats-left {
@@ -801,6 +824,18 @@ body[data-theme="light"] .btn-channel:hover {
   position: relative;
 }
 
+.radio-btn {
+  width: fit-content;
+  padding: 0.5rem 10px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
 .settings-btn {
   padding: 0.5rem;
   border-radius: 50%;
@@ -810,6 +845,7 @@ body[data-theme="light"] .btn-channel:hover {
   transition: background 0.2s;
 }
 
+.radio-btn:hover,
 .fullscreen-btn:hover,
 .settings-btn:hover {
   background: rgba(68, 68, 68, 0.8);
@@ -931,7 +967,8 @@ body[data-theme="light"] .btn-channel:hover {
   margin-left: 8px;
   display: inline-block;
   vertical-align: middle;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2),
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.2),
     inset 0 1px 1px rgba(255, 255, 255, 0.3); /* brillo interior */
   border: 1px solid rgba(255, 255, 255, 0.2);
 }

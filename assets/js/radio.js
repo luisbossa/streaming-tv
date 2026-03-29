@@ -10,11 +10,11 @@ const shows = [
     src: "https://live.streamingradiosmr.com/8152/stream",
   },
   {
-    title: "BBC Radio 2",
-    host: "UK Hits",
+    title: "BEST FM",
+    host: "Costa Rica Live",
     desc: "Clásicos y éxitos modernos para todo el día.",
-    img: "https://picsum.photos/50?2",
-    cover: "https://picsum.photos/1200/600?2",
+    img: "/assets/images/radio-imgs/bestFM.png",
+    cover: "/assets/images/radio-imgs/bestFM-cover.jfif",
     src: "https://stream.live.vc.bbcmedia.co.uk/bbc_radio_two",
   },
   {

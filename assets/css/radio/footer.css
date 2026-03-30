@@ -44,3 +44,30 @@
   align-items: center;
   gap: 8px;
 }
+
+.tv-btn {
+  width: fit-content;
+  padding: 0.4rem 10px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 500;
+  background: #0f0f0f;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  border: 1px solid #1a1a1a;
+  transition: background 0.2s;
+  gap: 5px;
+}
+
+.tv-img-btn {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.tv-btn:hover {
+  background: rgb(26, 26, 26);
+}

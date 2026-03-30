@@ -1,5 +1,3 @@
-/* ===================== DATA ===================== */
-
 const shows = [
   {
     title: "TicoSound Radio",
@@ -71,7 +69,6 @@ const heroTitle = document.querySelector(".hero h1");
 const heroDesc = document.querySelector(".radio-desc");
 
 const heroHost = document.getElementById("hero-host");
-const heroStatus = document.getElementById("hero-status");
 
 const relatedContainer = document.getElementById("related-shows");
 
@@ -92,7 +89,6 @@ function updateHero(show) {
   heroDesc.textContent = show.desc;
 
   if (heroHost) heroHost.textContent = show.host;
-  if (heroStatus) heroStatus.textContent = "En vivo";
 }
 
 function animateHero() {
@@ -133,7 +129,7 @@ function renderShows() {
       div.classList.add("active");
 
       currentShow = show;
-      currentIndex = shows.indexOf(show); // 🔥 IMPORTANTE
+      currentIndex = shows.indexOf(show);
 
       try {
         audio.src = show.src;
@@ -151,7 +147,7 @@ function renderShows() {
       </svg>
     `;
 
-        renderRelated(); // 🔥 SOLO ESTO AGREGAS
+        renderRelated();
       } catch (err) {
         console.error("Error:", err);
       }
@@ -159,7 +155,7 @@ function renderShows() {
 
     showsContainer.appendChild(div);
 
-    /* 🔥 setear primer elemento en hero */
+    /* setear primer elemento en hero */
     if (!currentShow && index === 0) {
       currentShow = show;
       updateHero(show);
@@ -207,27 +203,7 @@ function renderCategories() {
 
 renderCategories();
 renderShows();
-
-function renderShows() {
-  showsContainer.innerHTML = "";
-
-  shows.forEach((show, index) => {
-    const div = document.createElement("div");
-    div.className = "show";
-
-    div.innerHTML = `
-      <img src="${show.img}">
-      <div class="show-info">
-        <strong>${show.title}</strong>
-        <p>${show.host}</p>
-      </div>
-    `;
-
-    div.addEventListener("click", () => loadShow(index));
-
-    showsContainer.appendChild(div);
-  });
-}
+renderRelated();
 
 function renderRelated() {
   if (!relatedContainer || !currentShow) return;
@@ -309,10 +285,18 @@ if (volume) {
 /* ===================== MOBILE MENU ===================== */
 
 const menuBtn = document.getElementById("menu-btn");
-const sidebar = document.getElementById("radioSidebar");
+const sidebar = document.getElementById("radio-sidebar");
 
 if (menuBtn && sidebar) {
   menuBtn.addEventListener("click", () => {
     sidebar.classList.toggle("open");
+  });
+}
+
+const closeBtn = document.getElementById("close-btn");
+
+if (closeBtn && sidebar) {
+  closeBtn.addEventListener("click", () => {
+    sidebar.classList.remove("open");
   });
 }

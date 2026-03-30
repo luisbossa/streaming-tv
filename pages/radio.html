@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/assets/css/radio/main.css">
     <link rel="stylesheet" href="/assets/css/radio/sidebar.css">
     <link rel="stylesheet" href="/assets/css/radio/categories.css">
+    <link rel="stylesheet" href="/assets/css/radio/hero.css">
     <link rel="stylesheet" href="/assets/css/radio/play-panel.css">
     <link rel="stylesheet" href="/assets/css/radio/related.css">
     <link rel="stylesheet" href="/assets/css/radio/footer.css">
@@ -20,7 +21,7 @@
             <div class="header-content">
                 <span class="title">SONO</span>
                 <div class="logo-box">
-                    <img src="/assets/images/radio-logo.png" alt="">
+                    <img src="/assets/images/radio-logo.png" alt="Radio Logo">
                 </div>
                 <span class="title">
                     LIVE
@@ -34,6 +35,8 @@
 
         <div class="radio-layout ">
             <aside id="radio-sidebar" class="radio-sidebar">
+                <h3 class="radio-categories">Emisoras de radio</h3>
+
                 <div class="radio-close-div">
                     <button class="radio-menu-btn" id="close-btn">
                         <svg viewBox="0 0 24 24" width="22">
@@ -48,32 +51,49 @@
 
             <main class="radio-main">
                 <div class="radio-top-div">
-                    <!-- HERO -->
+
                     <div class="hero">
+
                         <div class="hero-left">
-                            <img src="https://picsum.photos/1200/600" class="hero-img">
+                            <img src="/assets/images/no-img.webp" class="hero-img">
                         </div>
 
                         <div class="hero-right">
-                            <span class="hero-tag">En vivo</span>
-                            <h1>Ride On</h1>
 
-                            <div class="hero-meta">
-                                <span id="hero-host">Radio Host</span>
+                            <div class="hero-tag">
+                                <div class="audio-bars">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                EN VIVO
                             </div>
 
-                            <p class="radio-desc">
-                                Extrovertida, amena y auténtica. Noticias, música y humor para tu tarde.
-                            </p>
+                            <h1></h1>
+
+                            <div class="hero-meta">
+                                <span id="hero-host"></span>
+                                <span id="hero-category"></span>
+                                <span class="listeners">3.2K oyentes</span>
+                            </div>
+
+                            <p class="radio-desc"></p>
+
                         </div>
+
                     </div>
 
                     <div class="radio-panel">
                         <div class="radio-player">
 
                             <div class="radio-player-div">
-                                <strong id="player-title">Radio</strong>
-                                <span id="status">Pausado</span>
+                                <div class="player-title-row">
+                                    <strong id="player-title">Audio</strong>
+                                </div>
+
+                                <div class="player-status-row">
+                                    <span id="status"><!-- DINAMIC CONTENT --></span>
+                                </div>
                             </div>
 
                             <div class="controls">
@@ -108,7 +128,7 @@
                 </div>
 
                 <section class="related-section">
-                    <h3>Radios relacionadas</h3>
+                    <h3>Emisoras similares</h3>
 
                     <div id="related-shows" class="related-list"></div>
                 </section>

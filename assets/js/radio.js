@@ -45,6 +45,15 @@ const shows = [
     src: "https://mmradio-lb.mmlabs.mx/calientecr",
   },
   {
+    title: "ElTunel FM",
+    host: "Música Rock clásica",
+    category: "Rock",
+    desc: "Estación que opera desde la comunidad colombiana de Pereira a través de su espacio virtual, compartiendo cada día los mejores temas para el recuerdo de la música pop y rock de las últimas décadas.",
+    img: "/assets/images/radio-imgs/espiritu-rock.webp",
+    cover: "/assets/images/radio-imgs/espiritu-rock-cover.png",
+    src: "https://centova92.instainternet.com/proxy/santiago/stream",
+  },
+  {
     title: "Radio Musical 97.5",
     host: "Música Romantica",
     category: "Romantico",
@@ -54,7 +63,7 @@ const shows = [
     src: "https://live.turadio.stream:7005/stream",
   },
   {
-    title: "Bésame Costa Rica 89.9 FM",
+    title: "Bésame 89.9 FM",
     host: "Música Romantica",
     category: "Romantico",
     desc: "Emisora costarricense de música romántica. Transmite tanto música en inglés como en español, contando que el amor y la pasión estén en su esencia.",
@@ -71,6 +80,42 @@ const shows = [
     cover: "/assets/images/radio-imgs/clasicRock-cover.png",
     src: "https://n02.rcs.revma.com/fk3507vbv4uvv/2_16iifzo43qpn202/playlist.m3u8",
   },
+  {
+    title: "JOE FM",
+    host: "Música clásica",
+    category: "Clasicos",
+    desc: "Escucha tu Radio Joe 80s Belgium FM las 24 horas del día, los 7 días de la semana.",
+    img: "/assets/images/radio-imgs/joe.png",
+    cover: "/assets/images/radio-imgs/joe-cover.png",
+    src: "https://streams.radio.dpgmedia.cloud/redirect/joe_nl/mp3?source=mytuner",
+  },
+  {
+    title: "ElTunel FM",
+    host: "Música Rock clásica",
+    category: "Rock",
+    desc: "Sistema de radios online de Colombia. Nuestras señales ofrecen radio streaming 24/7 con la mejor música. La Música que tus oídos quieren.",
+    img: "/assets/images/radio-imgs/elTunel.png",
+    cover: "/assets/images/radio-imgs/elTunel-cover.webp",
+    src: "https://play10.tikast.com/proxy/eltunel?mp=/stream",
+  },
+  {
+    title: "Crossover Estereo",
+    host: "Música variada",
+    category: "Variado",
+    desc: "Con una programación que abarca una amplia gama de géneros musicales.",
+    img: "/assets/images/radio-imgs/crossover.png",
+    cover: "/assets/images/radio-imgs/crossover-cover.png",
+    src: "https://stream-159.zeno.fm/76skg1fndkeuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiI3NnNrZzFmbmRrZXV2IiwiaG9zdCI6InN0cmVhbS0xNTkuemVuby5mbSIsInJ0dGwiOjUsImp0aSI6IjJzcXp6TjJVUUtlVUJGcTRJSmlKMFEiLCJpYXQiOjE3NzUwOTA4MTksImV4cCI6MTc3NTA5MDg3OX0.fPdSpVKXxri4U1d4zRxi3XZ8nx4XeVU6GJMvHCgbddU",
+  },
+  {
+    title: "W Radio",
+    host: "Música variada",
+    category: "Variado",
+    desc: "Emite 24 horas al día y se puede oír en vivo en las señales 900 AM y 96.9 FM.",
+    img: "/assets/images/radio-imgs/wRadio.png",
+    cover: "/assets/images/radio-imgs/wRadio-cover.jpg",
+    src: "https://27573.live.streamtheworld.com/WRADIOAAC_SC?csegid=10000",
+  },
 ];
 
 const categories = [
@@ -81,6 +126,8 @@ const categories = [
   { title: "Noticias", date: "Noticias y más" },
   { title: "Romantico", date: "Canciones de amor" },
   { title: "Noticias", date: "Actualidad" },
+  { title: "Clasicos", date: "90's, 80's y más" },
+  { title: "Variado", date: "Todo tipo de música" },
 ];
 
 /* ===================== ELEMENTS ===================== */

@@ -29,7 +29,7 @@
 
 .radio-sidebar {
   width: 100%;
-  height: calc(100vh - 80px);
+  height: 100vh;
   overflow-y: auto;
   background: #0a0a0a;
   border-right: 1px solid #111;
@@ -149,7 +149,7 @@
 @media (max-width: 900px) {
   .radio-sidebar {
     width: clamp(240px, 75%, 320px);
-    height: 100vh;
+    height: 100%;
     position: fixed;
     left: -100%;
     top: 0;

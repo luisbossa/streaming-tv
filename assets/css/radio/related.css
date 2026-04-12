@@ -15,11 +15,11 @@
 
 .related-list {
   display: flex;
-  gap: 12px;
-  padding-bottom: 10px;
+  padding: 20px 0;
   overflow-x: auto;
   overflow-y: hidden;
   scroll-behavior: smooth;
+  gap: 12px;
 }
 
 /* Scrollbar Chrome / Edge / Safari */

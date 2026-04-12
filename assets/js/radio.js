@@ -481,19 +481,31 @@ if (volume) {
 
 const menuBtn = document.getElementById("menu-btn");
 const sidebar = document.getElementById("radio-sidebar");
+const closeBtn = document.getElementById("close-btn");
+const overlay = document.getElementById("radio-overlay");
 
-if (menuBtn && sidebar) {
-  menuBtn.addEventListener("click", () => {
-    sidebar.classList.toggle("open");
-  });
+function openSidebar() {
+  sidebar.classList.add("open");
+  overlay.classList.add("active");
+  document.body.classList.add("no-scroll");
 }
 
-const closeBtn = document.getElementById("close-btn");
+function closeSidebar() {
+  sidebar.classList.remove("open");
+  overlay.classList.remove("active");
+  document.body.classList.remove("no-scroll");
+}
 
-if (closeBtn && sidebar) {
-  closeBtn.addEventListener("click", () => {
-    sidebar.classList.remove("open");
-  });
+if (menuBtn && sidebar) {
+  menuBtn.addEventListener("click", openSidebar);
+}
+
+if (closeBtn) {
+  closeBtn.addEventListener("click", closeSidebar);
+}
+
+if (overlay) {
+  overlay.addEventListener("click", closeSidebar);
 }
 
 document.addEventListener("click", (e) => {

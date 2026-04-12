@@ -15,8 +15,36 @@
 
 .related-list {
   display: flex;
-  padding-bottom: 10px;
   gap: 12px;
+  padding-bottom: 10px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar Chrome / Edge / Safari */
+.related-list::-webkit-scrollbar {
+  height: 6px;
+}
+
+.related-list::-webkit-scrollbar-track {
+  background: #0a0a0a;
+  border-radius: 10px;
+}
+
+.related-list::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 10px;
+}
+
+.related-list::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Firefox */
+.related-list {
+  scrollbar-width: thin;
+  scrollbar-color: #333 #0a0a0a;
 }
 
 .related-card {

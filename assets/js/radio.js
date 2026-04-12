@@ -3,6 +3,7 @@ const shows = [
     title: "Radio Dos 99.5",
     host: "Música pop",
     category: "Pop",
+    listeners: "3.2K",
     desc: "Éxitos que fueron de uno y ahora son de 2.",
     img: "/assets/images/radio-imgs/radio2.png",
     cover: "/assets/images/radio-imgs/radio2-cover.jpg",
@@ -12,15 +13,27 @@ const shows = [
     title: "Urbano 106 FM",
     host: "Música Hip-hop",
     category: "Hip-hop",
+    listeners: "4.8K",
     desc: "Emisora de corte musical urbano. Enfocada en programas dedicados a diferentes géneros musicales como el Reggae Clásico, Roots, Old School y Dance Hall, además de Hip Hop.",
     img: "/assets/images/radio-imgs/urbano.png",
     cover: "/assets/images/radio-imgs/urbano-cover.png",
     src: "https://usa18.fastcast4u.com/proxy/rmoohhrw?mp=/1",
   },
   {
+    title: "Flow 103",
+    host: "Música Hip-hop",
+    category: "Hip-hop",
+    listeners: "2.7K",
+    desc: "Free internet radio playing the hottest hip hop, live 24/7.",
+    img: "/assets/images/radio-imgs/flow103.png",
+    cover: "/assets/images/radio-imgs/flow103-cover.jpg",
+    src: "https://ais-sa3.cdnstream1.com/1668_128",
+  },
+  {
     title: "Teletica Radio 91.5 FM",
     host: "Noticias y deportes",
     category: "Noticias",
+    listeners: "6.1K",
     desc: "Es una emisora dedicada a la producción y transmisión de contenidos informativos y deportivos.",
     img: "/assets/images/radio-imgs/teletica.png",
     cover: "/assets/images/radio-imgs/teletica-cover.jpg",
@@ -30,6 +43,7 @@ const shows = [
     title: "Radio Columbia",
     host: "Noticias y deportes",
     category: "Noticias",
+    listeners: "5.6K",
     desc: "Es una de las principales emisoras de radio de Costa Rica para contenidos informativos y deportivos.",
     img: "/assets/images/radio-imgs/columbia.png",
     cover: "/assets/images/radio-imgs/columbia-cover.jpg",
@@ -39,6 +53,7 @@ const shows = [
     title: "Caliente 90.7 FM",
     host: "Música latina",
     category: "Lanino",
+    listeners: "3.9K",
     desc: "Emisora con un formato musical enfocado en la música latina, con destaque para los sonidos tropicales, bachata, merengue, cumbia, salsa, baladas y música regional mexicana.",
     img: "/assets/images/radio-imgs/caliente.jpg",
     cover: "/assets/images/radio-imgs/caliente-cover.png",
@@ -48,6 +63,7 @@ const shows = [
     title: "ElTunel FM",
     host: "Música Rock clásica",
     category: "Rock",
+    listeners: "2.4K",
     desc: "Estación que opera desde la comunidad colombiana de Pereira a través de su espacio virtual, compartiendo cada día los mejores temas para el recuerdo de la música pop y rock de las últimas décadas.",
     img: "/assets/images/radio-imgs/espiritu-rock.webp",
     cover: "/assets/images/radio-imgs/espiritu-rock-cover.png",
@@ -57,6 +73,7 @@ const shows = [
     title: "Radio Musical 97.5",
     host: "Música Romantica",
     category: "Romantico",
+    listeners: "3.5K",
     desc: "Radio Musical es una emisora cercana a sus oyentes, transmitiendo una programación que se encuentra en constante actualización.",
     img: "/assets/images/radio-imgs/radio-musical.png",
     cover: "/assets/images/radio-imgs/radio-musical-cover.jpg",
@@ -66,6 +83,7 @@ const shows = [
     title: "Bésame 89.9 FM",
     host: "Música Romantica",
     category: "Romantico",
+    listeners: "4.1K",
     desc: "Emisora costarricense de música romántica. Transmite tanto música en inglés como en español, contando que el amor y la pasión estén en su esencia.",
     img: "/assets/images/radio-imgs/besame.png",
     cover: "/assets/images/radio-imgs/besame-cover.jpg",
@@ -75,6 +93,7 @@ const shows = [
     title: "Classic Rock Station",
     host: "Música Rock clásica",
     category: "Rock",
+    listeners: "2.9K",
     desc: "All The Rock Classics songs!",
     img: "/assets/images/radio-imgs/clasicRock.png",
     cover: "/assets/images/radio-imgs/clasicRock-cover.png",
@@ -84,6 +103,7 @@ const shows = [
     title: "JOE FM",
     host: "Música clásica",
     category: "Clasicos",
+    listeners: "1.8K",
     desc: "Escucha tu Radio Joe 80s Belgium FM las 24 horas del día, los 7 días de la semana.",
     img: "/assets/images/radio-imgs/joe.png",
     cover: "/assets/images/radio-imgs/joe-cover.png",
@@ -93,6 +113,7 @@ const shows = [
     title: "ElTunel FM",
     host: "Música Rock clásica",
     category: "Rock",
+    listeners: "2.2K",
     desc: "Sistema de radios online de Colombia. Nuestras señales ofrecen radio streaming 24/7 con la mejor música. La Música que tus oídos quieren.",
     img: "/assets/images/radio-imgs/elTunel.png",
     cover: "/assets/images/radio-imgs/elTunel-cover.webp",
@@ -102,24 +123,36 @@ const shows = [
     title: "Crossover Estereo",
     host: "Música variada",
     category: "Variado",
+    listeners: "2.6K",
     desc: "Con una programación que abarca una amplia gama de géneros musicales.",
     img: "/assets/images/radio-imgs/crossover.png",
     cover: "/assets/images/radio-imgs/crossover-cover.png",
-    src: "https://stream-159.zeno.fm/76skg1fndkeuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiI3NnNrZzFmbmRrZXV2IiwiaG9zdCI6InN0cmVhbS0xNTkuemVuby5mbSIsInJ0dGwiOjUsImp0aSI6IjJzcXp6TjJVUUtlVUJGcTRJSmlKMFEiLCJpYXQiOjE3NzUwOTA4MTksImV4cCI6MTc3NTA5MDg3OX0.fPdSpVKXxri4U1d4zRxi3XZ8nx4XeVU6GJMvHCgbddU",
+    src: "https://stream-159.zeno.fm/76skg1fndkeuv",
   },
   {
     title: "W Radio",
     host: "Música variada",
     category: "Variado",
+    listeners: "4.4K",
     desc: "Emite 24 horas al día y se puede oír en vivo en las señales 900 AM y 96.9 FM.",
     img: "/assets/images/radio-imgs/wRadio.png",
     cover: "/assets/images/radio-imgs/wRadio-cover.jpg",
     src: "https://27573.live.streamtheworld.com/WRADIOAAC_SC?csegid=10000",
   },
+  {
+    title: "Salsa y Más",
+    host: "Música salsa",
+    category: "Salsa",
+    listeners: "3.1K",
+    desc: "Con sabor Latino! Acerca de Salsa y mas Cali.",
+    img: "/assets/images/radio-imgs/salsaMas.jpeg",
+    cover: "/assets/images/radio-imgs/salsaMas-cover.png",
+    src: "https://stream-166.zeno.fm/42w3pfn7pzzuv",
+  },
 ];
 
 const categories = [
-  { title: "Todas", date: "Ver todo" },
+  { title: "Todas", date: "Todas las emisoras" },
   { title: "Pop", date: "Música comercial" },
   { title: "Hip-hop", date: "Música urbana" },
   { title: "Rock", date: "Clásico y moderno" },
@@ -128,6 +161,7 @@ const categories = [
   { title: "Noticias", date: "Actualidad" },
   { title: "Clasicos", date: "90's, 80's y más" },
   { title: "Variado", date: "Todo tipo de música" },
+  { title: "Salsa", date: "Música salsa para bailar" },
 ];
 
 /* ===================== ELEMENTS ===================== */
@@ -149,6 +183,11 @@ const heroHost = document.getElementById("hero-host");
 
 const relatedContainer = document.getElementById("related-shows");
 
+const heroListeners = document.querySelector(".listeners");
+
+const prevBtn = document.getElementById("prev");
+const nextBtn = document.getElementById("next");
+
 /* ===================== STATE ===================== */
 
 let playing = false;
@@ -166,6 +205,16 @@ function updateHero(show) {
   heroDesc.textContent = show.desc;
 
   if (heroHost) heroHost.textContent = show.host;
+
+  if (heroListeners) {
+    heroListeners.textContent = randomListeners(show.listeners) + " oyentes";
+  }
+}
+
+function randomListeners(base) {
+  const num = parseFloat(base);
+  const variation = Math.random() * 0.4 - 0.2;
+  return (num + variation).toFixed(1) + "K";
 }
 
 function animateHero() {
@@ -375,5 +424,67 @@ const closeBtn = document.getElementById("close-btn");
 if (closeBtn && sidebar) {
   closeBtn.addEventListener("click", () => {
     sidebar.classList.remove("open");
+  });
+}
+
+document.addEventListener("click", (e) => {
+  if (!sidebar) return;
+
+  const clickedInsideSidebar = sidebar.contains(e.target);
+  const clickedMenuBtn = menuBtn && menuBtn.contains(e.target);
+
+  if (!clickedInsideSidebar && !clickedMenuBtn) {
+    sidebar.classList.remove("open");
+  }
+});
+
+async function playShowByIndex(index) {
+  if (index < 0) index = shows.length - 1;
+  if (index >= shows.length) index = 0;
+
+  const show = shows[index];
+
+  currentShow = show;
+  currentIndex = index;
+
+  try {
+    audio.src = show.src;
+    await audio.play();
+
+    status.textContent = "Reproduciendo";
+    playing = true;
+
+    updateHero(show);
+    renderRelated();
+
+    playBtn.innerHTML = `
+      <svg viewBox="0 0 24 24" width="26">
+        <path fill="white" d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+      </svg>
+    `;
+
+    /* actualizar activo en sidebar */
+    document.querySelectorAll(".show").forEach((el) => {
+      el.classList.remove("active");
+    });
+
+    const showElements = document.querySelectorAll(".show");
+    if (showElements[index]) {
+      showElements[index].classList.add("active");
+    }
+  } catch (err) {
+    console.error(err);
+  }
+}
+
+if (prevBtn) {
+  prevBtn.addEventListener("click", () => {
+    playShowByIndex(currentIndex - 1);
+  });
+}
+
+if (nextBtn) {
+  nextBtn.addEventListener("click", () => {
+    playShowByIndex(currentIndex + 1);
   });
 }

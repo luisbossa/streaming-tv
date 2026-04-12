@@ -100,16 +100,6 @@ const shows = [
     src: "https://ais-sa3.cdnstream1.com/1668_128",
   },
   {
-    title: "Zorround System",
-    host: "Música Hip-hop",
-    category: "Hip-hop",
-    listeners: "3.5K",
-    desc: "The other side of Classic Soul R&B.",
-    img: "/assets/images/radio-imgs/zorround.jfif",
-    cover: "/assets/images/radio-imgs/zorround-cover.png",
-    src: "http://5.135.154.72:12700/;",
-  },
-  {
     title: "Hits Radio",
     host: "Música de los 90's",
     category: "Clasicos",
@@ -190,6 +180,16 @@ const shows = [
     src: "https://stream-161.zeno.fm/nt3g6u0pe6quv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJudDNnNnUwcGU2cXV2IiwiaG9zdCI6InN0cmVhbS0xNjEuemVuby5mbSIsInJ0dGwiOjUsImp0aSI6ImZWVkdNbVFsU1RhTEpObzVuZ3h0Y1EiLCJpYXQiOjE3NzYwMTM0NzgsImV4cCI6MTc3NjAxMzUzOH0.zBlGmYgfWlh8tqHMjx1d2gutFtn7l9Yv1GUKEVy72nY",
   },
   {
+    title: "Rock a La 2",
+    host: "Rock y metal",
+    category: "Rock",
+    listeners: "4.2K",
+    desc: "Es una radio dedicada al Rock que transmite en la frecuencia 1000AM, desde Costa Rica para el mundo.",
+    img: "/assets/images/radio-imgs/rock2.png",
+    cover: "/assets/images/radio-imgs/rock2-cover.jpg",
+    src: "https://streaming.radio.co/s0ebd65fd5/listen",
+  },
+  {
     title: "Salsa y Más",
     host: "Música salsa",
     category: "Salsa",
@@ -249,6 +249,16 @@ const shows = [
     cover: "/assets/images/radio-imgs/wRadio-cover.jpg",
     src: "https://27573.live.streamtheworld.com/WRADIOAAC_SC",
   },
+  {
+    title: "Zorround System",
+    host: "Música R & B",
+    category: "R&B",
+    listeners: "3.5K",
+    desc: "The other side of Classic Soul R&B.",
+    img: "/assets/images/radio-imgs/zorround.jfif",
+    cover: "/assets/images/radio-imgs/zorround-cover.png",
+    src: "http://5.135.154.72:12700/;",
+  },
 ];
 
 const categories = [
@@ -262,6 +272,7 @@ const categories = [
   { title: "Variado", date: "Todo tipo de música" },
   { title: "Salsa", date: "Música salsa para bailar" },
   { title: "Reggae", date: "Música Reggae" },
+  { title: "R&B", date: "Música R & B" },
 ];
 
 /* ===================== ELEMENTS ===================== */

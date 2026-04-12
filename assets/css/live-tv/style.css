@@ -1058,7 +1058,7 @@ body[data-theme="light"] .footer-stats {
   }
 
   .settings-and-fullscreen {
-    gap: 8px;
+    gap: 5px;
   }
 }
 
@@ -1122,8 +1122,7 @@ body[data-theme="light"] .footer-stats {
     gap: 0.5rem;
   }
 
-  .settings-btn,
-  .fullscreen-btn {
+  .settings-btn {
     display: none;
   }
 }

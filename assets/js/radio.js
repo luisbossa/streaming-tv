@@ -30,6 +30,16 @@ const shows = [
     src: "https://ais-sa3.cdnstream1.com/1668_128",
   },
   {
+    title: "Urban Hits",
+    host: "Música Hip-hop y más",
+    category: "Hip-hop",
+    listeners: "3.9K",
+    desc: "URBAN HITS - France. Escucha la radio por Internet gratis.",
+    img: "/assets/images/radio-imgs/urbanHits.png",
+    cover: "/assets/images/radio-imgs/urbanHits-cover.jpg",
+    src: "https://streaming.nrjaudio.fm/ouhse4apu6pb?aw_0_1st.station=NRJ-Urban-Hits&origine=mytuner",
+  },
+  {
     title: "Teletica Radio 91.5 FM",
     host: "Noticias y deportes",
     category: "Noticias",

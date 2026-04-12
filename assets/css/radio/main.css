@@ -47,7 +47,7 @@ a {
 
 .radio-layout {
   display: grid;
-  height: calc(100vh - 80px);
+  min-height: calc(100vh - 80px);
   grid-template-columns:
     minmax(180px, 18vw)
     1fr

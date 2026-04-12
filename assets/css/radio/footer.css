@@ -1,12 +1,12 @@
 .footer {
   height: 60px;
-  background: #0a0a0a;
-  border-top: 1px solid #111;
+  padding: 0 25px;
+  font-size: 13px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 25px;
-  font-size: 13px;
+  background: #0a0a0a;
+  border-top: 1px solid #111;
 }
 
 .footer-left {
@@ -22,21 +22,6 @@
 .footer-left small {
   color: #666;
   font-size: 11px;
-}
-
-.footer-center {
-  display: flex;
-  gap: 20px;
-}
-
-.footer-center a {
-  color: #888;
-  text-decoration: none;
-  transition: 0.2s;
-}
-
-.footer-center a:hover {
-  color: #fff;
 }
 
 .footer-right {

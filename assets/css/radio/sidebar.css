@@ -1,18 +1,24 @@
 .radio-menu-btn {
-  position: relative;
-  width: 42px;
-  height: 42px;
-  color: #fff;
+  width: 40px;
+  height: 40px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  background: #111;
-  border-radius: 12px;
+  align-items: center;
   border: 1px solid #1f1f1f;
   backdrop-filter: blur(6px);
+  border-radius: 12px;
+  background: #111;
   cursor: pointer;
-  transition: all 0.25s ease;
-  overflow: hidden;
+  gap: 4px;
+}
+
+.radio-menu-btn span {
+  width: 17px;
+  height: 2px;
+  background: #fff;
+  display: block;
+  border-radius: 2px;
 }
 
 .radio-close-div {
@@ -23,6 +29,7 @@
 
 .radio-sidebar {
   width: 100%;
+  height: calc(100vh - 80px);
   overflow-y: auto;
   background: #0a0a0a;
   border-right: 1px solid #111;
@@ -160,6 +167,6 @@
 
 @media (max-width: 500px) {
   .radio-sidebar {
-    width: 85%;
+    width: 270px;
   }
 }

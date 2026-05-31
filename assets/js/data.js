@@ -10,10 +10,10 @@ const canales = [
   },
   {
     id: "canal2",
-    nombre: "Next HD",
+    nombre: "Retro Plus 3",
     descripcion: "Películas y programas",
-    imagen: "/assets/images/chanels-imgs/nextHD.png",
-    url: "https://live.enhdtv.com:19360/nexthd/nexthd.m3u8",
+    imagen: "/assets/images/chanels-imgs/retroplus.jpg",
+    url: "https://tls-cl.cdnz.cl/retroplustvtres/live/chunklist_w1181730567.m3u8",
     categoria: "Cine",
   },
   {
@@ -21,7 +21,7 @@ const canales = [
     nombre: "Cindie TV",
     descripcion: "Películas y programas",
     imagen: "/assets/images/chanels-imgs/cindie-tv.png",
-    url: "https://d20xuwbyc4yoag.cloudfront.net/v1/manifest/9d062541f2ff39b5c0f48b743c6411d25f62fc25/DistroTV-MuxIP-CINDIE/3dd0f5cb-3f46-4945-90a8-b446c6501cdf/2.m3u8",
+    url: "https://d20xuwbyc4yoag.cloudfront.net/scheduler/scheduleMaster/387/variant/22099958.m3u8",
     categoria: "Cine",
   },
   {
@@ -34,34 +34,34 @@ const canales = [
   },
   {
     id: "canal5",
-    nombre: "Canal TVS",
+    nombre: "Bayres TV",
     descripcion: "Películas y programas",
-    imagen: "/assets/images/chanels-imgs/tvs.png",
-    url: "https://vcp10.myplaytv.com/tvs/tvs/playlist.m3u8",
+    imagen: "/assets/images/chanels-imgs/bayres.jfif",
+    url: "https://streaming01.mikrolive.tv/bayrestv/live/playlist.m3u8",
     categoria: "Cine",
   },
   {
     id: "canal6",
-    nombre: "Gen TV",
+    nombre: "Canal Más TV",
     descripcion: "Películas y Entretenimiento",
-    imagen: "/assets/images/chanels-imgs/gen-tv.jpg",
-    url: "https://srv3.zcast.com.br/gentv/gentv/playlist.m3u8",
+    imagen: "/assets/images/chanels-imgs/masTv.webp",
+    url: "https://movil.ejeserver.com/live/teledoradahd.m3u8",
     categoria: "Cine",
   },
   {
     id: "canal7",
     nombre: "Vision TV",
     descripcion: "Películas y cine",
-    imagen: "/assets/images/chanels-imgs/visionTV.webp",
+    imagen: "/assets/images/chanels-imgs/visionTV.jpg",
     url: "https://cdn.streamhispanatv.net:3531/live/tvsretrogtlive.m3u8",
     categoria: "Cine",
   },
   {
     id: "canal8",
-    nombre: "Pituco TV",
-    descripcion: "Cine de acción",
-    imagen: "/assets/images/chanels-imgs/pitucoTV.png",
-    url: "https://imagenuniversaltv.net:3439/live/elpitucolive.m3u8",
+    nombre: "Gen TV",
+    descripcion: "Películas y cine",
+    imagen: "/assets/images/chanels-imgs/gen-tv.jpg",
+    url: "https://srv3.zcast.com.br/gentv/gentv/playlist.m3u8",
     categoria: "Cine",
   },
   {
@@ -82,18 +82,18 @@ const canales = [
   },
   {
     id: "canal11",
-    nombre: "Kanade TV",
-    descripcion: "Películas y Ánime",
-    imagen: "/assets/images/chanels-imgs/kanade.png",
-    url: "https://backend.energeek.cl/webtv/kanadeweb/tracks-v1a1/mono.m3u8?token=deM0kanADeweB",
+    nombre: "Canal 33 Atacama",
+    descripcion: "Películas y cine",
+    imagen: "/assets/images/chanels-imgs/canal-33.jpg",
+    url: "https://v2.tustreaming.cl/atacamatv/tracks-v1a1/mono.m3u8",
     categoria: "Cine",
   },
   {
     id: "canal12",
-    nombre: "Rakuten tv",
-    descripcion: "Peliculas Ci-Fi",
-    imagen: "/assets/images/chanels-imgs/rakuten.jpg",
-    url: "https://b0d59c8c98974e708e5ccb9a27cdfdfc.mediatailor.eu-west-1.amazonaws.com/v1/manifest/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6740/e30c9270-3d7f-457e-9695-335e950b21f9/2.m3u8",
+    nombre: "Microvisión",
+    descripcion: "Películas y cine",
+    imagen: "/assets/images/chanels-imgs/microvision.jfif",
+    url: "https://streaming.telecablecentral.com.do/live/MicroHD/serenotv.m3u8",
     categoria: "Cine",
   },
 
@@ -168,7 +168,7 @@ const canales = [
     descripcion: "Peleas Mexicanas",
     imagen: "/assets/images/chanels-imgs/luchaPlus.webp",
     url: "https://amg17334-amg17334c1-plex-us-6729.playouts.now.amagi.tv/playlist/amg17334-luchalibrefast-luchalibre-plexus/playlist.m3u8",
-    categoria: "Cine",
+    categoria: "Deportes",
   },
 
   // --- Entretenimiento ---
@@ -210,7 +210,7 @@ const canales = [
     nombre: "Canela TV",
     descripcion: "Películas y entretenimiento",
     imagen: "/assets/images/chanels-imgs/canelaTV.jpg",
-    url: "https://amg00658-amg00658c8-canelatv-international-7227.playouts.now.amagi.tv/ts-us-e2-n2/playlist/amg00658-canelamediafast-cinemalt-canelatvinternational/playlist.m3u8?app_bundle=canela.tv&app_name=CanelaTV&app_store_url=NA&content_livestream=1&coppa=0&device_language=es&did=09891ef6-0193-4ff0-904f-1385f076aee5&dnt=0&ic=IAB1-7&ifa_type=NA&lmt=NA&rights_holder_id=canela-cinema2&url=https%3A%2F%2Fcanela.tv%2Fplayer%2Fchannel%2Fcanela-cinema2&us_privacy=null_us_privacy&user_id=&vip=186.32.221.5",
+    url: "https://amg00658-amg00658c108-canelatv-international-7664.playouts.now.amagi.tv/playlist/amg00658-canelamediafast-canelatvlatamapp-canelatvinternational/playlist.m3u8",
     categoria: "Shows",
   },
   {
@@ -497,10 +497,18 @@ const canales = [
     url: "http://tv.ticosmedia.com:1935/IQ/IQ/playlist.m3u8",
     categoria: "Música",
   },
+  {
+    id: "canal62",
+    nombre: "KMBY-LD",
+    descripcion: "Música y entretenimiento",
+    imagen: "/assets/images/chanels-imgs/km27.png",
+    url: "https://2-fss-2.streamhoster.com/pl_138/205510-3094608-1/playlist.m3u8",
+    categoria: "Música",
+  },
 
   // --- Noticias ---
   {
-    id: "canal62",
+    id: "canal63",
     nombre: "Costa Rica Channel",
     descripcion: "Noticias locales Centroamérica",
     imagen: "/assets/images/chanels-imgs/crChannel.png",
@@ -508,7 +516,7 @@ const canales = [
     categoria: "Noticias",
   },
   {
-    id: "canal63",
+    id: "canal64",
     nombre: "DW Español",
     descripcion: "Noticias globales Alemania",
     imagen: "/assets/images/chanels-imgs/dwEsp.png",
@@ -519,7 +527,7 @@ const canales = [
   // --- Documentales ---
 
   {
-    id: "canal64",
+    id: "canal65",
     nombre: "Extrema TV",
     descripcion: "Documental animal",
     imagen: "/assets/images/chanels-imgs/xtremaTV.jpg",
@@ -527,7 +535,7 @@ const canales = [
     categoria: "Reportajes",
   },
   {
-    id: "canal65",
+    id: "canal66",
     nombre: "Love The Planet",
     descripcion: "Documental animal",
     imagen: "/assets/images/chanels-imgs/lovePlanet.jpg",
@@ -535,7 +543,7 @@ const canales = [
     categoria: "Reportajes",
   },
   {
-    id: "canal66",
+    id: "canal67",
     nombre: "Clic",
     descripcion: "Documentales",
     imagen: "/assets/images/chanels-imgs/clic.jfif",
@@ -543,7 +551,7 @@ const canales = [
     categoria: "Reportajes",
   },
   {
-    id: "canal67",
+    id: "canal68",
     nombre: "CGTN",
     descripcion: "Documentales de china",
     imagen: "/assets/images/chanels-imgs/cgtn.png",
@@ -551,7 +559,7 @@ const canales = [
     categoria: "Reportajes",
   },
   {
-    id: "canal68",
+    id: "canal69",
     nombre: "Big Stories",
     descripcion: "Documental sobre vinos",
     imagen: "/assets/images/chanels-imgs/loveWine.webp",
@@ -559,7 +567,7 @@ const canales = [
     categoria: "Reportajes",
   },
   {
-    id: "canal69",
+    id: "canal70",
     nombre: "AKC TV",
     descripcion: "Mascotas En Vivo",
     imagen: "/assets/images/chanels-imgs/akc.jpg",
@@ -570,35 +578,43 @@ const canales = [
   // --- Cartoons ---
 
   {
-    id: "canal70",
-    nombre: "Retro Cartoons",
-    descripcion: "Caricaturas retro",
-    imagen: "/assets/images/chanels-imgs/cartoonRetro.webp",
-    url: "https://stmv3.voxtvhd.com.br/xtremaretrocartoons/xtremaretrocartoons/playlist.m3u8",
-    categoria: "Caricaturas",
-  },
-  {
     id: "canal71",
-    nombre: "Cartoons En Vivo",
-    descripcion: "Caricaturas en vivo",
-    imagen: "/assets/images/chanels-imgs/toons.webp",
-    url: "https://stmv6.voxtvhd.com.br/xtremacartoons/xtremacartoons/playlist.m3u8",
+    nombre: "Retro Toons",
+    descripcion: "Ánime",
+    imagen: "/assets/images/chanels-imgs/retrotoons.png",
+    url: "https://live20.bozztv.com/akamaissh101/ssh101/retrotoons/playlist.m3u8",
     categoria: "Caricaturas",
   },
   {
     id: "canal72",
-    nombre: "Ánime Visión",
+    nombre: "Anime Station",
     descripcion: "Ánime",
-    imagen: "/assets/images/chanels-imgs/animeVision.jpg",
-    url: "https://d82pyvmcw2kdc.cloudfront.net/v1/manifest/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-swfivzrzwamaq/4465d40d-bd43-494d-8a5c-ff5ecc4727a3/4.m3u8",
+    imagen: "/assets/images/chanels-imgs/animeStation.jpg",
+    url: "https://live20.bozztv.com/akamaissh101/ssh101/livestreamingtv/chunks.m3u8",
     categoria: "Caricaturas",
   },
   {
     id: "canal73",
+    nombre: "Ánime Visión",
+    descripcion: "Ánime",
+    imagen: "/assets/images/chanels-imgs/animevision2.jpg",
+    url: "https://d82pyvmcw2kdc.cloudfront.net/v1/manifest/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-swfivzrzwamaq/4465d40d-bd43-494d-8a5c-ff5ecc4727a3/4.m3u8",
+    categoria: "Caricaturas",
+  },
+  {
+    id: "canal74",
     nombre: "Ánime Visión 2",
     descripcion: "Más ánime",
-    imagen: "/assets/images/chanels-imgs/animeVision.jpg",
+    imagen: "/assets/images/chanels-imgs/animevision2.jpg",
     url: "https://d1ujfw1zyymzyd.cloudfront.net/v1/manifest/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-a6fukwkbxmex8/78eed597-052d-4922-80cb-c5edd1721d37/4.m3u8",
+    categoria: "Caricaturas",
+  },
+  {
+    id: "canal75",
+    nombre: "Canal Dragon Ball",
+    descripcion: "Ánime de Dragon ball",
+    imagen: "/assets/images/chanels-imgs/dragonball.jpg",
+    url: "https://live20.bozztv.com/giatv/giatv-dball/dball/playlist.m3u8",
     categoria: "Caricaturas",
   },
 ];

@@ -560,7 +560,7 @@ const canales = [
   },
   {
     id: "canal69",
-    nombre: "Big Stories",
+    nombre: "Love Wine",
     descripcion: "Documental sobre vinos",
     imagen: "/assets/images/chanels-imgs/loveWine.webp",
     url: "https://amg01821-lovetvchannels-lovewinespain-tivify-tivify-9ajng.amagi.tv/playlist.m3u8",

@@ -645,10 +645,8 @@ body[data-theme="light"] .footer-stats {
   align-items: center;
   justify-content: center;
   text-align: center;
-
   padding: 30px;
   z-index: 200;
-
   background:
     radial-gradient(circle at center, rgba(37, 99, 235, 0.18), transparent 55%),
     rgba(3, 7, 18, 0.95);
@@ -660,35 +658,14 @@ body[data-theme="light"] .footer-stats {
   width: 110px;
   height: 110px;
   object-fit: contain;
-
   margin-bottom: 24px;
   padding: 22px;
-
   border-radius: 50%;
-
   background: rgba(15, 23, 42, 0.75);
-
   border: 1px solid rgba(96, 165, 250, 0.25);
-
   box-shadow:
     0 0 35px rgba(37, 99, 235, 0.35),
     inset 0 0 20px rgba(255, 255, 255, 0.04);
-
-  animation: offlineFloat 3s ease-in-out infinite;
-}
-
-@keyframes offlineFloat {
-  0% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-8px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
 }
 
 .offline-overlay h2 {
@@ -701,9 +678,7 @@ body[data-theme="light"] .footer-stats {
 
 .offline-overlay p {
   max-width: 500px;
-
   color: #cbd5e1;
-
   font-size: 1rem;
   line-height: 1.7;
 }
@@ -715,22 +690,16 @@ body[data-theme="light"] .footer-stats {
 .loading-overlay {
   position: absolute;
   inset: 0;
-
   display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   text-align: center;
-
   z-index: 190;
-
   background:
     radial-gradient(circle at center, rgba(37, 99, 235, 0.15), transparent 55%),
     rgba(0, 0, 0, 0.92);
-
   backdrop-filter: blur(12px);
-
   color: #fff;
 }
 

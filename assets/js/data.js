@@ -10,10 +10,10 @@ const canales = [
   },
   {
     id: "canal2",
-    nombre: "Retro Plus 3",
+    nombre: "El Sol TV",
     descripcion: "Películas y programas",
-    imagen: "/assets/images/chanels-imgs/retroplus.jpg",
-    url: "https://tls-cl.cdnz.cl/retroplustvtres/live/chunklist_w1181730567.m3u8",
+    imagen: "/assets/images/chanels-imgs/elSol.png",
+    url: "https://tv.wracanal10.com:3025/live/elsoltvlive.m3u8",
     categoria: "Cine",
   },
   {
@@ -34,10 +34,10 @@ const canales = [
   },
   {
     id: "canal5",
-    nombre: "Bayres TV",
+    nombre: "Sicardi TV",
     descripcion: "Películas y programas",
-    imagen: "/assets/images/chanels-imgs/bayres.jfif",
-    url: "https://streaming01.mikrolive.tv/bayrestv/live/playlist.m3u8",
+    imagen: "/assets/images/chanels-imgs/sicardi.png",
+    url: "https://vivo.solumedia.com:19360/sicarditv/sicarditv.m3u8",
     categoria: "Cine",
   },
   {
@@ -82,9 +82,9 @@ const canales = [
   },
   {
     id: "canal11",
-    nombre: "Canal 33 Atacama",
+    nombre: "Atacama TV",
     descripcion: "Películas y cine",
-    imagen: "/assets/images/chanels-imgs/canal-33.jpg",
+    imagen: "/assets/images/chanels-imgs/atacama.png",
     url: "https://v2.tustreaming.cl/atacamatv/tracks-v1a1/mono.m3u8",
     categoria: "Cine",
   },
@@ -217,7 +217,7 @@ const canales = [
     id: "canal27",
     nombre: "Retro Plus Tv",
     descripcion: "Películas y entretenimiento",
-    imagen: "/assets/images/chanels-imgs/retroPlus.png",
+    imagen: "/assets/images/chanels-imgs/retroplus.jpg",
     url: "https://tls-cl.cdnz.cl/retroplustvtres/live/playlist.m3u8",
     categoria: "Shows",
   },

@@ -215,7 +215,7 @@ const canales = [
   },
   {
     id: "canal27",
-    nombre: "Retro Plus Tv",
+    nombre: "RETROPLUS",
     descripcion: "Películas y entretenimiento",
     imagen: "/assets/images/chanels-imgs/retroplus.jpg",
     url: "https://tls-cl.cdnz.cl/retroplustvtres/live/playlist.m3u8",

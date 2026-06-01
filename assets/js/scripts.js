@@ -1,17 +1,25 @@
 const video = document.getElementById("videoPlayer");
 let hls = null;
 
+let isPlaying = false;
+let isMuted = false;
+let timeoutVerificacion = null;
+
 const overlay = document.getElementById("fueraDeServicio");
 const mensajeError = document.getElementById("mensajeError");
+const loadingOverlay = document.getElementById("loadingOverlay");
 
 function ocultarError() {
   overlay.style.display = "none";
+  loadingOverlay.style.display = "none";
   video.style.opacity = "1";
 }
 
 function mostrarError(
-  mensaje = "Actualmente no hay señal disponible para este canal."
+  mensaje = "Actualmente no hay señal disponible para este canal.",
 ) {
+  ocultarLoading();
+
   overlay.style.display = "flex";
   video.style.opacity = "0";
   mensajeError.textContent = mensaje;
@@ -34,16 +42,25 @@ video.onerror = () => {
 };
 
 function iniciarTimeoutVerificacion() {
-  ocultarError();
-  setTimeout(() => {
-    if (video.readyState < 2) {
-      console.log("El canal no está enviando señal");
+  mostrarLoading();
+
+  clearTimeout(timeoutVerificacion);
+
+  timeoutVerificacion = setTimeout(() => {
+    if (
+      video.readyState < 2 ||
+      (video.videoWidth === 0 && video.videoHeight === 0)
+    ) {
       mostrarError();
     }
-  }, 5000);
+  }, 10000);
 }
 
 function verificarVideoActivo() {
+  clearTimeout(timeoutVerificacion);
+
+  ocultarLoading();
+
   if (video.videoWidth === 0 && video.videoHeight === 0) {
     mostrarError("Este canal reproduce solo audio. No hay imagen disponible.");
   } else {
@@ -166,6 +183,7 @@ document.addEventListener("click", (e) => {
 
   if (Hls.isSupported()) {
     hls = new Hls();
+    mostrarLoading();
     hls.loadSource(url);
     hls.attachMedia(video);
     habilitarDeteccionErrores(hls);
@@ -210,12 +228,27 @@ window.addEventListener("DOMContentLoaded", () => {
 
   if (Hls.isSupported()) {
     hls = new Hls();
+
+    mostrarLoading();
+
     hls.loadSource(url);
     hls.attachMedia(video);
-    hls.on(Hls.Events.MANIFEST_PARSED, () => video.play());
+
+    habilitarDeteccionErrores(hls);
+    iniciarTimeoutVerificacion();
+
+    hls.on(Hls.Events.MANIFEST_PARSED, () => {
+      video.play();
+      actualizarControlesReproduccion();
+    });
   } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
+    mostrarLoading();
+    iniciarTimeoutVerificacion();
+
     video.src = url;
     video.play();
+
+    actualizarControlesReproduccion();
   }
 
   statusText.textContent = "Reproduciendo";
@@ -231,9 +264,6 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 if (playButton && volumeButton && volumeSlider && statusText) {
-  let isPlaying = false;
-  let isMuted = false;
-
   statusText.textContent = "Reproduciendo";
   playButton.innerHTML = `
     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
@@ -391,4 +421,13 @@ function actualizarControlesReproduccion() {
 
   isPlaying = true;
   isMuted = false;
+}
+
+function mostrarLoading() {
+  loadingOverlay.style.display = "flex";
+  overlay.style.display = "none";
+}
+
+function ocultarLoading() {
+  loadingOverlay.style.display = "none";
 }

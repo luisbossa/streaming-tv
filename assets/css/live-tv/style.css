@@ -633,33 +633,169 @@ body[data-theme="light"] .footer-stats {
   transition: opacity 0.3s ease;
 }
 
+/* =========================
+   MENSAJE FUERA DE SERVICIO
+========================= */
+
 .offline-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.85);
-  color: #fff;
-  font-size: 24px;
-  font-weight: 600;
   display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-sizing: border-box;
   text-align: center;
-  padding: 20px;
+
+  padding: 30px;
   z-index: 200;
+
+  background:
+    radial-gradient(circle at center, rgba(37, 99, 235, 0.18), transparent 55%),
+    rgba(3, 7, 18, 0.95);
+
+  backdrop-filter: blur(12px);
+}
+
+.offline-icon {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+
+  margin-bottom: 24px;
+  padding: 22px;
+
+  border-radius: 50%;
+
+  background: rgba(15, 23, 42, 0.75);
+
+  border: 1px solid rgba(96, 165, 250, 0.25);
+
+  box-shadow:
+    0 0 35px rgba(37, 99, 235, 0.35),
+    inset 0 0 20px rgba(255, 255, 255, 0.04);
+
+  animation: offlineFloat 3s ease-in-out infinite;
+}
+
+@keyframes offlineFloat {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .offline-overlay h2 {
-  margin: 0;
-  font-size: 28px;
-  font-weight: 700;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
 }
 
 .offline-overlay p {
-  margin: 8px 0 0 0;
-  font-size: 16px;
-  color: #ccc;
+  max-width: 500px;
+
+  color: #cbd5e1;
+
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* =========================
+   MENSAJE CARGANDO
+========================= */
+
+.loading-overlay {
+  position: absolute;
+  inset: 0;
+
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  z-index: 190;
+
+  background:
+    radial-gradient(circle at center, rgba(37, 99, 235, 0.15), transparent 55%),
+    rgba(0, 0, 0, 0.92);
+
+  backdrop-filter: blur(12px);
+
+  color: #fff;
+}
+
+.loading-overlay h2 {
+  margin-top: 24px;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.loading-overlay p {
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1rem;
+}
+
+/* =========================
+   SPINNER PREMIUM
+========================= */
+
+.spinner {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+
+  border: 4px solid rgba(255, 255, 255, 0.08);
+  border-top-color: #2563eb;
+
+  animation: spin 1s linear infinite;
+
+  position: relative;
+}
+
+.spinner::before {
+  content: "";
+  position: absolute;
+  inset: -12px;
+
+  border-radius: 50%;
+
+  border: 2px solid transparent;
+  border-top-color: rgba(37, 99, 235, 0.35);
+
+  animation: spin 2s linear infinite reverse;
+}
+
+.spinner::after {
+  content: "";
+
+  position: absolute;
+  inset: 18px;
+
+  border-radius: 50%;
+
+  background: rgba(37, 99, 235, 0.12);
+
+  box-shadow:
+    0 0 30px rgba(37, 99, 235, 0.45),
+    0 0 60px rgba(37, 99, 235, 0.25);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .video.fallido {

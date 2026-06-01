@@ -74,10 +74,18 @@
                     type="application/x-mpegURL"></video>
 
                 <div id="fueraDeServicio" class="offline-overlay">
+
+                    <img src="/assets/images/offline.svg" alt="Canal fuera de servicio" class="offline-icon">
+
                     <h2>Canal fuera de servicio</h2>
                     <p id="mensajeError">Actualmente no hay señal disponible para este canal.</p>
                 </div>
 
+                <div id="loadingOverlay" class="loading-overlay">
+                    <div class="spinner"></div>
+                    <h2>Buscando señal...</h2>
+                    <p>Conectando con la transmisión en vivo.</p>
+                </div>
 
                 <div class="video-header">
                     <div class="channel-heading">

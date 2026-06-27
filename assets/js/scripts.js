@@ -89,7 +89,7 @@ const lista = document.getElementById("channelsList");
 
 canales.forEach((canal, index) => {
   const button = document.createElement("button");
-  button.id = canal.id;
+  button.dataset.index = index;
   button.className = "btn-channel inactive-btn";
 
   button.innerHTML = `
@@ -145,7 +145,7 @@ document.addEventListener("click", (e) => {
   const btn = e.target.closest(".btn-channel");
   if (!btn) return;
 
-  const canal = canales.find((c) => c.id === btn.id);
+  const canal = canales[Number(btn.dataset.index)];
   if (!canal) return;
 
   const imagenCanalActual = document.getElementById("imagenCanalActual");
@@ -203,7 +203,9 @@ window.addEventListener("DOMContentLoaded", () => {
   const primerCanal = canales[0];
   if (!primerCanal) return;
 
-  const primerBoton = document.getElementById(primerCanal.id);
+  const primerBoton = document.querySelector(
+  '.btn-channel[data-index="0"]'
+);
 
   if (primerBoton) {
     primerBoton.classList.remove("inactive-btn");

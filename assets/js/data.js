@@ -10,10 +10,10 @@ const canales = [
   },
   {
     id: "canal2",
-    nombre: "El Sol TV",
+    nombre: "BUM TV",
     descripcion: "Películas y programas",
-    imagen: "/assets/images/chanels-imgs/elSol.png",
-    url: "https://tv.wracanal10.com:3025/live/elsoltvlive.m3u8",
+    imagen: "/assets/images/chanels-imgs/bum.jfif",
+    url: "https://movil.ejeserver.com/live/visiondorada.m3u8",
     categoria: "Cine",
   },
   {
@@ -628,25 +628,17 @@ const canales = [
   {
     id: "canal77",
     nombre: "Telecreativa",
-    descripcion: "Caricaturas variadas",
+    descripcion: "Shows y entretenimiento",
     imagen: "/assets/images/chanels-imgs/telecreativa.jfif",
     url: "https://panel.host-live.com:19360/8012/8012.m3u8",
-    categoria: "Caricaturas",
+    categoria: "Shows",
   },
   {
     id: "canal78",
-    nombre: "Visión Dorada",
-    descripcion: "Caricaturas variadas",
-    imagen: "/assets/images/chanels-imgs/visionDorada.jpg",
-    url: "https://movil.ejeserver.com/live/visiondorada.m3u8",
-    categoria: "Caricaturas",
-  },
-  {
-    id: "canal79",
     nombre: "GTV",
-    descripcion: "Caricaturas y películas",
+    descripcion: "Shows y entretenimiento",
     imagen: "/assets/images/chanels-imgs/gtv.png",
     url: "https://vdo.voxhdnet.com:3035/live/gtvlive.m3u8",
-    categoria: "Caricaturas",
+    categoria: "Shows",
   },
 ];

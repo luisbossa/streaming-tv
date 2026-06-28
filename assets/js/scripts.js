@@ -9,6 +9,40 @@ const overlay = document.getElementById("fueraDeServicio");
 const mensajeError = document.getElementById("mensajeError");
 const loadingOverlay = document.getElementById("loadingOverlay");
 
+function reproducirCanal(canal) {
+  if (!canal) return;
+
+  const video = document.getElementById("videoPlayer");
+
+  const imagenCanalActual = document.getElementById("imagenCanalActual");
+  const nombreCanalActual = document.getElementById("nombreCanalActual");
+
+  if (imagenCanalActual && nombreCanalActual) {
+    imagenCanalActual.src = canal.imagen;
+    nombreCanalActual.textContent = canal.nombre;
+  }
+
+  const url = canal.url;
+
+  if (hls) {
+    hls.destroy();
+    hls = null;
+  }
+
+  if (Hls.isSupported()) {
+    hls = new Hls();
+    hls.loadSource(url);
+    hls.attachMedia(video);
+
+    hls.on(Hls.Events.MANIFEST_PARSED, () => {
+      video.play().catch(() => {});
+    });
+  } else {
+    video.src = url;
+    video.play().catch(() => {});
+  }
+}
+
 function ocultarError() {
   overlay.style.display = "none";
   loadingOverlay.style.display = "none";
@@ -148,121 +182,21 @@ document.addEventListener("click", (e) => {
   const canal = canales[Number(btn.dataset.index)];
   if (!canal) return;
 
-  const imagenCanalActual = document.getElementById("imagenCanalActual");
-  const nombreCanalActual = document.getElementById("nombreCanalActual");
-
-  imagenCanalActual.src = canal.imagen;
-  nombreCanalActual.textContent = canal.nombre;
-
-  document.querySelectorAll(".btn-channel").forEach((b) => {
-    b.classList.remove("active-btn");
-    b.classList.add("inactive-btn");
-
-    const circle = b.querySelector(".button-container");
-    if (circle) {
-      circle.classList.remove("active-circle");
-      circle.classList.add("inactive-circle");
-    }
-  });
-
-  btn.classList.remove("inactive-btn");
-  btn.classList.add("active-btn");
-
-  const activeCircle = btn.querySelector(".button-container");
-  if (activeCircle) {
-    activeCircle.classList.remove("inactive-circle");
-    activeCircle.classList.add("active-circle");
-  }
-
-  const url = canal.url;
-
-  if (hls) {
-    hls.destroy();
-    hls = null;
-  }
-
-  if (Hls.isSupported()) {
-    hls = new Hls();
-    mostrarLoading();
-    hls.loadSource(url);
-    hls.attachMedia(video);
-    habilitarDeteccionErrores(hls);
-    iniciarTimeoutVerificacion();
-    hls.on(Hls.Events.MANIFEST_PARSED, () => {
-      video.play();
-      actualizarControlesReproduccion();
-    });
-  } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
-    video.src = url;
-    video.play();
-    actualizarControlesReproduccion();
-  }
+  window.reproducirCanal?.(canal);
+  setActiveChannelUI(btn);
 });
 
 window.addEventListener("DOMContentLoaded", () => {
-  const primerCanal = canales[0];
-  if (!primerCanal) return;
+  if (canales.length) {
+    renderCanales(lista, canales, 0);
 
-  const primerBoton = document.querySelector(
-  '.btn-channel[data-index="0"]'
-);
+    reproducirCanal(canales[0]);
 
-  if (primerBoton) {
-    primerBoton.classList.remove("inactive-btn");
-    primerBoton.classList.add("active-btn");
-
-    const circle = primerBoton.querySelector(".button-container");
-    if (circle) {
-      circle.classList.remove("inactive-circle");
-      circle.classList.add("active-circle");
+    const firstBtn = document.querySelector(`.btn-channel[data-index="0"]`);
+    if (firstBtn) {
+      setActiveChannelUI(firstBtn);
     }
   }
-
-  const imagenCanalActual = document.getElementById("imagenCanalActual");
-  const nombreCanalActual = document.getElementById("nombreCanalActual");
-
-  if (imagenCanalActual && nombreCanalActual) {
-    imagenCanalActual.src = primerCanal.imagen;
-    nombreCanalActual.textContent = primerCanal.nombre;
-  }
-
-  const url = primerCanal.url;
-
-  if (Hls.isSupported()) {
-    hls = new Hls();
-
-    mostrarLoading();
-
-    hls.loadSource(url);
-    hls.attachMedia(video);
-
-    habilitarDeteccionErrores(hls);
-    iniciarTimeoutVerificacion();
-
-    hls.on(Hls.Events.MANIFEST_PARSED, () => {
-      video.play();
-      actualizarControlesReproduccion();
-    });
-  } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
-    mostrarLoading();
-    iniciarTimeoutVerificacion();
-
-    video.src = url;
-    video.play();
-
-    actualizarControlesReproduccion();
-  }
-
-  statusText.textContent = "Reproduciendo";
-  playButton.innerHTML = `
-    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-      fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-      stroke-linejoin="round" class="lucide lucide-pause" aria-hidden="true">
-      <rect x="6" y="4" width="4" height="16"></rect>
-      <rect x="14" y="4" width="4" height="16"></rect>
-    </svg>
-  `;
-  isPlaying = true;
 });
 
 if (playButton && volumeButton && volumeSlider && statusText) {
@@ -433,3 +367,5 @@ function mostrarLoading() {
 function ocultarLoading() {
   loadingOverlay.style.display = "none";
 }
+
+window.reproducirCanal = reproducirCanal;

@@ -70,7 +70,7 @@
         <div class="right-div">
             <div class="video-wrapper">
 
-                <video class="video" id="videoPlayer" autoplay muted playsinline src=""
+                <video class="video" id="videoPlayer" autoplay playsinline src=""
                     type="application/x-mpegURL"></video>
 
                 <div id="fueraDeServicio" class="offline-overlay">
@@ -231,6 +231,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+
     <script src="/assets/js/data/cine.js"></script>
     <script src="/assets/js/data/deportes.js"></script>
     <script src="/assets/js/data/musica.js"></script>
@@ -239,9 +240,17 @@
     <script src="/assets/js/data/reportajes.js"></script>
     <script src="/assets/js/data/caricaturas.js"></script>
     <script src="/assets/js/data/data.js"></script>
+
+    <!-- UI / render -->
+    <script src="/assets/js/channels.js"></script>
+
+    <!-- PLAYER (IMPORTANTE que esté antes de sort) -->
     <script src="/assets/js/scripts.js"></script>
-    <script src="/assets/js/category-menu.js"></script>
+
+    <!-- FILTROS -->
     <script src="/assets/js/sort.js"></script>
+
+    <script src="/assets/js/category-menu.js"></script>
     <script src="/assets/js/fullscreen.js"></script>
     <script src="/assets/js/config.js"></script>
     <script src="/assets/js/modal.js"></script>

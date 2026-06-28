@@ -12,6 +12,8 @@ const loadingOverlay = document.getElementById("loadingOverlay");
 function reproducirCanal(canal) {
   if (!canal) return;
 
+  resetPlayerUI();
+
   const video = document.getElementById("videoPlayer");
 
   const imagenCanalActual = document.getElementById("imagenCanalActual");
@@ -366,6 +368,29 @@ function mostrarLoading() {
 
 function ocultarLoading() {
   loadingOverlay.style.display = "none";
+}
+
+function resetPlayerUI() {
+  if (!video) return;
+
+  isPlaying = true;
+  isMuted = false;
+
+  statusText.textContent = "Reproduciendo";
+
+  video.muted = false;
+  video.volume = 0.5;
+
+  volumeSlider.value = 0.5;
+
+  playButton.innerHTML = `
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+      fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round">
+      <rect x="6" y="4" width="4" height="16"></rect>
+      <rect x="14" y="4" width="4" height="16"></rect>
+    </svg>
+  `;
 }
 
 window.reproducirCanal = reproducirCanal;

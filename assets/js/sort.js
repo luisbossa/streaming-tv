@@ -21,6 +21,8 @@ function aplicarFiltro(categoria) {
   renderCanales(lista, filtrados);
 
   if (filtrados.length && typeof window.reproducirCanal === "function") {
+    resetPlayerUI();
+
     window.reproducirCanal(filtrados[0]);
 
     setTimeout(() => {

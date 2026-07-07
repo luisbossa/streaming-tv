@@ -71,7 +71,7 @@ const shows = [
   },
 
   // --- General/Variedad ---
-  
+
   {
     nombre: "TVM+",
     descripcion: "Variedad Venezolana en vivo",
@@ -126,6 +126,20 @@ const shows = [
     descripcion: "Tecnología y entretenimiento",
     imagen: "/assets/images/chanels-imgs/ideas5Min.jpg",
     url: "https://soul-5mincraftspa-rakuten.amagi.tv/playlist.m3u8",
+    categoria: "Shows",
+  },
+  {
+    nombre: "Telecreativa",
+    descripcion: "Shows y entretenimiento",
+    imagen: "/assets/images/chanels-imgs/telecreativa.jfif",
+    url: "https://panel.host-live.com:19360/8012/8012.m3u8",
+    categoria: "Shows",
+  },
+  {
+    nombre: "GTV",
+    descripcion: "Shows y entretenimiento",
+    imagen: "/assets/images/chanels-imgs/gtv.png",
+    url: "https://vdo.voxhdnet.com:3035/live/gtvlive.m3u8",
     categoria: "Shows",
   },
 ];

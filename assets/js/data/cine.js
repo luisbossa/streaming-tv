@@ -83,4 +83,25 @@ const cine = [
     url: "https://streaming.telecablecentral.com.do/live/MicroHD/serenotv.m3u8",
     categoria: "Cine",
   },
+  {
+    nombre: "Telered Television",
+    descripcion: "Películas y cine",
+    imagen: "/assets/images/chanels-imgs/telered.jfif",
+    url: "https://k20.usastreams.com:8081/telered/index.m3u8",
+    categoria: "Cine",
+  },
+  {
+    nombre: "360 RFTV",
+    descripcion: "Películas y cine",
+    imagen: "/assets/images/chanels-imgs/360rftv.jpg",
+    url: "https://acceso.mediosdecostarica.com:3638/live/360rftvcrlive.m3u8",
+    categoria: "Cine",
+  },
+  {
+    nombre: "San Vito Tv",
+    descripcion: "Películas y cine",
+    imagen: "/assets/images/chanels-imgs/sanVito.jfif",
+    url: "https://stream.lamegatv.com/hls/sanvitotelevision/index.m3u8",
+    categoria: "Cine",
+  },
 ];

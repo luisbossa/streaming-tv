@@ -11,6 +11,7 @@
     <link rel='stylesheet' href='/assets/css/instaSports/header.css' />
     <link rel='stylesheet' href='/assets/css/instaSports/hero.css' />
     <link rel='stylesheet' href='/assets/css/instaSports/screen.css' />
+    <link rel='stylesheet' href='/assets/css/instaSports/copy-toast.css' />
     <link rel='stylesheet' href='/assets/css/instaSports/carrusel.css' />
     <link rel='stylesheet' href='/assets/css/instaSports/right-side.css' />
 
@@ -122,11 +123,10 @@
                                     </svg>
                                     Facebook
                                 </a>
-                                <a href='#' id='sh-cp'
-                                    onclick='navigator.clipboard.writeText(location.href);this.style.color="var(--red)";setTimeout(function(){document.getElementById("sh-cp").style.color="#aaa";},1500);return false'>
-                                    <svg fill='currentColor' height='16' viewBox='0 0 24 24' width='16'>
+                                <a href="#" id="sh-cp">
+                                    <svg fill="currentColor" height="16" viewBox="0 0 24 24" width="16">
                                         <path
-                                            d='M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z'>
+                                            d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z">
                                         </path>
                                     </svg>
                                     Copiar enlace
@@ -137,6 +137,17 @@
 
                     <div class='sources-bar' id='sources-bar'>
                         <div id='src-btns'></div>
+                    </div>
+                </div>
+
+                <div id="copy-toast" class="copy-toast">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+
+                    <div>
+                        <strong>Enlace copiado</strong>
+                        <span>Ya puedes compartirlo.</span>
                     </div>
                 </div>
 
@@ -225,6 +236,7 @@
     <script defer='defer' src='https://cdn.jsdelivr.net/npm/hls.js@1.5.13/dist/hls.min.js'></script>
     <script src="/assets/js/instaSports/header.js"></script>
     <script src="/assets/js/instaSports/jquery.js"></script>
+    <script src="/assets/js/instaSports/copy-toast.js"></script>
 </body>
 
 </html>

@@ -499,7 +499,7 @@ body[data-theme="light"] .btn-channel:hover {
 
 .channel-image-container .status-dot {
   position: absolute;
-  bottom: -0.10rem;
+  bottom: -0.1rem;
   right: -0.15rem;
   width: 0.75rem;
   height: 0.75rem;
@@ -1080,7 +1080,7 @@ body[data-theme="light"] .footer-stats {
   vertical-align: middle;
   box-shadow:
     0 1px 3px rgba(0, 0, 0, 0.2),
-    inset 0 1px 1px rgba(255, 255, 255, 0.3); /* brillo interior */
+    inset 0 1px 1px rgba(255, 255, 255, 0.3);
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -1106,7 +1106,70 @@ body[data-theme="light"] .footer-stats {
   }
 }
 
-/* === RESPONSIVE === */
+.sports-link {
+  position: relative;
+  width: fit-content;
+  padding: 0.2rem 11px 0.2rem 5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  border-radius: 999px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: visible;
+  transition: .25s ease;
+}
+
+.sports-link:hover{
+    background: rgba(59,130,246,.18);
+    border-color: rgba(96,165,250,.45);
+}
+
+.sports-link__logo {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 3px;
+}
+
+.sports-link__text {
+  white-space: nowrap;
+  letter-spacing: 0.2px;
+}
+
+.sports-link__badge {
+  position: absolute;
+  top: -7px;
+  right: -8px;
+  padding: 2px 7px;
+  color: #fff;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  border-radius: 999px;
+  transform: rotate(12deg);
+  transform-origin: center;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  animation: sportsBadge 1.8s ease-in-out infinite;
+}
+
+@keyframes sportsBadge {
+  0%,
+  100% {
+    transform: rotate(12deg) scale(1);
+  }
+
+  50% {
+    transform: rotate(12deg) scale(1.12);
+  }
+}
 
 @media (max-width: 1024px) {
   .left-div {

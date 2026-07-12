@@ -1,0 +1,13 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  margin-top: 20px;
+  align-items: start;
+  gap: 16px;
+}
+
+@media (max-width: 960px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+}

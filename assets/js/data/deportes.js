@@ -70,13 +70,6 @@ const deportes = [
     categoria: "Deportes",
   },
   {
-    nombre: "Sportsmax News",
-    descripcion: "Deportes en vivo",
-    imagen: "/assets/images/chanels-imgs/sportsMax.jpg",
-    url: "https://cdnlive.klicgo.net/esportsmax/live/playlist_dvr.m3u8",
-    categoria: "Deportes",
-  },
-  {
     nombre: "Tv azteca deportes",
     descripcion: "Deportes en vivo",
     imagen: "/assets/images/chanels-imgs/aztecaDeportes.jfif",

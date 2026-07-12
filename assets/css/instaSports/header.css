@@ -1,34 +1,12 @@
 .app-header {
-  position: sticky;
-  top: 0;
-  z-index: 999;
-
+  position: relative;
   height: 72px;
-
   background: linear-gradient(180deg, #111827 0%, #0f172a 100%);
-
   border-bottom: 1px solid rgba(96, 165, 250, 0.18);
-
   box-shadow:
-    0 12px 35px rgba(0, 0, 0, 0.45),
-    inset 0 -1px 0 rgba(255, 255, 255, 0.04);
-
-  transition:
-    height 0.35s ease,
-    background 0.35s ease,
-    box-shadow 0.35s ease;
-}
-
-.app-header.scrolled {
-  height: 60px;
-
-  background: linear-gradient(180deg, #0b1220 0%, #090d16 100%);
-
-  border-bottom-color: rgba(96, 165, 250, 0.25);
-
-  box-shadow:
-    0 16px 45px rgba(0, 0, 0, 0.65),
-    inset 0 -1px 0 rgba(255, 255, 255, 0.05);
+  0 12px 35px rgba(0, 0, 0, 0.45),
+  inset 0 -1px 0 rgba(255, 255, 255, 0.04);
+  z-index: 10;
 }
 
 .app-header__container {
@@ -68,49 +46,32 @@
   border-color: rgba(96, 165, 250, 0.35);
 }
 
-.app-header.scrolled .app-header__brand img {
-  height: 34px;
-}
-
 .app-header__brand-text {
   display: flex;
-
   flex-direction: column;
-
   line-height: 1.1;
 }
 
 .app-header__brand-text h1 {
   margin: 0;
-
   color: #fff;
-
   font-size: 18px;
-
   font-weight: 800;
-
   letter-spacing: 0.3px;
 }
 
 .app-header__brand-text span {
   margin-top: 3px;
-
   color: #94a3b8;
-
   font-size: 10px;
-
   text-transform: uppercase;
-
   letter-spacing: 1px;
 }
 
 /* NAV */
-
 .app-header__nav {
   display: flex;
-
   align-items: center;
-
   gap: 30px;
 }
 
@@ -142,24 +103,18 @@
 
 .live-dot {
   width: 8px;
-
   height: 8px;
-
   border-radius: 50%;
-
   background: #3b82f6;
-
   box-shadow:
     0 0 10px #3b82f6,
     0 0 20px rgba(59, 130, 246, 0.5);
-
   animation: pulseLive 1.6s infinite;
 }
 
 @keyframes pulseLive {
   50% {
     opacity: 0.4;
-
     transform: scale(0.8);
   }
 }
@@ -168,33 +123,21 @@
 
 .app-header__toggle {
   display: none;
-
   width: 44px;
-
   height: 44px;
-
   border: 0;
-
   background: none;
-
   cursor: pointer;
 }
 
 .app-header__toggle span {
   display: block;
-
   width: 24px;
-
   height: 2px;
-
   margin: 6px auto;
-
   background: #fff;
-
   transition: 0.3s;
 }
-
-/* MOBILE */
 
 @media (max-width: 768px) {
   .app-header__container {

@@ -46,18 +46,26 @@
 .app-header__brand {
   display: flex;
   align-items: center;
-  gap: 14px;
   text-decoration: none;
+  gap: 14px;
 }
 
 .app-header__brand img {
+  width: 42px;
   height: 42px;
-
-  width: auto;
-
   object-fit: contain;
+  padding: 5px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease;
+}
 
-  transition: 0.3s ease;
+.app-header__brand:hover img {
+  background: rgba(59, 130, 246, 0.16);
+  border-color: rgba(96, 165, 250, 0.35);
 }
 
 .app-header.scrolled .app-header__brand img {

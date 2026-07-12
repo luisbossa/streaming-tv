@@ -200,13 +200,19 @@
               l: "Opción 1",
               q: "HD",
               tipo: "iframe",
-              url: "https://elcanaldeportivo.org/directvsports.php",
+              url: "https://deportes.ksdjugfsddeports.com/stream2.php?canal=directvsports&target=2",
             },
             {
               l: "Opción 2",
               q: "HD",
               tipo: "iframe",
               url: "https://www.cablevisionhd.com/stream2/core.php?canal=directvsports",
+            },
+            {
+              l: "Opción 3",
+              q: "HD",
+              tipo: "iframe",
+              url: "https://elcanaldeportivo.org/directvsports.php",
             },
           ],
         },
@@ -273,9 +279,27 @@
         if (e >= n.length)
           return (
             r(),
-            void t("#player-screen").html(
-              '<p class="idle-txt">Sin se&#241;al disponible</p><p style="color:#444;font-size:13px;margin-top:6px;">Todas las fuentes fallaron &#8212; intenta m&#225;s tarde</p>',
-            )
+            void t("#player-screen").html(`
+              <div class="player-empty player-error">
+
+                  <div class="player-empty__icon error-icon">
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                          <path d="M12 9v4"></path>
+                          <path d="M12 17h.01"></path>
+                          <circle cx="12" cy="12" r="9"></circle>
+                      </svg>
+                  </div>
+
+                  <h3 class="player-empty__title">
+                      Sin señal
+                  </h3>
+
+                  <p class="player-empty__text">
+                      Intenta otra fuente.
+                  </p>
+
+              </div>
+              `)
           );
         var c = n[e];
         if (
@@ -465,6 +489,9 @@
       var h = (p = 65535 & ++p);
       (t("#ch-name").html(a.n),
         (function (a) {
+          t("#src-btns").empty();
+          t("#sources-bar").removeClass("visible");
+
           if (a.s && !(a.s.length <= 1)) {
             var i = "";
             (t.each(a.s, function (t, a) {

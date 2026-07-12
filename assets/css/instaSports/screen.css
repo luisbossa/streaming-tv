@@ -343,6 +343,24 @@
   pointer-events: none;
 }
 
+.player-error .error-icon {
+  background: linear-gradient(
+    135deg,
+    rgba(239, 68, 68, 0.18),
+    rgba(239, 68, 68, 0.05)
+  );
+
+  border: 1px solid rgba(239, 68, 68, 0.28);
+
+  box-shadow:
+    0 0 30px rgba(239, 68, 68, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.player-error .error-icon svg {
+  stroke: #ef4444;
+}
+
 @media (max-width: 640px) {
   #player-shell {
     border-radius: 12px;

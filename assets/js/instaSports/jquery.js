@@ -55,33 +55,6 @@
       })(),
       (window.CANALES = [
         {
-          n: "Am&#233;rica TV",
-          f: "&#127477;&#127466;",
-          c: "Per&#250;",
-          cat: "futbol",
-          m: !0,
-          s: [
-            {
-              l: "Opción 1",
-              q: "HD",
-              tipo: "iframe",
-              url: "https://spaceyou.store/v4.php?channel=americatv",
-            },
-            {
-              l: "Opción 2",
-              q: "HD",
-              tipo: "iframe",
-              url: "https://spaceyou.store/v41.php?channel=americatv",
-            },
-            {
-              l: "Opción 3",
-              q: "HD",
-              tipo: "iframe",
-              url: "https://spaceyou.store/v42.php?channel=americatv",
-            },
-          ],
-        },
-        {
           n: "Latina TV",
           f: "&#127477;&#127466;",
           c: "Per&#250;",
@@ -130,7 +103,7 @@
           n: "Azteca Inter",
           f: "&#127487;&#127485;",
           c: "M&#233;xico",
-          cat: "deportes",
+          cat: "entretenimiento",
           m: !0,
           s: [
             {
@@ -138,21 +111,6 @@
               q: "HD",
               tipo: "m3u8",
               url: "https://azt-mun.otteravision.com/azt/mun/mun.m3u8",
-            },
-          ],
-        },
-        {
-          n: "Las Estrellas",
-          f: "&#127487;&#127485;",
-          c: "M&#233;xico",
-          cat: "entretenimiento",
-          m: !1,
-          s: [
-            {
-              l: "Opción 1",
-              q: "HD",
-              tipo: "m3u8",
-              url: "https://channel01-onlymex.akamaized.net/hls/live/2022749/event01/index.m3u8",
             },
           ],
         },
@@ -187,10 +145,10 @@
           ],
         },
         {
-          n: "FOX Deportes",
+          n: "FOX Sports",
           f: "&#127482;&#127480;",
           c: "USA/Espa&#241;ol",
-          cat: "futbol",
+          cat: "entretenimiento",
           m: !0,
           s: [
             {
@@ -232,21 +190,6 @@
           ],
         },
         {
-          n: "Fox Sports",
-          f: "&#127758;",
-          c: "Intl",
-          cat: "deportes",
-          m: !1,
-          s: [
-            {
-              l: "Opción 1",
-              q: "HD",
-              tipo: "iframe",
-              url: "https://dlhd.pk/embed/stream-929.php",
-            },
-          ],
-        },
-        {
           n: "DSports",
           f: "&#127758;",
           c: "Intl",
@@ -257,58 +200,13 @@
               l: "Opción 1",
               q: "HD",
               tipo: "iframe",
-              url: "https://deportes.ksdjugfsddeports.com/stream2.php?canal=directvsports&target=2",
+              url: "https://elcanaldeportivo.org/directvsports.php",
             },
             {
               l: "Opción 2",
               q: "HD",
               tipo: "iframe",
-              url: "https://deportes.ksdjugfsddeports.com/stream2.php?canal=directvsports&target=3",
-            },
-            {
-              l: "Opción 3",
-              q: "HD",
-              tipo: "iframe",
-              url: "https://www.cablevisionhd.com/stream/core.php?canal=directvsports",
-            },
-            {
-              l: "Opción 4",
-              q: "HD",
-              tipo: "iframe",
-              url: "https://elcanaldeportivo.org/directvsports.php",
-            },
-            {
-              l: "Opción 5",
-              q: "HD",
-              tipo: "iframe",
               url: "https://www.cablevisionhd.com/stream2/core.php?canal=directvsports",
-            },
-            {
-              l: "Opción 6",
-              q: "HD",
-              tipo: "iframe",
-              url: "https://www.cablevisionhd.com/stream3/core.php?canal=directvsports",
-            },
-            {
-              l: "Opción 8",
-              q: "HD",
-              tipo: "iframe",
-              url: "https://www.cablevisionhd.com/stream/core.php?canal=directvsports",
-            },
-          ],
-        },
-        {
-          n: "Fox Sports 1",
-          f: "&#127758;",
-          c: "Intl",
-          cat: "deportes",
-          m: !1,
-          s: [
-            {
-              l: "Opción 1",
-              q: "HD",
-              tipo: "iframe",
-              url: "https://dlhd.pk/embed/stream-929.php",
             },
           ],
         },
@@ -882,8 +780,8 @@
         keys: "TUDN",
       },
       Brazil: {
-        disp: "FOX Deportes",
-        keys: "FOX Deportes",
+        disp: "FOX Sports",
+        keys: "FOX Sports",
       },
       Peru: {
         disp: "Movistar",

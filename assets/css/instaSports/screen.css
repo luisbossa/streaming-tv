@@ -164,12 +164,10 @@
 
 #share-menu #sh-fb:hover {
   background: rgba(24, 119, 242, 0.12);
-  color: #1877f2 !important;
 }
 
 #share-menu #sh-cp:hover {
   background: rgba(59, 130, 246, 0.14);
-  color: #60a5fa !important;
 }
 
 @keyframes shareIn {

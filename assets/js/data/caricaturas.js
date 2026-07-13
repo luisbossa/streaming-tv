@@ -7,10 +7,10 @@ const caricaturas = [
     categoria: "Caricaturas",
   },
   {
-    nombre: "Retro Toons",
-    descripcion: "Anime",
-    imagen: "/assets/images/chanels-imgs/retrotoons.png",
-    url: "https://live20.bozztv.com/akamaissh101/ssh101/retrotoons/playlist.m3u8",
+    nombre: "ENERGEEK FAN",
+    descripcion: "Caricaturas retro",
+    imagen: "/assets/images/chanels-imgs/energeekFan.jpg",
+    url: "https://backend.energeek.cl/webtv/egfanweb/index.m3u8?token=ZZDemoIPTVGH",
     categoria: "Caricaturas",
   },
   {

@@ -7,7 +7,7 @@
       if ((t.stopPropagation(), !a.classList.contains("open"))) {
         var e = encodeURIComponent(location.href),
           p = encodeURIComponent(
-            "Ver Mundial 2026 en vivo gratis ⚽ " + location.href,
+            "Ver Mundial 2026 en vivo gratis " + location.href,
           );
         ((document.getElementById("sh-wa").href = "https://wa.me/?text=" + p),
           (document.getElementById("sh-fb").href =
@@ -276,45 +276,53 @@
     function n(a, e, s) {
       if (s === p) {
         for (var n = a.s || []; e < n.length && !n[e].url; ) e++;
+
         if (e >= n.length)
           return (
             r(),
             void t("#player-screen").html(`
-              <div class="player-empty player-error">
+          <div class="player-empty player-error">
 
-                  <div class="player-empty__icon error-icon">
-                      <svg viewBox="0 0 24 24" aria-hidden="true">
-                          <path d="M12 9v4"></path>
-                          <path d="M12 17h.01"></path>
-                          <circle cx="12" cy="12" r="9"></circle>
-                      </svg>
-                  </div>
-
-                  <h3 class="player-empty__title">
-                      Sin señal
-                  </h3>
-
-                  <p class="player-empty__text">
-                      Intenta otra fuente.
-                  </p>
-
+              <div class="player-empty__icon error-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M12 9v4"></path>
+                      <path d="M12 17h.01"></path>
+                      <circle cx="12" cy="12" r="9"></circle>
+                  </svg>
               </div>
-              `)
+
+              <h3 class="player-empty__title">
+                  Sin señal
+              </h3>
+
+              <p class="player-empty__text">
+                  Intenta otra fuente.
+              </p>
+
+          </div>
+        `)
           );
+
         var c = n[e];
+
         if (
           (t("#src-btns .src-btn").removeClass("on").eq(e).addClass("on"),
           "m3u8" === c.tipo)
         ) {
           var d = new AbortController();
-          fetch(c.url, { method: "GET", mode: "cors", signal: d.signal })
+
+          fetch(c.url, {
+            method: "GET",
+            mode: "cors",
+            signal: d.signal,
+          })
             .then(function () {
               (d.abort(), s === p && l(a, c, e, s));
             })
             .catch(function (t) {
               "AbortError" !== t.name && s === p && h(a, e, s);
             });
-        } else
+        } else {
           !(function (a, e, s, n) {
             (r(),
               (function (a, e, s, r) {
@@ -323,71 +331,57 @@
                 })
                   ? ""
                   : ' sandbox="allow-scripts allow-same-origin allow-forms allow-presentation allow-orientation-lock allow-modals allow-downloads"';
-                if (
-                  (t("#player-screen").html(
-                    '<iframe src="' +
-                      e.url +
-                      '" allowfullscreen allow="autoplay;encrypted-media;fullscreen;picture-in-picture;gyroscope;accelerometer"' +
-                      n +
-                      ' style="position:absolute;inset:0;width:100%;height:100%;border:none"></iframe>' +
-                      (u
-                        ? ""
-                        : '<div id="ad-shield" style="position:absolute;inset:0;z-index:10;cursor:pointer;background:transparent"></div>') +
-                      '<div id="shield-hint" style="position:absolute;bottom:70px;right:10px;z-index:11;background:rgba(0,0,0,.7);color:#fff;font-size:13px;padding:4px 8px;border-radius:4px;pointer-events:none">' +
-                      (u ? "▶ Toca la pantalla para reproducir" : "") +
-                      '</div><div id="src-bar" style="position:absolute;bottom:0;left:0;height:3px;background:var(--red);width:100%;z-index:15;border-radius:0 2px 2px 0;transition:width ' +
-                      Math.round(20) +
-                      's linear"></div>',
-                  ),
-                  !u)
-                ) {
-                  var l = !1;
-                  t("#ad-shield").on("click", function () {
-                    l ||
-                      ((l = !0),
-                      t("#shield-hint").text("🔊 Activando... (3s)"),
-                      t(this).css("pointer-events", "none"),
-                      setTimeout(function () {
-                        (t("#ad-shield").css("pointer-events", "all"),
-                          (l = !1));
-                      }, 3e3));
-                  });
-                }
+
+                t("#player-screen").html(
+                  '<iframe src="' +
+                    e.url +
+                    '" allowfullscreen allow="autoplay;encrypted-media;fullscreen;picture-in-picture;gyroscope;accelerometer"' +
+                    n +
+                    ' style="position:absolute;inset:0;width:100%;height:100%;border:none"></iframe>' +
+                    '<div id="src-bar" style="position:absolute;bottom:0;left:0;height:3px;background:var(--red);width:100%;z-index:15;border-radius:0 2px 2px 0;transition:width ' +
+                    Math.round(20) +
+                    's linear"></div>',
+                );
+
                 function c() {
                   o();
+
                   var t = document.getElementById("src-bar");
+
                   t &&
                     ((t.style.transition = "none"), (t.style.display = "none"));
                 }
-                (t("#shield-hint").one("click touchstart", function () {
-                  t(this).hide();
-                }),
-                  setTimeout(function () {
-                    var a = t("#shield-hint");
-                    a.length && a.fadeOut(800);
-                  }, 5e3));
+
                 var d = Date.now();
-                (t("#player-screen iframe").one("load", function () {
+
+                t("#player-screen iframe").one("load", function () {
                   r === p && (Date.now() - d < 800 && !m ? h(a, s, r) : c());
-                }),
+                });
+
+                requestAnimationFrame(function () {
                   requestAnimationFrame(function () {
-                    requestAnimationFrame(function () {
-                      var t = document.getElementById("src-bar");
-                      t && (t.style.width = "0%");
-                    });
-                  }),
-                  (i = setTimeout(function () {
-                    r === p && (m ? c() : h(a, s, r));
-                  }, 2e4)),
-                  t("#player-screen").one("click mousedown", function () {
-                    try {
-                      localStorage.setItem("lws_" + a.n, e.url);
-                    } catch (t) {}
                     var t = document.getElementById("src-bar");
-                    t && (t.style.display = "none");
-                  }));
+
+                    t && (t.style.width = "0%");
+                  });
+                });
+
+                i = setTimeout(function () {
+                  r === p && (m ? c() : h(a, s, r));
+                }, 20000);
+
+                t("#player-screen").one("mousedown", function () {
+                  try {
+                    localStorage.setItem("lws_" + a.n, e.url);
+                  } catch (t) {}
+
+                  var t = document.getElementById("src-bar");
+
+                  t && (t.style.display = "none");
+                });
               })(a, e, s, n));
           })(a, c, e, s);
+        }
       }
     }
     function l(e, i, s, o) {

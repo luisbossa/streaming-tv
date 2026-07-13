@@ -77,10 +77,24 @@ const musica = [
     categoria: "Música",
   },
   {
+    nombre: "Música Vintage",
+    descripcion: "Música vintage",
+    imagen: "/assets/images/chanels-imgs/vmVintage.jpg",
+    url: "https://59ef525c24caa.streamlock.net/vmtv/tvvintage/playlist.m3u8",
+    categoria: "Música",
+  },
+  {
     nombre: "VEVO Latino",
     descripcion: "Música, cultura urbana",
     imagen: "/assets/images/chanels-imgs/vevoPop.png",
     url: "https://amg00056-amg00056c13-rakuten-es-3246.playouts.now.amagi.tv/playlist.m3u8",
+    categoria: "Música",
+  },
+  {
+    nombre: "Soy Plancha",
+    descripcion: "Música romántica",
+    imagen: "/assets/images/chanels-imgs/soyPlancha.jfif",
+    url: "https://59ef525c24caa.streamlock.net/vmtv/soyplancha/playlist.m3u8",
     categoria: "Música",
   },
   {

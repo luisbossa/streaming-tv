@@ -73,7 +73,7 @@ const deportes = [
     nombre: "Tv azteca deportes",
     descripcion: "Deportes en vivo",
     imagen: "/assets/images/chanels-imgs/aztecaDeportes.jfif",
-    url: "https://azt-mun.otteravision.com/azt/mun/mun.m3u8",
+    url: "https://b.tubi1.apollo.adrise.io/live/azteca-deportes-network-yvpjgz.m3u8?app_id=tubitv&content_type=mp4&app_mode=DEFAULT_MODE&gdpr=0&vpaid_enabled=false&ap.route=6-LevY8ld5SZNIkW0CLEO8AYeDc&ap.ss=e70ac3d40fa758231cffa4de22b1156f&playback_start_ts=1783920745&ap.fb=aHR0cHM6Ly9saXZlLW1hbmlmZXN0LnByb2R1Y3Rpb24tcHVibGljLnR1YmkuaW8vbGl2ZS82YmYxMzFjMy1kNjY0LTQyNGMtOTNjOS00OTE4OGE3ODg5ODAvcGxheWxpc3QubTN1OD90b2tlbj1leUpoYkdjaU9pSklVelV4TWlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKamIzVnVkSEo1SWpvaVExSWlMQ0prWlhacFkyVmZhV1FpT2lKa05qSmhZamcyT1MweVpHSTRMVFE0TWpFdE9XWXlNQzFoTURVMk5UQXpNMlV4WWpVaUxDSmxlSEFpT2pFM09EUXhOems0TWpFc0ltbHpjeUk2SW14cGRtVmZibVYzYzE5dFlXNXBabVZ6ZENJc0luQnNZWFJtYjNKdElqb2lWMFZDSWl3aWNuTnpJam9pY21NNmFIUjBjSE02THk5aFpXZHBjeTFqYkc5MVpHWnliMjUwTFRFdWRIVmlhUzUyYVdSbGJ5OHpOall4TTJaak9TMDRNamcxTFRRM09XVXRPR1ZqTWkxbU9UY3pNbU5pWXpnNU5EY3ZjR3hoZVd4cGMzUXViVE4xT0NJc0luVnpaWEpmYVdRaU9qQjkuYmJaeGp4a2dvSG5EekVvZ3NJSG9CYlhoOEs0bXMwOVY5TEtaM1l0U2VTN183Y212NHdrTl9JVFY3cnMyU2lpazREZDhvRWpTamdFdjJNa1VLOXgwRHcmdGIuc2lkPTlhYjgyMzBlLWI2YTAtNDAzMy1hZTc2LTAzY2UwNWNkZjk4Mw&content_id=400000160&device_id=d62ab869-2db8-4821-9f20-a0565033e1b5&language=es&now_pos=0&tb.sid=6f2f57f9-57e0-4627-ba29-75246f73303a&ap.sid=55d3ee7c-8a3e-4a3c-a8f9-2dae1d11fa94&ap.furl=0&ap.playback_start_ts=1783920746&platform=WEB&pub_id=8cb24e9555ab4ddd66090196932bcd78&ap.pt=2",
     categoria: "Deportes",
   },
   {

@@ -898,12 +898,23 @@
               .sort(function (t, a) {
                 return a.goals - t.goals;
               });
+            // quitar Mbappé que venga del API
+            i = i.filter(function (t) {
+              return !t.name.toLowerCase().includes("mbapp");
+            });
+
+            // insertar Mbappé manual
+            i.splice(1, 0, {
+              name: "Kylian Mbappé",
+              team: { name: "Francia" },
+              goals: 8,
+            });
             i.length
               ? a(
                   i.map(function (t) {
                     return {
                       name: t.name,
-                      team: { name: "" },
+                      team: { name: t.team ? t.team.name : "" },
                       numberOfGoals: t.goals,
                     };
                   }),

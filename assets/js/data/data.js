@@ -4,7 +4,7 @@ const canales = [
   ...musica,
   ...noticias,
   ...shows,
-  ...reportajes,
+  ...documentales,
   ...caricaturas,
 ];
 

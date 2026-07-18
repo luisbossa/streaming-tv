@@ -156,11 +156,18 @@ const shows = [
     url: "https://cloudvideo.servers10.com:8081/8230/index.m3u8",
     categoria: "Shows",
   },
-    {
+  {
     nombre: "TeleSur",
     descripcion: "Shows y entretenimiento",
     imagen: "/assets/images/chanels-imgs/teleSur.jpg",
     url: "https://s1.tvdatta.com:3582/live/telesurlive.m3u8",
+    categoria: "Shows",
+  },
+  {
+    nombre: "Nosey",
+    descripcion: "Shows y entretenimiento",
+    imagen: "/assets/images/chanels-imgs/nosey.avif",
+    url: "https://epg-ipv4.provider.plex.tv/library/parts/608049aefa2b8ae93c2c39ea-6154a863e3e4d9577f96b31a.m3u8?includeAllStreams=1&x-plex-product=Plex+Mediaverse&x-plex-token=ix-Fpu42W4wRmEkF_yXZ&redirectedFromV6=1",
     categoria: "Shows",
   },
   {

@@ -206,10 +206,22 @@
               l: "Opción 2",
               q: "HD",
               tipo: "iframe",
-              url: "https://www.cablevisionhd.com/stream2/core.php?canal=directvsports",
+              url: "https://deportes.ksdjugfsddeports.com/stream2.php?canal=directvsports&target=3",
             },
             {
               l: "Opción 3",
+              q: "HD",
+              tipo: "iframe",
+              url: "https://www.cablevisionhd.com/stream/core.php?canal=directvsports",
+            },
+            {
+              l: "Opción 4",
+              q: "HD",
+              tipo: "iframe",
+              url: "https://www.cablevisionhd.com/stream2/core.php?canal=directvsports",
+            },
+            {
+              l: "Opción 5",
               q: "HD",
               tipo: "iframe",
               url: "https://elcanaldeportivo.org/directvsports.php",
@@ -1075,8 +1087,7 @@
         Morocco: "&#127474;&#127462;",
         "Saudi Arabia": "&#127480;&#127462;",
         Cameroon: "&#127464;&#127474;",
-        England:
-          '\n      <svg class="team-flag-placeholder" viewBox="0 0 24 24" aria-hidden="true">\n        <path d="M8 3h8v4a4 4 0 0 1-8 0V3z"></path>\n        <path d="M8 5H5a3 3 0 0 0 3 5"></path>\n        <path d="M16 5h3a3 3 0 0 1-3 5"></path>\n        <path d="M12 11v5"></path>\n        <path d="M9 21h6"></path>\n        <path d="M10 16h4"></path>\n      </svg>\n    ',
+        England: "&#127988;&#917607;&#917602;&#917605;&#917614;&#917607;&#917631;",
         Serbia: "&#127479;&#127480;",
         Ghana: "&#127468;&#127469;",
         "Costa Rica": "&#127464;&#127479;",
@@ -1338,7 +1349,7 @@
         function i(t) {
           return (
             T[t] ||
-            '\n    <svg class="team-flag-placeholder" viewBox="0 0 24 24" aria-hidden="true">\n      <path d="M8 3h8v4a4 4 0 0 1-8 0V3z"></path>\n      <path d="M8 5H5a3 3 0 0 0 3 5"></path>\n      <path d="M16 5h3a3 3 0 0 1-3 5"></path>\n      <path d="M12 11v5"></path>\n      <path d="M9 21h6"></path>\n      <path d="M10 16h4"></path>\n    </svg>\n  '
+            '&#127988;&#917607;&#917602;&#917605;&#917614;&#917607;&#917631;'
           );
         }
         function s(t) {

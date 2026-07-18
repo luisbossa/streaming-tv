@@ -4,14 +4,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   fullscreenBtn.addEventListener("click", () => {
     if (!document.fullscreenElement) {
-      // Maximizar
       if (video.requestFullscreen) {
         video.requestFullscreen();
       } else if (video.webkitRequestFullscreen) {
-        /* Safari */
         video.webkitRequestFullscreen();
       } else if (video.msRequestFullscreen) {
-        /* IE11 */
         video.msRequestFullscreen();
       }
 
@@ -27,14 +24,11 @@ document.addEventListener("DOMContentLoaded", () => {
         </svg>
         `;
     } else {
-      // Minimizar
       if (document.exitFullscreen) {
         document.exitFullscreen();
       } else if (document.webkitExitFullscreen) {
-        /* Safari */
         document.webkitExitFullscreen();
       } else if (document.msExitFullscreen) {
-        /* IE11 */
         document.msExitFullscreen();
       }
 
@@ -52,7 +46,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Detectar cambio de fullscreen con tecla ESC o doble click
   document.addEventListener("fullscreenchange", () => {
     if (!document.fullscreenElement) {
       fullscreenBtn.innerHTML = `

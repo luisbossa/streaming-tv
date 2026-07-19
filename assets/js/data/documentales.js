@@ -93,7 +93,7 @@ const documentales = [
   {
     nombre: "Milennio TV",
     descripcion: "Programacion de esoterismo",
-    imagen: "/assets/images/chanels-imgs/milenioTv.png",
+    imagen: "/assets/images/chanels-imgs/milennioTv.jfif",
     url: "https://videostream.shockmedia.com.ar:19360/milenniotv/milenniotv.m3u8",
     categoria: "Documentales",
   },

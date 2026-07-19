@@ -142,7 +142,7 @@ const deportes = [
   {
     nombre: "AS3 Sport TV",
     descripcion: "Deportes en vivo",
-    imagen: "/assets/images/chanels-imgs/as3Sports.png",
+    imagen: "/assets/images/chanels-imgs/as3Sports.jfif",
     url: "https://streamtv.as3sport.online:3394/hybrid/play.m3u8",
     categoria: "Deportes",
   },

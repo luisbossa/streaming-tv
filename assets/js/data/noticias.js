@@ -91,10 +91,10 @@ const noticias = [
     categoria: "Noticias",
   },
   {
-    nombre: "M95 Television Marbella",
+    nombre: "Weather Spy",
     descripcion: "Noticias y Más",
-    imagen: "/assets/images/chanels-imgs/m95Tv.jpg",
-    url: "https://limited2.todostreaming.es/live/m95-livestream.m3u8",
+    imagen: "/assets/images/chanels-imgs/weatherSpy.png",
+    url: "https://jukin-weatherspy-2-mx.samsung.wurl.tv/playlist.m3u8",
     categoria: "Noticias",
   },
   {

@@ -42,13 +42,6 @@ const documentales = [
     categoria: "Documentales",
   },
   {
-    nombre: "Ecovisión",
-    descripcion: "Documentales variados",
-    imagen: "/assets/images/chanels-imgs/ecovision.png",
-    url: "https://streaming.grupomediosdelnorte.com:19360/ecovision/ecovision.m3u8",
-    categoria: "Documentales",
-  },
-  {
     nombre: "Nature Scape",
     descripcion: "Naturaleza en Vivo",
     imagen: "/assets/images/chanels-imgs/natureScape.jpg",

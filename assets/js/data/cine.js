@@ -153,4 +153,11 @@ const cine = [
     url: "https://amg00793-amg00793c40-rakuten-es-5444.playouts.now.amagi.tv/playlist.m3u8",
     categoria: "Cine",
   },
+  {
+    nombre: "Canal 10",
+    descripcion: "Películas y cine",
+    imagen: "/assets/images/chanels-imgs/canal10.webp",
+    url: "https://acceso.mediosdecostarica.com:3606/hybrid/play.m3u8",
+    categoria: "Cine",
+  },
 ];

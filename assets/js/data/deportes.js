@@ -1,10 +1,10 @@
 const deportes = [
   {
-    nombre: "Real Madrid",
-    descripcion: "Fútbol y entretenimiento",
-    imagen: "/assets/images/chanels-imgs/rmTV.jpeg",
-    url: "https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8",
-    categoria: "Deportes",
+    nombre: "Garaje TV",
+    descripcion: "Programa sobre autos",
+    imagen: "/assets/images/chanels-imgs/garageTv.webp",
+    url: "https://stream1.sersat.com/hls/garagetv.m3u8",
+    categoria: "Shows",
   },
   {
     nombre: "Redbull TV",
@@ -144,6 +144,20 @@ const deportes = [
     descripcion: "Deportes en vivo",
     imagen: "/assets/images/chanels-imgs/as3Sports.jfif",
     url: "https://streamtv.as3sport.online:3394/hybrid/play.m3u8",
+    categoria: "Deportes",
+  },
+  {
+    nombre: "Telemundo Deportes",
+    descripcion: "Deportes en vivo",
+    imagen: "/assets/images/chanels-imgs/telemundo.jfif",
+    url: "https://nbculocallive.akamaized.net/hls/live/2037499/puertorico/stream1/master.m3u8",
+    categoria: "Deportes",
+  },
+  {
+    nombre: "Real Madrid",
+    descripcion: "Fútbol y entretenimiento",
+    imagen: "/assets/images/chanels-imgs/rmTV.jpeg",
+    url: "https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8",
     categoria: "Deportes",
   },
 ];

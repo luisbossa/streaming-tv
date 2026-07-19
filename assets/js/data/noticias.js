@@ -1,5 +1,12 @@
 const noticias = [
   {
+    nombre: "Canal 1",
+    descripcion: "Programas nacionales",
+    imagen: "/assets/images/chanels-imgs/canal1.jfif",
+    url: "https://vid.canal1cr.com:3424/multi_live/play.m3u8",
+    categoria: "Noticias",
+  },
+  {
     nombre: "Canal 4",
     descripcion: "Noticias y programas",
     imagen: "/assets/images/chanels-imgs/canal-4.svg",
@@ -14,6 +21,13 @@ const noticias = [
     categoria: "Noticias",
   },
   {
+    nombre: "Canal 8",
+    descripcion: "Noticias y programas",
+    imagen: "/assets/images/chanels-imgs/canal8.png",
+    url: "https://us-b4-p-e-mg17.cdn.mdstrm.com/live-stream/5a7b1e63a8da282c34d65445/publish/media_2000.m3u8?aid=579bd29dc99290cf08362c3b&uid=5yOzs4Zpy05d7HihvInBFsrdMoeZVaoT&sid=Gec2EHCbH1vJfPXdnmTjr1vEv9TVybFm&pid=KzMcGvaZZvPooWLGJYPKrPrBtQ1fxAej&pid_dvr=3DHLjB8dxPJQfRqx3hB1394qiQutNb5E&ref=https%3A%2F%2Fwww.telediario.cr%2F&without_cookies=false&listenerid=&dnt=true&es=us-b4-p-e-mg17.cdn.mdstrm.com&ote=1784560487760&ot=JiA3cBFlCEPrM6WB5GtMlg&proto=https&pz=us&CMCD=cid%3D%225a7b1e63a8da282c34d65445%22%2Cmtp%3D94700%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22KzMcGvaZZvPooWLGJYPKrPrBtQ1fxAej%22",
+    categoria: "Noticias",
+  },
+  {
     nombre: "Canal 11",
     descripcion: "Noticias y programas",
     imagen: "/assets/images/chanels-imgs/canal-11.webp",
@@ -25,6 +39,13 @@ const noticias = [
     descripcion: "Noticias globales, Alemania",
     imagen: "/assets/images/chanels-imgs/dwEsp.png",
     url: "https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/index.m3u8",
+    categoria: "Noticias",
+  },
+  {
+    nombre: "Meganoticias",
+    descripcion: "Noticias de Chile",
+    imagen: "/assets/images/chanels-imgs/meganoticias.webp",
+    url: "https://us-b4-p-e-pb13.cdn.mdstrm.com/live-stream-gdai/561430ae330428c223687e1e/linear/hls/pa/event/gMTfZO3XQTaa1D8xz5aWaw/stream/76963c47-b8c8-4225-8454-cf67e5222251:CHS/variant/dab4573f1f72b7d5861f3110bd283105/bandwidth/2959550.m3u8?aid=53bc2bcae41e2d9c662e1ba7&uid=5yOzs4Zpy05d7HihvInBFsrdMoeZVaoT&sid=Gec2EHCbH1vJfPXdnmTjr1vEv9TVybFm&pid=LS5oo7oCeifyLXHZR9az2prnh73kM4ku&pid_dvr=QJ0Aa01bOI2kvC317tIpGsDT8pYt5maO&ref=https%3A%2F%2Fwww.meganoticias.cl%2F&without_cookies=false&listenerid=&dnt=true&access_token=qlgAlcPrzWP6wFlRekesv3sQzi5lZoUXaqfHZPh2GORPVwF8pQDlRoswVgD26O3zEfewcZZhOpw&adInsertionGoogleStreamId=76963c47-b8c8-4225-8454-cf67e5222251%3ACHS&CMCD=cid%3D%22561430ae330428c223687e1e%22%2Cmtp%3D63000%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22LS5oo7oCeifyLXHZR9az2prnh73kM4ku%22&es=us-b4-p-e-pb13.cdn.mdstrm.com&ote=1784561013192&ot=sLv9mUzIcVO5olzlowsbLg&proto=https&pz=us",
     categoria: "Noticias",
   },
   {
@@ -116,6 +137,27 @@ const noticias = [
     descripcion: "Noticias de Russia",
     imagen: "/assets/images/chanels-imgs/rt.svg",
     url: "https://rt-esp.rttv.com/dvr/rtesp/playlist.m3u8",
+    categoria: "Noticias",
+  },
+  {
+    nombre: "Maulevisión",
+    descripcion: "Noticias de Chile",
+    imagen: "/assets/images/chanels-imgs/maulevision.jpg",
+    url: "https://v2.tustreaming.cl/maulevisiontv/index.m3u8",
+    categoria: "Noticias",
+  },
+  {
+    nombre: "Madero TV",
+    descripcion: "Noticias de Chile",
+    imagen: "/assets/images/chanels-imgs/maderoTv.webp",
+    url: "https://v1.tustreaming.cl/maderoantofagasta/index.m3u8",
+    categoria: "Noticias",
+  },
+  {
+    nombre: "Canal 22",
+    descripcion: "Programas y entretenimiento",
+    imagen: "/assets/images/chanels-imgs/canal22.jpg",
+    url: "https://5f700d5b2c46f.streamlock.net/canal22/canal22/playlist.m3u8",
     categoria: "Noticias",
   },
 ];

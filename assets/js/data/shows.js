@@ -1,12 +1,5 @@
 const shows = [
   {
-    nombre: "Viwix TV",
-    descripcion: "Programas y entretenimiento",
-    imagen: "/assets/images/chanels-imgs/viwix.jfif",
-    url: "https://vdochile.com:3816/stream/play.m3u8",
-    categoria: "Shows",
-  },
-  {
     nombre: "COLOSAL TV",
     descripcion: "Programas y entretenimiento",
     imagen: "/assets/images/chanels-imgs/colosalTV.jpg",
@@ -62,9 +55,6 @@ const shows = [
     url: "https://rightsboosterltd-cops-1-eu.plex.wurl.tv/playlist.m3u8",
     categoria: "Shows",
   },
-
-  // --- General/Variedad ---
-
   {
     nombre: "TVM+",
     descripcion: "Variedad Venezolana en vivo",

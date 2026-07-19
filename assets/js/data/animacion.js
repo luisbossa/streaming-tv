@@ -21,17 +21,10 @@ const animacion = [
     categoria: "Animación",
   },
   {
-    nombre: "Anime Classics",
-    descripcion: "Anime",
-    imagen: "/assets/images/chanels-imgs/animeClassic.jpg",
-    url: "https://d82pyvmcw2kdc.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-swfivzrzwamaq/live/fast-channel-animevisionclassics-efc8dc6d/fast-channel-animevisionclassics-efc8dc6d.m3u8",
-    categoria: "Animación",
-  },
-  {
-    nombre: "Anime Visión",
+    nombre: "Capitan Tsubasa",
     descripcion: "Más Anime",
-    imagen: "/assets/images/chanels-imgs/animeVision.jpg",
-    url: "https://d1ujfw1zyymzyd.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-a6fukwkbxmex8/live/fast-channel-animevision-64527ec0/fast-channel-animevision-64527ec0.m3u8",
+    imagen: "/assets/images/chanels-imgs/capitanTabusa.png",
+    url: "https://amg00658-amg00658c48-canelatv-international-7663.playouts.now.amagi.tv/ts-us-w2-n2/playlist/amg00658-canelamediafast-channela-canelatvinternational/cb7c3e167b726f869cca3561d1a314aad20563d35d63806766a05dc52195155ad1bef1c9e919ea687ec062812b53310d0c78ce07de6c19a08724fc0e733f070afe88b37bc7991919d581512c2eb86a5657fa1705a165137edcde1f0aae34a1365040bf473d0072c59621c90b2ed99056d2247c9bda88326222434fec051fbafd0bbcfee45d5bd872a1af1c58f67e13b6c01bd6d11fbc9ed75d8c57d423f91cc896f88ace18818f927ea856e46544002125cfcd7d929e09e18fcd306acf777e74213f93cb0f06f35dfc25606eba95e8b076eb128ebb2c826145c36afa61a54047ef376bdd8c60afbfafd7026034a1d6526226da85eaeaa97d5bb917819353a66f1dddd66d1827a90db8421e98da8fea1981d11c95b76ca6bb7a0939ffa34c989c884e8eda8267933fc3cbf89972170033444ab154ac9e62cc3a9d569c8e4271121d1fedad5ccad08d05707a19d2c91ef5030bb5debc86dd2532de2f4e09bf2e8a0d4524e71c5851c961b99635678c662d803636f41175a34aeeb721f0e88ab05675e590970caf2fdcb40cd3e40be6386f0e4ce0a45e2a2f264ad9e06202276a8314b4a1adcf434951bcb99d8483395e20361855008e989753939ccf2418568c1311697a14188117940efb055a0b3ac60ed9ce5c26656799cb7215595addcaf1eb3f2d3250228b2e59ff1e21/52/854x480_2081040/index.m3u8",
     categoria: "Animación",
   },
   {
@@ -60,6 +53,13 @@ const animacion = [
     descripcion: "Anime variado",
     imagen: "/assets/images/chanels-imgs/maxAnime.png",
     url: "https://cdnlive.klicgo.net/maxanime/live/playlist_dvr.m3u8",
+    categoria: "Animación",
+  },
+  {
+    nombre: "RETRO CRUSH",
+    descripcion: "Anime",
+    imagen: "/assets/images/chanels-imgs/retroCrush.png",
+    url: "https://linear-899.frequency.stream/dist/cineverse/899/hls/master/playlist.m3u8",
     categoria: "Animación",
   },
 ];

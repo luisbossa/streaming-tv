@@ -14,13 +14,6 @@ const shows = [
     categoria: "Shows",
   },
   {
-    nombre: "Impaco TV",
-    descripcion: "Contenido y entretenimiento",
-    imagen: "/assets/images/chanels-imgs/impactoTV.jpg",
-    url: "https://cloudvideo.servers10.com:8081/impactotv/index.m3u8",
-    categoria: "Shows",
-  },
-  {
     nombre: "Bellavision",
     descripcion: "Entretenimiento",
     imagen: "/assets/images/chanels-imgs/bellavision.png",

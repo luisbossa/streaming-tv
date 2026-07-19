@@ -5,6 +5,6 @@ const canales = [
   ...noticias,
   ...shows,
   ...documentales,
-  ...caricaturas,
+  ...animacion,
 ];
 

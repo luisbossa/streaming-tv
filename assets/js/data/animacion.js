@@ -7,7 +7,7 @@ const animacion = [
     categoria: "Animación",
   },
   {
-    nombre: "EnerGeek ",
+    nombre: "ENERGEEK ",
     descripcion: "Animación",
     imagen: "/assets/images/chanels-imgs/enerGeek.png",
     url: "https://iptv2.cronet.cl/ENERGEEK_RETRO/index.m3u8",

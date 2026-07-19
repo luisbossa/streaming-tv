@@ -904,16 +904,15 @@
               .sort(function (t, a) {
                 return a.goals - t.goals;
               });
-            // quitar Mbappé que venga del API
+            // quitar cualquier Mbappé del API
             i = i.filter(function (t) {
-              return !t.name.toLowerCase().includes("mbapp");
+              return !/mbapp/i.test(t.name);
             });
-
-            // insertar Mbappé manual
-            i.splice(1, 0, {
+            // ponerlo de primero
+            i.unshift({
               name: "Kylian Mbappé",
               team: { name: "Francia" },
-              goals: 8,
+              goals: 10,
             });
             i.length
               ? a(
@@ -1087,7 +1086,8 @@
         Morocco: "&#127474;&#127462;",
         "Saudi Arabia": "&#127480;&#127462;",
         Cameroon: "&#127464;&#127474;",
-        England: "&#127988;&#917607;&#917602;&#917605;&#917614;&#917607;&#917631;",
+        England:
+          "&#127988;&#917607;&#917602;&#917605;&#917614;&#917607;&#917631;",
         Serbia: "&#127479;&#127480;",
         Ghana: "&#127468;&#127469;",
         "Costa Rica": "&#127464;&#127479;",
@@ -1349,7 +1349,7 @@
         function i(t) {
           return (
             T[t] ||
-            '&#127988;&#917607;&#917602;&#917605;&#917614;&#917607;&#917631;'
+            "&#127988;&#917607;&#917602;&#917605;&#917614;&#917607;&#917631;"
           );
         }
         function s(t) {

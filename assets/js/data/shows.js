@@ -96,7 +96,7 @@ const shows = [
   {
     nombre: "Infinita TV",
     descripcion: "Shows y entretenimiento",
-    imagen: "/assets/images/chanels-imgs/infinita.webp",
+    imagen: "/assets/images/chanels-imgs/infinitaTv.jfif",
     url: "https://s2.tvdatta.com:3753/hybrid/play.m3u8",
     categoria: "Shows",
   },

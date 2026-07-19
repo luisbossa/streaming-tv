@@ -7,6 +7,13 @@ const caricaturas = [
     categoria: "Caricaturas",
   },
   {
+    nombre: "EnerGeek ",
+    descripcion: "Caricaturas",
+    imagen: "/assets/images/chanels-imgs/enerGeek.png",
+    url: "https://iptv2.cronet.cl/ENERGEEK_RETRO/index.m3u8",
+    categoria: "Caricaturas",
+  },
+  {
     nombre: "ENERGEEK FAN",
     descripcion: "Caricaturas retro",
     imagen: "/assets/images/chanels-imgs/energeekFan.jpg",

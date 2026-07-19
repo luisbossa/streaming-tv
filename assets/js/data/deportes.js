@@ -10,7 +10,7 @@ const deportes = [
     nombre: "Redbull TV",
     descripcion: "Deportes extremos",
     imagen: "/assets/images/chanels-imgs/redbullTV.png",
-    url: "https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8",
+    url: "https://886bd3fbc782459f8de7555d32d7e9ce.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-957-WORBLATAMESFAST-WHALETVPLUS/957/whaletvplus/hls/master/playlist.m3u8",
     categoria: "Deportes",
   },
   {
@@ -39,6 +39,13 @@ const deportes = [
     descripcion: "Deportes en vivo",
     imagen: "/assets/images/chanels-imgs/foxSports.png",
     url: "https://aegis-cloudfront-1.tubi.video/62883227-8fc8-4992-97ff-614d283b4789/playlist.m3u8",
+    categoria: "Deportes",
+  },
+  {
+    nombre: "Fox deportes",
+    descripcion: "Deportes en vivo",
+    imagen: "/assets/images/chanels-imgs/foxDeportes.png",
+    url: "https://csm-e-cetubilusordlive-97882305.csm.tubi.video/csm/live/750557920.m3u8?playback_start_ts=1784410329&yo.ap=https://lna.tubi.video/prd-yospace/&yo.t.jt=1000&ss.exp=20260721213209&ss.sig=70460f81acbc8520eb12a1b26a5fb4f3aec4a8c6&yo.oh=Y3NtLWUtZWIuY3NtLnR1YmkudmlkZW8=",
     categoria: "Deportes",
   },
   {
@@ -77,10 +84,17 @@ const deportes = [
     categoria: "Deportes",
   },
   {
+    nombre: "FIFA",
+    descripcion: "Deportes en vivo",
+    imagen: "/assets/images/chanels-imgs/fifaTV.webp",
+    url: "https://6c849fb3.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/TEctbXhfRklGQVBsdXNTcGFuaXNoLTFfSExT/playlist.m3u8",
+    categoria: "Deportes",
+  },
+  {
     nombre: "FIFA Plus",
     descripcion: "Deportes en vivo",
     imagen: "/assets/images/chanels-imgs/fifaPlus.png",
-    url: "https://d63fabad.wurl.com/manifest/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWVzX0ZJRkFQbHVzU3BhbmlzaF9ITFM/461a5cfc-eaf5-4cae-8bfa-7a5d0f9e1079/1.m3u8",
+    url: "https://d63fabad.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWVzX0ZJRkFQbHVzU3BhbmlzaF9ITFM/playlist.m3u8",
     categoria: "Deportes",
   },
   {
@@ -102,6 +116,34 @@ const deportes = [
     descripcion: "Deportes en vivo",
     imagen: "/assets/images/chanels-imgs/claroSports.png",
     url: "https://d1rqgw5gocwo9i.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-nbcu-stitched/6a4c908e-7980-4fcb-93e3-584472a5f9a3/4.m3u8",
+    categoria: "Deportes",
+  },
+  {
+    nombre: "Deportes TVC",
+    descripcion: "Deportes en vivo",
+    imagen: "/assets/images/chanels-imgs/deportesTVC.jfif",
+    url: "https://streaming.onnethn.com/DEPORTES_TVC/playlist.m3u8",
+    categoria: "Deportes",
+  },
+  {
+    nombre: "Colimdo TV",
+    descripcion: "Deportes en vivo",
+    imagen: "/assets/images/chanels-imgs/colimdoTV.jpg",
+    url: "https://edge.livestreaminggroup.info/colimdotvlive/index.m3u8",
+    categoria: "Deportes",
+  },
+  {
+    nombre: "BEIN SPORTS XTRA",
+    descripcion: "Deportes en vivo",
+    imagen: "/assets/images/chanels-imgs/beinSports.webp",
+    url: "https://dc1644a9jazgj.cloudfront.net/beIN_Sports_Xtra_Espanol.m3u8",
+    categoria: "Deportes",
+  },
+  {
+    nombre: "AS3 Sport TV",
+    descripcion: "Deportes en vivo",
+    imagen: "/assets/images/chanels-imgs/as3Sports.png",
+    url: "https://streamtv.as3sport.online:3394/hybrid/play.m3u8",
     categoria: "Deportes",
   },
 ];

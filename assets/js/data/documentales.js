@@ -90,4 +90,11 @@ const documentales = [
     url: "https://epg-ipv4.provider.plex.tv/library/parts/608049aefa2b8ae93c2c39ea-5f0ff263d71dcb00449ec021.m3u8?includeAllStreams=1&x-plex-product=Plex+Mediaverse&x-plex-token=ix-Fpu42W4wRmEkF_yXZ&redirectedFromV6=1",
     categoria: "Documentales",
   },
+  {
+    nombre: "Milennio TV",
+    descripcion: "Programacion de esoterismo",
+    imagen: "/assets/images/chanels-imgs/milenioTv.png",
+    url: "https://videostream.shockmedia.com.ar:19360/milenniotv/milenniotv.m3u8",
+    categoria: "Documentales",
+  },
 ];

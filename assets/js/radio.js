@@ -1,5 +1,35 @@
 const shows = [
   {
+    title: "Generación X Radio",
+    host: "Música pop",
+    category: "Pop",
+    listeners: "4.3K",
+    desc: "Emisora de música y cultura pop",
+    img: "/assets/images/radio-imgs/geneRadio.png",
+    cover: "/assets/images/radio-imgs/geneRadio-cover.png",
+    src: "https://live.streamingradiosmr.com/8816/stream",
+  },
+  {
+    title: "JRE RADIO",
+    host: "Música tranquila",
+    category: "Chill",
+    listeners: "4.5K",
+    desc: "Transmitimos selección de música Jazz y Chillout.",
+    img: "/assets/images/radio-imgs/jrRadio.webp",
+    cover: "/assets/images/radio-imgs/jrRadio-cover.jpg",
+    src: "https://live.streamingradiosmr.com/8156/stream",
+  },
+  {
+    title: "Lazy Low-Fi",
+    host: "Música Low-Fi",
+    category: "Chill",
+    listeners: "4.5K",
+    desc: "Transmitimos música Low-fi.",
+    img: "/assets/images/radio-imgs/lazyLowFi.webp",
+    cover: "/assets/images/radio-imgs/lazyLowFi-cover.png",
+    src: "https://live.streamingradiosmr.com/8754/stream",
+  },
+  {
     title: "100hitz.com",
     host: "Música Hip-hop",
     category: "Hip-hop",
@@ -68,6 +98,16 @@ const shows = [
     img: "/assets/images/radio-imgs/crossover.png",
     cover: "/assets/images/radio-imgs/crossover-cover.png",
     src: "https://stream-159.zeno.fm/76skg1fndkeuv",
+  },
+    {
+    title: "Planet Radio",
+    host: "Música variada",
+    category: "Variado",
+    listeners: "4.1K",
+    desc: " La mejor música, noticias, programas y eventos en Costa Rica.",
+    img: "/assets/images/radio-imgs/planetRadio.jfif",
+    cover: "/assets/images/radio-imgs/planetRadio-cover.jpg",
+    src: "https://stream20.usastreams.com/8094/stream%22",
   },
   {
     title: "eltunel.co",
@@ -259,6 +299,16 @@ const shows = [
     cover: "/assets/images/radio-imgs/zorround-cover.png",
     src: "http://5.135.154.72:12700/;",
   },
+  {
+    title: "Mala Fama Radio",
+    host: "Cumbia Argentina",
+    category: "Cumbia",
+    listeners: "4.0K",
+    desc: "Emisora de lo mejor de la música cumbia.",
+    img: "/assets/images/radio-imgs/mfRadio.png",
+    cover: "/assets/images/radio-imgs/mfRadio-cover.jfif",
+    src: "https://live.streamingradiosmr.com/8818/stream",
+  },
 ];
 
 const categories = [
@@ -273,6 +323,8 @@ const categories = [
   { title: "Salsa", date: "Música salsa para bailar" },
   { title: "Reggae", date: "Música Reggae" },
   { title: "R&B", date: "Música R & B" },
+  { title: "Cumbia", date: "La mejor música cumbia" },
+  { title: "Chill", date: "Música tranquila" },
 ];
 
 /* ===================== ELEMENTS ===================== */

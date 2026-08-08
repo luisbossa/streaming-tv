@@ -99,7 +99,7 @@ const shows = [
     cover: "/assets/images/radio-imgs/crossover-cover.png",
     src: "https://stream-159.zeno.fm/76skg1fndkeuv",
   },
-    {
+  {
     title: "Planet Radio",
     host: "Música variada",
     category: "Variado",

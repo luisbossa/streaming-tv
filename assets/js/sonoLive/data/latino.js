@@ -2,7 +2,7 @@ export const latino = [
   {
     title: "Caliente 90.7 FM",
     host: "Música latina",
-    category: "Lanino",
+    category: "Latino",
     listeners: "3.9K",
     desc: "Emisora con un formato musical enfocado en la música latina, con destaque para los sonidos tropicales, bachata, merengue, cumbia, salsa, baladas y música regional mexicana.",
     img: "/assets/images/radio-imgs/caliente.jpg",
@@ -12,7 +12,7 @@ export const latino = [
   {
     title: "Scan 96.1",
     host: "Música latina internacional",
-    category: "Lanino",
+    category: "Latino",
     listeners: "3.7K",
     desc: "Emisora que propone una programación con el mejor entretenimiento musical durante las 24 horas.",
     img: "/assets/images/radio-imgs/scan96.png",

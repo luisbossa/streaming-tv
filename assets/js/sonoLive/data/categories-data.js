@@ -36,6 +36,10 @@ export const categories = [
     date: "Música salsa para bailar",
   },
   {
+    title: "Latino",
+    date: "Música Latinoamericana",
+  },
+  {
     title: "Reggae",
     date: "Música Reggae",
   },

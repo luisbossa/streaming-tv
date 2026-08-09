@@ -1,0 +1,32 @@
+export const variado = [
+  {
+    title: "Crossover Estereo",
+    host: "Música variada",
+    category: "Variado",
+    listeners: "2.6K",
+    desc: "Con una programación que abarca una amplia gama de géneros musicales.",
+    img: "/assets/images/radio-imgs/crossover.png",
+    cover: "/assets/images/radio-imgs/crossover-cover.png",
+    src: "https://stream-159.zeno.fm/76skg1fndkeuv",
+  },
+  {
+    title: "Planet Radio",
+    host: "Música variada",
+    category: "Variado",
+    listeners: "4.1K",
+    desc: " La mejor música, noticias, programas y eventos en Costa Rica.",
+    img: "/assets/images/radio-imgs/planetRadio.jfif",
+    cover: "/assets/images/radio-imgs/planetRadio-cover.jpg",
+    src: "https://stream20.usastreams.com/8094/stream%22",
+  },
+  {
+    title: "W Radio",
+    host: "Música variada",
+    category: "Variado",
+    listeners: "4.4K",
+    desc: "Emite 24 horas al día.",
+    img: "/assets/images/radio-imgs/wRadio.png",
+    cover: "/assets/images/radio-imgs/wRadio-cover.jpg",
+    src: "https://27573.live.streamtheworld.com/WRADIOAAC_SC",
+  },
+];

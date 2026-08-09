@@ -1,0 +1,32 @@
+export const pop = [
+  {
+    title: "Los 40",
+    host: "Música pop del momento",
+    category: "Pop",
+    listeners: "4.5K",
+    desc: "Disfruta de los 40 éxitos más importantes del momento en LOS40 Costa Rica.",
+    img: "/assets/images/radio-imgs/los40.png",
+    cover: "/assets/images/radio-imgs/los40-cover.jpg",
+    src: "https://27903.live.streamtheworld.com/LOS40_SC",
+  },
+  {
+    title: "Generación X Radio",
+    host: "Música pop",
+    category: "Pop",
+    listeners: "4.3K",
+    desc: "Emisora de música y cultura pop",
+    img: "/assets/images/radio-imgs/geneRadio.png",
+    cover: "/assets/images/radio-imgs/geneRadio-cover.png",
+    src: "https://live.streamingradiosmr.com/8816/stream",
+  },
+  {
+    title: "Radio Dos 99.5",
+    host: "Música pop",
+    category: "Pop",
+    listeners: "3.2K",
+    desc: "Éxitos que fueron de uno y ahora son de 2.",
+    img: "/assets/images/radio-imgs/radio2.png",
+    cover: "/assets/images/radio-imgs/radio2-cover.jpg",
+    src: "https://s5.radio.co/sd515b7b34/listen",
+  },
+];

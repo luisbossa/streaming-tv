@@ -29,4 +29,14 @@ export const variado = [
     cover: "/assets/images/radio-imgs/wRadio-cover.jpg",
     src: "https://27573.live.streamtheworld.com/WRADIOAAC_SC",
   },
+  {
+    title: "RADIO MILIMON",
+    host: "Música variada",
+    category: "Variado",
+    listeners: "4.6K",
+    desc: "Emisora de radio con sede en la provincia de Limón, en Costa Rica, que emite en línea las 24 horas del día.",
+    img: "/assets/images/radio-imgs/miLimon.jpg",
+    cover: "/assets/images/radio-imgs/miLimon-cover.jfif",
+    src: "https://milimonradio-rowrigos.radioca.st/stream",
+  },
 ];

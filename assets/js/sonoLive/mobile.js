@@ -1,15 +1,7 @@
-/* =========================================================
-   MOBILE MENU
-========================================================= */
-
 const menuBtn = document.getElementById("menu-btn");
 const sidebar = document.getElementById("radio-sidebar");
 const closeBtn = document.getElementById("close-btn");
 const overlay = document.getElementById("radio-overlay");
-
-/* =========================================================
-   ABRIR
-========================================================= */
 
 function openSidebar() {
   if (!sidebar || !overlay) {
@@ -23,10 +15,6 @@ function openSidebar() {
   document.body.classList.add("no-scroll");
 }
 
-/* =========================================================
-   CERRAR
-========================================================= */
-
 function closeSidebar() {
   if (!sidebar || !overlay) {
     return;
@@ -38,10 +26,6 @@ function closeSidebar() {
 
   document.body.classList.remove("no-scroll");
 }
-
-/* =========================================================
-   INICIALIZAR
-========================================================= */
 
 export function initMobile() {
   if (menuBtn) {

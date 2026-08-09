@@ -1,26 +1,13 @@
-/* =========================================================
-   HERO
-========================================================= */
-
 const hero = document.querySelector(".hero");
-
 const heroImg = document.querySelector(".hero-img");
-
 const heroTitle = document.querySelector(".hero h1");
-
 const heroDesc = document.querySelector(".radio-desc");
-
 const heroHost = document.getElementById("hero-host");
-
 const heroCategory = document.getElementById("hero-category");
-
 const heroListeners = document.getElementById("listeners");
-
 const playerTitle = document.getElementById("player-title");
 
-/* =========================================================
-   ACTUALIZAR HERO
-========================================================= */
+/* ACTUALIZAR HERO */
 
 export function updateHero(show) {
   if (!show) {
@@ -60,10 +47,6 @@ export function updateHero(show) {
   animateHero();
 }
 
-/* =========================================================
-   OYENTES
-========================================================= */
-
 function randomListeners(base) {
   if (!base) {
     return "0";
@@ -79,10 +62,6 @@ function randomListeners(base) {
 
   return (num + variation).toFixed(1) + "K";
 }
-
-/* =========================================================
-   ANIMACIÓN
-========================================================= */
 
 function animateHero() {
   if (!hero) {

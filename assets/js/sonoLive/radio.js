@@ -19,10 +19,6 @@ import { initPlayer, playRadio } from "./player.js";
 import { renderRelated } from "./related.js";
 import { initMobile } from "./mobile.js";
 
-/* =========================================================
-   TODAS LAS EMISORAS
-========================================================= */
-
 export const shows = [
   ...pop,
   ...hiphop,
@@ -39,15 +35,7 @@ export const shows = [
   ...chill,
 ];
 
-/* =========================================================
-   ELEMENTOS
-========================================================= */
-
 const showsContainer = document.getElementById("shows");
-
-/* =========================================================
-   OBTENER EMISORAS FILTRADAS
-========================================================= */
 
 export function getFilteredShows() {
   if (radioState.currentCategory === "Todas") {
@@ -56,10 +44,6 @@ export function getFilteredShows() {
 
   return shows.filter((show) => show.category === radioState.currentCategory);
 }
-
-/* =========================================================
-   RENDER EMISORAS
-========================================================= */
 
 export function renderShows() {
   if (!showsContainer) {
@@ -94,17 +78,9 @@ export function renderShows() {
                 </div>
             `;
 
-    /*
-     * Marcar emisora activa
-     */
-
     if (radioState.currentShow && radioState.currentShow.title === show.title) {
       div.classList.add("active");
     }
-
-    /*
-     * Seleccionar emisora
-     */
 
     div.addEventListener("click", () => {
       selectRadio(show);
@@ -112,11 +88,6 @@ export function renderShows() {
 
     showsContainer.appendChild(div);
   });
-
-  /*
-   * Si no hay emisora seleccionada,
-   * seleccionar la primera
-   */
 
   if (!radioState.currentShow && filteredShows.length > 0) {
     radioState.currentShow = filteredShows[0];
@@ -128,10 +99,6 @@ export function renderShows() {
     renderRelated(radioState.currentShow, shows);
   }
 }
-
-/* =========================================================
-   SELECCIONAR EMISORA
-========================================================= */
 
 export function selectRadio(show) {
   if (!show) {
@@ -152,10 +119,6 @@ export function selectRadio(show) {
   renderRelated(show, shows);
 }
 
-/* =========================================================
-   ACTUALIZAR EMISORA ACTIVA
-========================================================= */
-
 function updateActiveRadio() {
   document.querySelectorAll(".show").forEach((element) => {
     element.classList.remove("active");
@@ -174,10 +137,6 @@ function updateActiveRadio() {
   });
 }
 
-/* =========================================================
-   CAMBIAR CATEGORÍA
-========================================================= */
-
 function changeCategory(category) {
   radioState.currentCategory = category;
 
@@ -185,10 +144,6 @@ function changeCategory(category) {
 
   renderShows();
 }
-
-/* =========================================================
-   SIGUIENTE EMISORA
-========================================================= */
 
 export function nextRadio() {
   if (!shows.length) {
@@ -203,10 +158,6 @@ export function nextRadio() {
 
   selectRadio(shows[index]);
 }
-
-/* =========================================================
-   EMISORA ANTERIOR
-========================================================= */
 
 export function previousRadio() {
   if (!shows.length) {
@@ -225,10 +176,6 @@ export function previousRadio() {
 window.addEventListener("radio:select", (event) => {
   selectRadio(event.detail);
 });
-
-/* =========================================================
-   INICIALIZACIÓN
-========================================================= */
 
 initCategories(changeCategory);
 initPlayer(nextRadio, previousRadio);

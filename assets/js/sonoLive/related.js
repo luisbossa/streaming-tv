@@ -1,12 +1,4 @@
-/* =========================================================
-   EMISORAS SIMILARES
-========================================================= */
-
 const relatedContainer = document.getElementById("related-shows");
-
-/* =========================================================
-   RENDER
-========================================================= */
 
 export function renderRelated(currentShow, shows) {
   if (!relatedContainer || !currentShow) {
@@ -50,11 +42,6 @@ export function renderRelated(currentShow, shows) {
                     ${show.host || ""}
                 </span>
             `;
-
-    /*
-     * El click lo manejará radio.js
-     * mediante un evento personalizado
-     */
 
     div.addEventListener("click", () => {
       window.dispatchEvent(

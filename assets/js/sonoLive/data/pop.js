@@ -14,9 +14,9 @@ export const pop = [
     host: "Música pop",
     category: "Pop",
     listeners: "4.3K",
-    desc: "Emisora de música y cultura pop",
+    desc: "Emisora de música y cultura pop.",
     img: "/assets/images/radio-imgs/geneRadio.png",
-    cover: "/assets/images/radio-imgs/geneRadio-cover.png",
+    cover: "/assets/images/radio-imgs/geneRadio-cover.jfif",
     src: "https://live.streamingradiosmr.com/8816/stream",
   },
   {

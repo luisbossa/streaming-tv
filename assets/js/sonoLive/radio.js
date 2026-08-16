@@ -60,23 +60,23 @@ export function renderShows() {
     div.className = "show";
 
     div.innerHTML = `
-                <img
-                    src="${show.img}"
-                    alt="${show.title}"
-                >
+        <img
+            src="${show.img}"
+            alt="${show.title}"
+        >
 
-                <div class="show-info">
+        <div class="show-info">
 
-                    <strong>
-                        ${show.title}
-                    </strong>
+            <strong>
+                ${show.title}
+            </strong>
 
-                    <p>
-                        ${show.host || ""}
-                    </p>
+            <p>
+                ${show.host || ""}
+            </p>
 
-                </div>
-            `;
+        </div>
+    `;
 
     if (radioState.currentShow && radioState.currentShow.title === show.title) {
       div.classList.add("active");

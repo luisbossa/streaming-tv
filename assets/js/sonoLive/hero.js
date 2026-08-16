@@ -7,17 +7,56 @@ const heroCategory = document.getElementById("hero-category");
 const heroListeners = document.getElementById("listeners");
 const playerTitle = document.getElementById("player-title");
 
-/* ACTUALIZAR HERO */
-
 export function updateHero(show) {
   if (!show) {
     return;
   }
 
   if (heroImg) {
-    heroImg.src = show.cover || show.img;
+    const newImage = show.cover || show.img;
+    const skeleton = document.querySelector(".hero-image-skeleton");
 
-    heroImg.alt = show.title;
+    // Mostrar skeleton
+    if (skeleton) {
+      skeleton.classList.remove("hidden");
+    }
+
+    // Ocultar imagen mientras carga
+    heroImg.classList.remove("loaded");
+
+    // Crear imagen temporal para precargar
+    const imageLoader = new Image();
+
+    imageLoader.onload = () => {
+      // Cuando terminó de cargar, colocamos la imagen
+      heroImg.src = newImage;
+      heroImg.alt = show.title;
+
+      // Mostrar imagen
+      requestAnimationFrame(() => {
+        heroImg.classList.add("loaded");
+
+        // Ocultar skeleton
+        if (skeleton) {
+          skeleton.classList.add("hidden");
+        }
+      });
+    };
+
+    imageLoader.onerror = () => {
+      console.error("No se pudo cargar la imagen:", newImage);
+
+      // Ocultar skeleton aunque falle
+      if (skeleton) {
+        skeleton.classList.add("hidden");
+      }
+
+      // Mostrar la imagen igualmente para poder detectar el error
+      heroImg.src = newImage;
+      heroImg.alt = show.title;
+    };
+
+    imageLoader.src = newImage;
   }
 
   if (heroTitle) {

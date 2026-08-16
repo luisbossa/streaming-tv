@@ -39,4 +39,14 @@ export const variado = [
     cover: "/assets/images/radio-imgs/miLimon-cover.jfif",
     src: "https://milimonradio-rowrigos.radioca.st/stream",
   },
+  {
+    title: "Radio 94.7 FM",
+    host: "Música variada",
+    category: "Variado",
+    listeners: "4.2K",
+    desc: "Representa una mezcla perfecta de cultura y melodías que resuenan con el espíritu costarricense.",
+    img: "/assets/images/radio-imgs/94.7.jfif",
+    cover: "/assets/images/radio-imgs/94.7-cover.png",
+    src: "https://29308.live.streamtheworld.com/CRC_947AAC.aac",
+  },
 ];
